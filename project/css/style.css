@@ -44,13 +44,16 @@ body {
     font-family: 'Lato', sans-serif;
     text-transform: none;
 }
+
 .dropdown-item:last-child{
     border-bottom: transparent !important;
 }
+
 .dropdown-item:hover{
     background-color: transparent !important;
     color: turquoise !important;
 }
+
 /*--- slider --*/
 
 .carousel-item{
