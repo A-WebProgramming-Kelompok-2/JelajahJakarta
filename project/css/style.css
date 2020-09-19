@@ -8,6 +8,7 @@ body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
     color: #505962;
+    background-color: cornsilk !important;
 }
 .navbar {
     text-transform: uppercase;
@@ -89,6 +90,33 @@ body {
     border-radius: 0;
     font-size: 1.1rem;
     margin-top: 15px;
+}
+
+/*-- jumbotron --*/
+
+.heading{
+    color:black;
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+}
+.jumbotron{
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+    background-color: rgb(253, 230, 199) !important;
+}
+
+/*-- card --*/
+.card-1{
+    width: 22rem;
+}
+
+.card-body{
+    color: black;
+    text-align: justify;
+}
+
+.mb-3{
+    color: gold;
 }
 
 /*--- media queries --*/
