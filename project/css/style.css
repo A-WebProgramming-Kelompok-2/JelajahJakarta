@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+    background-color: cornsilk !important;
+}
+.navbar {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.8)!important;
+}
+
+.nav-link{
+    font-family: Century Gothic;
+    margin-left: 10px;
+}
+
+.navbar-brand{
+    margin-left: 5px;
+    font-family: 'Pacifico',cursive;
+    font-weight: 400;
+}
+.navbar-nav .nav-link{
+    color: rgba(230, 222, 222, 0.897) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: turquoise !important;
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.5)!important;
+}
+.dropdown-item{
+    color:rgba(230, 222, 222, 0.897) !important;
+    border-bottom: solid white 0.6px !important;
+    font-family: 'Lato', sans-serif;
+    text-transform: none;
+}
+
+.dropdown-item:last-child{
+    border-bottom: transparent !important;
+}
+
+.dropdown-item:hover{
+    background-color: transparent !important;
+    color: turquoise !important;
+}
+
+/*--- slider --*/
+
+.carousel-item{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption{
+    font-family: 'Josefin Slab', serif;
+    position: absolute;
+    top: 35%;
+    text-transform: uppercase;
+}
+
+.carousel-caption h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+    border-bottom: double white;
+}
+
+.carousel-caption h2{
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.btn-lg{
+    font-family: Century Gothic;
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+/*-- jumbotron --*/
+
+.heading{
+    color:black;
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+}
+.jumbotron{
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+    background-color: rgb(253, 230, 199) !important;
+}
+
+/*-- card --*/
+.card-1{
+    width: 22rem;
+}
+
+.card-body{
+    color: black;
+    text-align: justify;
+}
+
+.mb-3{
+    color: gold;
+}
+
+/*--- media queries --*/
+@media(max-width: 767px){
+
+    .carousel-caption h1{
+        font-size: 2rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .btn-lg{
+        font-size: 1rem;
+    }
+}
