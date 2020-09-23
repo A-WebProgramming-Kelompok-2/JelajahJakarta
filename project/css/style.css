@@ -133,6 +133,11 @@ body {
     color: gold;
 }
 
+/*-- MODAL LOGIN/SIGN UP --*/
+.modal-dialog{
+    width: 350px !important;
+}
+
 /*--- media queries --*/
 @media(max-width: 767px){
 
