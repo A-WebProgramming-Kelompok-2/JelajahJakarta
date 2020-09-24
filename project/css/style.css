@@ -135,6 +135,7 @@ body {
 
 /*-- MODAL LOGIN/SIGN UP --*/
 .modal-dialog{
+<<<<<<< HEAD
     width: 200% !important;
 }
 .alert
@@ -155,6 +156,9 @@ body {
 .good .fa-times
 {
     display: none;
+=======
+    width: 350px !important;
+>>>>>>> 838a83b1c80da4f532c518338e1b1826929e92ab
 }
 
 /*--- media queries --*/
