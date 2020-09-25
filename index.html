@@ -4,6 +4,7 @@
     <title>JELAJAH JAKARTA</title>
     <!--css-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/javascript" href="script.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!--js bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,6 +16,12 @@
     <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
     <script src="https://kit.fontawesome.com/59d975929c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bootstrap-show-password.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+
 </head>
 <body data-spy="Scroll" data-target="#navbarResponsive">
     <!---NAVBAR-->
@@ -27,9 +34,6 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mr-auto ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#">My Booking</a>
               </li>
               <li class="nav-item dropdown">
@@ -38,15 +42,13 @@
                   Account
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Login</a>
-                  <a class="dropdown-item" href="#">Register</a>
+                  <!--button trigger modal-->
+                  <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" data-target="#register">Register</a>
                 </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
               </li>
             </ul>
             <!--search bar-->
@@ -61,7 +63,79 @@
             </form>
           </div>
       </nav>
+      <!--Modal log in-->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Log In Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Log in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of modal log in-->
 
+      <!--modal register-->
+      <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form 
+              oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1" >Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+                </div>
+                <div class="alert alert-warning password-alert" role="alert">
+                  <ul>
+                    <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+                    <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+                    <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+                  </ul>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Reenter Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--end of modal register-->
       <!--image slider-->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
         <ol class="carousel-indicators">
@@ -101,7 +175,7 @@
         </a>
       </div>
 
-      <!--Add more image-->
+      <!--first jumbotron-->
       <div id="Vocation">
         <div class="text-center">
         <div class="jumbotron container-fluid" >
@@ -109,7 +183,9 @@
           <div class="heading-underline"></div>
         </div>
         </div> 
-        <!--end of jumbotron-->
+        <!--end of first jumbotron-->
+
+        <!--first card-->
         <div class="container">
           <div class="row">
           <div class="col-md-4">
@@ -195,14 +271,15 @@
                   </div>
                 </div>
           </div>
-        </div> <!--end of container-->
-      </div> <!--end of vocation-->
-      
+        </div> 
+        <!--end of first card-->
+  
+      <!--second card-->
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <div class="card-1">
-              <img src="img/Monas2.jpg" style="height:14rem;" class="card-img-top" alt="...">
+            <div class="card-2">
+              <img src="img/Monas2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Monumen Nasional</h5>
                 <p class="card-text">Central Jakarta</p>
@@ -229,8 +306,8 @@
             </div>
           </div>
               <div class="col-md-4">
-                <div class="card-1">
-                  <img src="img/kotu.png" style="height:14rem;" class="card-img-top" alt="...">
+                <div class="card-2">
+                  <img src="img/kotu.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Kota Tua</h5>
                     <p class="card-text">North Jakarta</p>
@@ -257,8 +334,8 @@
                 </div>
               </div>
                 <div class="col-md-4">
-                  <div class="card-1">
-                    <img src="img/jktaqua.jpg" style="height:14rem;" class="card-img-top" alt="...">
+                  <div class="card-2">
+                    <img src="img/jktaqua.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Jakarta Aquarium</h5>
                       <p class="card-text">West Jakarta</p>
@@ -286,12 +363,56 @@
                 </div>
           </div> 
         </div>
-      </div>
+      <!--end of second card-->
+
+      <!--second jumbotron-->
       <div class="text-center">
-        <div class="jumbotron container-fluid" >
-          <h2 class="heading1"><a class="btn btn-success" style="width: 10rem;">See More</a></h2>
+        <div class="jumbotron-1 container-fluid" >
+          <h2 class="heading1"><a class="btn btn-outline-light">See More</a></h2>
           <div class="heading-underline"></div>
         </div>
       </div> 
-      
+        <!--end of second jumbotron-->
+    </div>
+    <!--end of vocation-->
+    <!--footer-->
+    <footer>
+      <div class="footer-top mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 segment-one">
+              <h2>CONTACT US</h2>
+              <ul>
+             <li><i class="fas fa-phone-square-alt"></i> : 08111222333 / Angellina</li>
+             <span class="ml-3"> : 08867564657 / Yongky</span> <br>
+             <span class="ml-3"> : 08646836491 / Cordellya</span> <br>
+             <span class="ml-3"> : 08967821410 / Vanesa</span> <br>
+             <span class="ml-3"> : 08285301962 / Nicholas</span>
+             <li><i class="fas fa-envelope"></i> : jelajahjakarta@gmail.com</li>
+            </ul>
+            </div>
+            <div class="col-md-4 segment-two">
+              <h2>FOLLOW US ON</h2>
+              <ul>
+             <li><i class="fab fa-instagram-square"></i><a  href="#"> : jelajahjakarta</a></li>
+             <li><i class="fab fa-facebook-square"></i><a  href="#"> : jelajahjakarta</a></li>
+             <li><i class="fab fa-twitter-square"></i><a  href="#"> : jelajahjakarta</a></li>
+             <li><i class="fab fa-youtube"></i><a  href="#"> : jelajahjakarta</a></li>
+            </ul>
+
+            </div>
+            <div class="col-md-4 segment-three">
+              <h2>OTHERS</h2>
+              <ul>
+             <li><i class="fas fa-question-circle" ></i> <a  href="#"> About</a></li>
+             <li><i class="fas fa-home"></i> <a  href="#"> Home</a></li>
+            </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!--end of footer-->
+
  </body>
+</html>
