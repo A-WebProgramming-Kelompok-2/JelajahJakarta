@@ -221,6 +221,29 @@ body {
 	transition: all ease 0.3s;
 }
 
+/*----- footer -----*/
+.footer-top .container{
+    margin-left: 200px;
+    margin-top: 70px;
+    border-bottom: 50px;
+}
+.footer-top .row h2{
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+.footer-top .row ul{
+    font-family: 'Josefin',serif;
+}
+.segment-one h2{
+    margin-left: 17px;   
+}
+.segment-three h2{
+    margin-left: 15px;   
+}
+
+.ul{
+    margin-left: 50px !important;
+}
 /*--- media queries --*/
 @media(max-width: 767px){
 
