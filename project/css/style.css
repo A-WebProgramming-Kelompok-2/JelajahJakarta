@@ -443,5 +443,10 @@ body {
     .b_t{
         margin-left: auto !important;
     }
-    
+    .footer-top{
+        height: auto;
+    }
+    .footer-top .container{
+        margin: auto;
+    }
 }
