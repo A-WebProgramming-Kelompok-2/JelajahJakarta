@@ -129,6 +129,9 @@ body {
     width: 8rem !important;
     letter-spacing: 0.06rem;
 }
+.heading1 .btn:hover{
+    background-color: rgb(255, 216, 41);
+}
 
 /*-- card --*/
 
@@ -234,11 +237,65 @@ body {
 	transition: all ease 0.3s;
 }
 
+/*-----buy ticket box------*/
+
+
+.buy_t{
+    margin-top: 30px;
+    background-size: cover;
+    height: 100vh;
+}
+.b_t{
+    text-align: center;
+    position: relative;
+    margin-top: 170px;
+    margin-left: 110px !important;
+}
+.b_t span{
+    color: white;
+    display: block;
+}
+.text_1{
+    animation: text 3s 1;
+    font-size: 45px;
+    background: rgb(255, 216, 41);
+    position: relative;
+    font-family: 'Oswald',sans-serif;
+}
+.lead{
+    font-family: 'josefin',serif;
+    font-size: 30px;
+}
+
+.headingbt{
+    padding: 10px;
+}
+.headingbt .btn{
+    font-family: 'Oswald', sans-serif;
+    width: 8rem !important;
+    letter-spacing: 0.06rem;
+    padding: 10px;
+}
+
+@keyframes text{
+    0%{
+        color: transparent;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
 /*-----tips and experience box-----*/
 
 .jumbotron-4{
     background-size: cover;
-    margin-top: 40px !important;
+    margin-top: 30px !important;
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 20px;
@@ -250,13 +307,6 @@ body {
     font-family: 'Oswald',sans-serif;
     color: white;
     font-weight: 600;
-}
-.container-1{
-    width: 100%;
-    height: 90vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
 }
 
 .boxt{
@@ -297,32 +347,45 @@ body {
     font-family: 'Oswald', sans-serif;
     text-align: left;
     padding-top: 50px;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .contain h5{
     color: white;
     font-family: 'Oswald', sans-serif;
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .contain-1 h2{
     color: white;
     font-family: 'Oswald', sans-serif;
     text-align: right;
     padding-top: 50px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 .contain-1 h5{
     text-align: right;
     color: white;
     font-family: 'Oswald', sans-serif;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 /*----- footer -----*/
+.footer-top{
+    background-color: rgb(21, 52, 117);
+    height: 50vh;
+}
+
+.link {
+    color: white;
+}
+.link:hover{
+    background-color: white;
+    color: black;
+}
 .footer-top .container{
     margin-left: 200px;
-    margin-top: 70px;
+    margin-top: 30px;
     border-bottom: 50px;
+    color: white;
 }
 .footer-top .row h2{
     font-family: 'Oswald', sans-serif;
@@ -332,19 +395,23 @@ body {
     font-family: 'Josefin',serif;
 }
 .segment-one h2{
+    margin-top: 60px;
     margin-left: 17px;   
 }
 .segment-three h2{
+    margin-top: 60px;
     margin-left: 15px;   
 }
-
+.segment-two h2{
+    margin-top: 60px;
+}
 .ul{
     margin-left: 50px !important;
 }
 
 
 /*--- media queries --*/
-@media(max-width: 767px){
+@media(max-width: 1300px){
 
     .carousel-caption h1{
         font-size: 2rem;
@@ -357,5 +424,24 @@ body {
     .box{
 		width: 94%;
 		height: 500px;
-	}
+    }
+
+    .boxe{
+        width: 70%;
+        margin: auto;
+        position: relative;
+    }
+    .boxt{
+        width: 70%;
+        margin: auto;
+        position: relative;
+    }
+    .contain-1 h5,.contain h5{
+        font-size: 15px;
+    }
+    
+    .b_t{
+        margin-left: auto !important;
+    }
+    
 }
