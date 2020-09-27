@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/javascript" href="script.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--js bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -186,11 +187,10 @@
       <!--first jumbotron-->
       <div id="Vocation">
         <div class="text-center">
-        <div class="jumbotron jumbotron-fluid" >
+        <div class="jumbotron jumbotron-fluid" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-anchor-placement="top-center" data-aos-once="true">
           <h2 class="heading"><b>POPULAR PLACES</b></h2>
           <div class="heading-underline"></div>
-
-        <!--end of first jumbotron-->
 
         <!--first card-->
         <div class="container">
@@ -377,7 +377,7 @@
       <!--second jumbotron-->
       <div class="text-center">
         <div class="jumbotron-1 jumbotron-fluid" >
-          <h2 class="heading1"><a class="btn btn-outline-light">See More</a></h2>
+          <h2 class="heading1"><a class="btn btn-outline-light" href="#">See More</a></h2>
           <div class="heading-underline"></div>
         </div>
       </div> 
@@ -387,12 +387,8 @@
     <!--third jumbotron-->
     <!--content slider-->
   <div id="slider-content">
-    <div class="jumbotron-3 jumbotron-fluid">
-      <div class="text1-justify">
-        <h1>DISCOVER THE BEST OF JAKARTA</h1>
-      </div>
-    </div>
     <div class="jumbotron-cs jumbotron-fluid">
+      <h1>DISCOVER THE BEST OF JAKARTA</h1>
       <div class="container-1">
         <!--slider-->
         <ul id="autoWidth" class="cs-hidden">
@@ -402,7 +398,7 @@
         <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content1_2.jpg);
         ">
           <div class="box-1">
-            <p>MUSEUM</p>
+            <a class="link_d" href="#"><p>MUSEUM</p></a>
           </div>
         </div>
         </li>
@@ -412,7 +408,7 @@
           <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content2_1.jpg);
           ">
             <div class="box-1">
-              <p>BEACH</p>
+              <a class="link_d" href="#"><p>BEACH</p></a>
             </div>
           </div>
           </li>
@@ -422,7 +418,7 @@
           <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content3_3.jpg);
           ">
             <div class="box-1">
-              <p>ZOO</p>
+              <a class="link_d" href="#"><p>ZOO</p></a>
             </div>
           </div>
           </li>
@@ -432,7 +428,7 @@
             <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content4_1.jpg);
             ">
               <div class="box-1">
-                <p>FOODS</p>
+                <a class="link_d" href="#"><p>FOODS</p></a>
               </div>
             </div>
             </li>
@@ -442,7 +438,7 @@
               <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content5_3.jpg);
               ">
                 <div class="box-1">
-                  <p>AMUSEMENT PARK</p>
+                  <a class="link_d" href="#"><p>AMUSEMENT PARK</p></a>
                 </div>
               </div>
               </li>
@@ -455,9 +451,14 @@
   <div id="buy_ticket">
     <div class="jumbotron jumbotron-fluid buy_t" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/buy_1.jpg);">
       <div class="container b_t">
-        <span class="text_1">BOOK YOUR TICKET HERE</span>
-        <span class="lead">To save your time and make your vacation more comfortable.</span>
-        <h1 class="headingbt"><a class="btn btn-outline-light">START NOW</a></h1>
+        <span class="text_1" data-aos="fade-up" data-aos-duration="1000">BOOK YOUR TICKET HERE</span>
+        <span class="lead" data-aos="fade-right"
+        data-aos-offset="200" data-aos-duration="1200"
+        data-aos-easing="ease-in-sine"> To save your time and make your vacation more comfortable.</span>
+        <h1 class="headingbt"data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-offset="200"
+        data-aos-duration="1500"><a class="btn btn-outline-light" href="#">START NOW</a></h1>
       </div>
     </div>
   </div>
@@ -470,18 +471,26 @@
       <div class="text2-justify">
         <h1>EXPERIENCE & TIPS<br></h1>
         <div class="container_te">
-            <div class="boxt">
-              <div class="contain">
+          <div class="boxt" data-aos="fade-right"
+            data-aos-offset="300" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+            <a class="link_te" href="#">  
+              <div class="contain"> 
                   <h2>TIPS</h2>
                   <h5>
                     Even though you feel safe and healthy to explore the beauty of tourist attractions in Jakarta, it never hurts to see some info & tips when you visit certain places. Here, we have a lot of useful information that you can use. </h5>
               </div>
+            </a>
             </div>
-            <div class="boxe">
+            <div class="boxe" data-aos="fade-left"
+            data-aos-offset="150" data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+            <a class="link_te" href="#">    
               <div class="contain-1">
                   <h2>EXPERIENCE</h2>
                   <h5>Let JelajahJakarta walk you through how to have a memorable experience on your trip to Jakarta.</h5>
               </div>
+            </a>
           </div>
         </div>
       </div>
@@ -521,7 +530,6 @@
              <li><i class="fas fa-question-circle" ></i> <a class="link" href="#"> About</a></li>
              <li><i class="fas fa-home"></i> <a class="link" href="#carouselExampleIndicators"> Home</a></li>
             </ul>
-
             </div>
           </div>
         </div>
@@ -529,5 +537,9 @@
     </footer>
     <!--end of footer-->
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
  </body>
 </html>

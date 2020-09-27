@@ -175,21 +175,16 @@ body {
 }
 
 /*----- content slider ------*/
-.jumbotron-3 h1{
-    margin-left: 50px;
-    padding-top: 50px;
-    font-size: 35PX;
+.jumbotron-cs h1{
+    margin-left: 70px;
+    padding-top: 40px;
+    font-size: 40PX;
     font-family: 'Oswald',sans-serif;
     color: white;
     font-weight: 600;
+    padding-bottom: 30px;
 }
-.jumbotron-3{
-    margin-top: 20px;
-    background-color:  rgb(36, 78, 167) !important;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding-bottom: 20px;
-}
+
 .jumbotron-cs{
     padding-top: 20px;
     background-color: rgb(36, 78, 167)  !important;
@@ -203,7 +198,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.link_d:hover{
+    color: white;
+}
 .box{
     width: 330px;
     height: 520px;
@@ -251,12 +248,13 @@ body {
     margin-top: 170px;
     margin-left: 110px !important;
 }
+
 .b_t span{
     color: white;
     display: block;
 }
+
 .text_1{
-    animation: text 3s 1;
     font-size: 45px;
     background: rgb(255, 216, 41);
     position: relative;
@@ -275,22 +273,9 @@ body {
     width: 8rem !important;
     letter-spacing: 0.06rem;
     padding: 10px;
+    position: relative;
 }
 
-@keyframes text{
-    0%{
-        color: transparent;
-        margin-bottom: -40px;
-    }
-    30%{
-        letter-spacing: 25px;
-        margin-bottom: -40px;
-    }
-    85%{
-        letter-spacing: 8px;
-        margin-bottom: -40px;
-    }
-}
 /*-----tips and experience box-----*/
 
 .jumbotron-4{
@@ -368,6 +353,10 @@ body {
     margin-right: 20px;
 }
 
+.link_te:hover{
+    color: transparent;
+}
+
 /*----- footer -----*/
 .footer-top{
     background-color: rgb(21, 52, 117);
@@ -439,7 +428,15 @@ body {
     .contain-1 h5,.contain h5{
         font-size: 15px;
     }
+
+    .jumbotron-cs h1{
+        font-size: 35px;
+    }
     
+    .jumbotron-cs{
+        margin: auto;
+    }
+
     .b_t{
         margin-left: auto !important;
     }
@@ -448,5 +445,11 @@ body {
     }
     .footer-top .container{
         margin: auto;
+    }
+    .text_1{
+        font-size: 40px;
+    }
+    .lead{
+        font-size: 17px !important;
     }
 }
