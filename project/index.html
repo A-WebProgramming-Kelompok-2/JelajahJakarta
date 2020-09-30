@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JELAJAH JAKARTA</title>
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/javascript" href="script.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--js bootstrap-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+    <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://kit.fontawesome.com/59d975929c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bootstrap-show-password.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <!--jquery light slider  -->
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="script/lightslider.js"></script>
+</head>
+<body data-spy="Scroll" data-target="#navbarResponsive">
+    <!---NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+          <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mr-auto ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mybooking.html">My Booking</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link
+                 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Account
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!--button trigger modal-->
+                  <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" data-target="#register">Register</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#slider-content">Places to go</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tipsexp">Plan your trip</a>
+              </li>
+
+            </ul>
+            <!--search bar-->
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                      <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+                </button>
+            </form>
+          </div>
+      </nav>
+      <!--Modal log in-->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Log In Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Log in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of modal log in-->
+
+      <!--modal register-->
+      <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form 
+              oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1" >Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+                </div>
+                <div class="alert alert-warning password-alert" role="alert">
+                  <ul>
+                    <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+                    <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+                    <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+                  </ul>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Reenter Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--end of modal register-->
+
+    <!--image slider-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!--slide 1-->
+          <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/slide1.jpg);">
+          </div>
+          <!--slide 2-->
+          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/slide2.jpg);">
+          </div>
+          <!--slide 3-->
+          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/slide3.jpg);">
+          </div>
+          <!--slide4-->
+          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/slide4.jpg);">
+          </div>
+        </div>
+        <!--caption-->
+        <div class="carousel-caption text-center">
+          <h1>WELCOME TO JELAJAH JAKARTA</h1>
+          <h2>start your vacation in jakarta</h2>
+          <a class="btn btn-outline-light btn-lg" href="#About-Jakarta">Get Started</a>
+        </div>
+        <!--prev & next button-->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+<!---------end of image slider-------->
+
+<!---about jakarta-->
+<div id="About-Jakarta">
+<div class="jumbotron jumbotron-fluid">
+  <div class="container" data-aos="fade-up" data-aos-duration="2000">
+    <h1 class="text_2">About Jakarta</h1>
+    <p class="lead1">A bustling melting pot where various cultures from across Indonesia collide, Jakarta is a place where traditional and modern lifestyle live side by side. Look beyond the gridlocked streets and discover why this sprawling metropolis remains one of the most electrifying capitals in Southeast Asia. 
+    <br><br>The charming Old Town district reveals traces of the colonial era, yet the city's true charms lie in its dynamic nature. Savor delicious cuisines at the trendiest restaurants or taste local dishes at street food vendors. The ultimate Jakarta experience awaits at its traditional markets and shopping malls. Come night time, catch live band performances or DJ sets while enjoying panoramic views of the city's skyline at a rooftop bar.</br></br> 
+      For a relaxing escape, hop on a boat and go to a beach in the Thousand Islands area north of the city. Better yet, catch a flight at the Soekarno–Hatta International Airport and fly to any destination in Indonesia.</p>
+  </div>
+</div>
+</div>
+<!----end of about jakarta-->
+      <!--first jumbotron-->
+      <div id="Vocation">
+        <div class="text-center">
+        <div class="jumbotron jumbotron-fluid" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-anchor-placement="top-bottom" data-aos-once="true">
+          <h2 class="heading"><b>POPULAR PLACES</b></h2>
+          <div class="heading-underline"></div>
+
+        <!--first card-->
+        <div class="container">
+          <div class="row">
+          <div class="col-md-4">
+            <div class="card-1">
+              <img src="img/ancol.jpg" class="card-img-top" alt="ancol">
+                <div class="card-body">
+                  <h5 class="card-title m-1 ">Ancol</h5>
+                  <p class="card-text m-1 ">North Jakarta</p>
+                  <p class="m-1 mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </p>
+                   <p>
+                   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                     View More 
+                    </a>
+                    <a class="btn btn-success">Buy Ticket</a>
+                    </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Taman Impian Jaya Ancol otherwise known as Ancol Dreamland is an integral part of Ancol Bay City, a resort destination located along Jakarta's waterfront, in Ancol (Kelurahan), Pademangan, Indonesia. It is owned by PT. Pembangunan Jaya Ancol Tbk, a subsidiary of Pembangunan Jaya Group. Ancol Dreamland opened in 1966 and is currently the largest integrated tourism area in South East Asia, boasting an international championship golf course, a theme park, hotels and other recreational facilities.
+                    </div>
+                  </div>   
+                    
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-1">
+                <img src="img/tmii.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title m-1 ">TMII</h5>
+                    <p class="card-text m-1 ">East Jakarta</p>
+                    <p class="m-1 mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                    <p>
+                     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                      View More 
+                     </a>
+                     <a class="btn btn-success">Buy Ticket</a>
+                     </p>
+                   <div class="collapse" id="collapseExample1">
+                     <div class="card card-body">
+                      Taman Mini "Indonesia Indah" (TMII) is a culture-based recreational area located in East Jakarta, Indonesia. It is operated by Yayasan Harapan Kita, a foundation established by Siti Hartinah, the first lady during most of the New Order and wife of Suharto, and still run by Suharto's descendants since his death. It has an area of about 100 hectares (250 acres). The park is a synopsis of Indonesian culture, with virtually all aspects of daily life in Indonesia's 26 (in 1975) provinces encapsulated in separate pavilions with the collections of rumah adat as the example of Indonesian vernacular architecture, clothing, dances and traditions are all depicted impeccably.
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-1">
+                  <img src="img/ragunan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title m-1 ">Ragunan Zoo</h5>
+                      <p class="card-text m-1 ">South Jakarta</p>
+                      <p class="m-1 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+                      <p>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                          View More 
+                         </a>
+                         <a class="btn btn-success">Buy Ticket</a>
+                         </p>
+                       <div class="collapse" id="collapseExample2">
+                         <div class="card card-body">
+                          Ragunan Zoo is located in Pasar Minggu, South Jakarta, Indonesia. The zoo has a land area of 140-hectare (350-acre). The zoo has an aviary and included a primate centre, and employs over 450 people. Many of the animals are endangered and threatened from all parts of Indonesia and the rest of the world. There are a total of 3,122 animal specimens including birds. Laid out in a lush tropical setting, rare animals such as crocodile, gorilla, orangutan, tapir, anoa, sumatran tiger, babirusa and peacocks are given ample room.
+                         </div>
+                       </div>   
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div> 
+        <!--end of first card-->
+
+      <!--second card-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-2">
+              <img src="img/Monas2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Monumen Nasional</h5>
+                <p class="card-text">Central Jakarta</p>
+                <p class="mb-3 mb-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  View More
+                </a>
+                <a class="btn btn-success">Buy Ticket</a>
+                <p>
+                  
+                </p>
+                <div class="collapse" id="collapseExample3">
+                  <div class="card card-body">
+                    The National Monument is a 132 memorial tower-like monument buit to commemorate the fight for the independence of Indonesia from the colonialsm of the Dutch. It is topped by a flame covered with gold foil, symbolizing the flame of fighting spirits. The National Monument is located at the center of Medan Merdeka Square.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-md-4">
+                <div class="card-2">
+                  <img src="img/kotu.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Kota Tua</h5>
+                    <p class="card-text">North Jakarta</p>
+                    <p class="mb-3 mb-1">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      View More
+                    </a>
+                    <a class="btn btn-success">Buy Ticket</a>
+                    <p>
+                      
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                      <div class="card card-body">
+                        Kota Tua is one of most popular places to visit in Jakarta. It is ‘Jakarta’s Old Town’. This is an area about 4.5 km north of the Monas that mainly consists of Dutch colonial buildings that were built during the 17th century. When you visit Kota Tua, you will see an area of the city that is quite distinct from other areas of Jakarta. It noticeably feels more European.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="col-md-4">
+                  <div class="card-2">
+                    <img src="img/jktaqua.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jakarta Aquarium</h5>
+                      <p class="card-text">West Jakarta</p>
+                      <p class="mb-3 mb-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </p>
+                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        View More
+                      </a>
+                      <a class="btn btn-success">Buy Ticket</a>
+                      <p>
+                        
+                      </p>
+                      <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                          The Jakarta Aquarium is a marine and freshwater aquarium located within a retail and leisure complex Neo Soho in Jakarta, Indonesia. The aquarium is home to hundreds of mammal, reptile, insect and various types of Indonesian marine fish, is to introduce to the next generation the biodiversity of the archipelago starting from islands, forests, and mangroves.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div> 
+        </div>
+      <!--end of second card-->
+      </div>
+    </div>
+  </div>
+      <!--second jumbotron-->
+      <div class="text-center">
+        <div class="jumbotron-1 jumbotron-fluid" >
+          <h2 class="heading1"><a class="btn btn-outline-light" href="#">See More</a></h2>
+          <div class="heading-underline"></div>
+        </div>
+      </div> 
+    <!--end of second jumbotron-->
+    <!--end of vocation-->
+
+    <!--third jumbotron-->
+    <!--content slider-->
+  <div id="slider-content">
+    <div class="jumbotron-cs jumbotron-fluid" data-aos="fade-right" data-aos-duration="2000"
+    data-aos-anchor-placement="top-bottom" data-aos-once="true">
+      <h1>DISCOVER THE BEST OF JAKARTA</h1>
+      <div class="container-1">
+        <!--slider-->
+        <ul id="autoWidth" class="cs-hidden">
+          <!--1-->
+        <li class="item-a">
+        <!--sldier box-->
+        <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content1_2.jpg);
+        ">
+          <div class="box-1">
+            <a class="link_d" href="#"><p>JAKARTA HISTORY PLACES</p></a>
+          </div>
+        </div>
+        </li>
+        <!--2-->
+        <li class="item-a">
+          <!--sldier box-->
+          <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content2_1.jpg);
+          ">
+            <div class="box-1">
+              <a class="link_d" href="#"><p>BEACH & ISLAND</p></a>
+            </div>
+          </div>
+          </li>
+        <!--3-->
+        <li class="item-a">
+          <!--sldier box-->
+          <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content3_3.jpg);
+          ">
+            <div class="box-1">
+              <a class="link_d" href="zoo.html"><p>ZOO & AQUARIUM</p></a>
+            </div>
+          </div>
+          </li>
+          <!--4-->
+          <li class="item-a">
+            <!--sldier box-->
+            <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content4_1.jpg);
+            ">
+              <div class="box-1">
+                <a class="link_d" href="#"><p>CULINARY</p></a>
+              </div>
+            </div>
+            </li>
+            <!--5-->
+            <li class="item-a">
+              <!--sldier box-->
+              <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content5_3.jpg);
+              ">
+                <div class="box-1">
+                  <a class="link_d" href="#" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p></a>
+                </div>
+              </div>
+              </li>
+              <!--6-->
+              <li class="item-a">
+                <!--sldier box-->
+                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content6_1.jpg);
+                ">
+                  <div class="box-1">
+                    <a class="link_d" href="#"><p>ANOTHER TOURIST ATTRACTION</p></a>
+                  </div>
+                </div>
+                </li>    
+          </ul>
+      </div>
+    </div>
+  </div>
+    
+  <!-- buy ticket box -->
+  <div id="buy_ticket">
+    <div class="jumbotron jumbotron-fluid buy_t" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/buy_1.jpg);">
+      <div class="container b_t">
+        <span class="text_1" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">BOOK YOUR TICKET HERE</span>
+        <span class="lead" data-aos="fade-right"
+        data-aos-offset="200" data-aos-duration="1200" data-aos-once="true"
+        data-aos-easing="ease-in-sine"> To save your time and make your vacation more comfortable.</span>
+        <h1 class="headingbt"data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-offset="200" data-aos-once="true"
+        data-aos-duration="1500"><a class="btn btn-outline-light" href="#">START NOW</a></h1>
+      </div>
+    </div>
+  </div>
+<!-- end of buy ticket box-->
+
+    <!--Exp and tip Box-->
+  <div id="tipsexp">
+    <div class="jumbotron-4 jumbotron-fluid" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/ecp_2.webp);
+    ">
+      <div class="text2-justify">
+        <h1>EXPERIENCE & TIPS<br></h1>
+        <div class="container_te">
+          <div class="boxt" data-aos="fade-right"
+            data-aos-offset="300" data-aos-duration="1000" data-aos-once="true"
+            data-aos-easing="ease-in-sine">
+            <a class="link_te" href="tips.html">  
+              <div class="contain"> 
+                  <h2>TIPS</h2>
+                  <h5>
+                    Even though you feel safe and healthy to explore the beauty of tourist attractions in Jakarta, it never hurts to see some info & tips when you visit certain places. Here, we have a lot of useful information that you can use. </h5>
+              </div>
+            </a>
+            </div>
+            <div class="boxe" data-aos="fade-left"
+            data-aos-offset="150" data-aos-duration="1000" data-aos-once="true"
+            data-aos-easing="ease-in-sine">
+            <a class="link_te" href="#">    
+              <div class="contain-1">
+                  <h2>EXPERIENCE</h2>
+                  <h5>Let JelajahJakarta walk you through how to have a memorable experience on your trip to Jakarta.</h5>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+    <!--end of jumbotron-->
+
+  <!-----footer--------->
+    <footer>
+      <div class="footer-top mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 segment-one">
+              <h2>CONTACT US</h2>
+              <ul>
+             <li><i class="fas fa-phone-square-alt"></i> : 08111222333 / Angellina</li>
+             <span class="ml-3"> : 08867564657 / Yongky</span> <br>
+             <span class="ml-3"> : 08646836491 / Cordellya</span> <br>
+             <span class="ml-3"> : 08967821410 / Vanesa</span> <br>
+             <span class="ml-3"> : 08285301962 / Nicholas</span>
+             <li><i class="fas fa-envelope"></i> : jelajahjakarta@gmail.com</li>
+            </ul>
+            </div>
+            <div class="col-md-4 segment-two">
+              <h2>FOLLOW US ON</h2>
+              <ul>
+             <li><i class="fab fa-instagram-square"></i><a class="link"  href="#"> : jelajahjakarta</a></li>
+             <li><i class="fab fa-facebook-square"></i><a class="link" href="#"> : jelajahjakarta</a></li>
+             <li><i class="fab fa-twitter-square"></i><a  class="link" href="#"> : jelajahjakarta</a></li>
+             <li><i class="fab fa-youtube"></i><a class="link" href="#"> : jelajahjakarta</a></li>
+            </ul>
+
+            </div>
+            <div class="col-md-4 segment-three">
+              <h2>OTHERS</h2>
+              <ul>
+             <li><i class="fas fa-question-circle" ></i> <a class="link" href="#"> About</a></li>
+             <li><i class="fas fa-home"></i> <a class="link" href="#carouselExampleIndicators"> Home</a></li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--end of footer-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+ </body>
+</html>

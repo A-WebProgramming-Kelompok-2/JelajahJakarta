@@ -1,0 +1,78 @@
+h1 {
+    color:gold;
+    text-align: center;
+}
+
+h2 {
+    color:black;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold !important;
+    border-bottom: double black;
+}
+.jj{
+    color:rgb(241, 223, 117);
+    text-align: center;
+}
+
+.background-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/jakarta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.climate-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/climate.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pesawat-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/pesawat.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.book-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/book.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vertical-center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-width {
+    width: 50%;
+    display: inline-block;
+}
+
+.height-400 {
+    height: 400px;
+}
+
+.padding-40 {
+    padding: 0px 40px;
+}
+
+.background-one-color {
+    background-color: #cb8929;
+}
+
+.text-white {
+    color: white;
+}
+
+.margin-left-2percent {
+    margin-left: 2%;
+}
+
+.margin-right-2percent {
+    margin-right: 2%;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
