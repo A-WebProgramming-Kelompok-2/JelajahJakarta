@@ -100,16 +100,96 @@
             <div class="col-lg-6 col-md-6">
                 <h1>Log in to your booking</h1>
                 <p>You'll receive your future travel voucher within 7 days from submitting our form. Already have your voucher? Get in touch with us to redeem it when you're ready to make a new booking.</p>
-           <button class="btn btn-success btn-lg">Log in now</button>
+           <button class="btn btn-info" href="" data-toggle="modal" data-target=#register>Register now</button>
            
-           <h6>Already on Jelajah Jakarta?</h6>
+           <h6 class="bb">Already on Jelajah Jakarta?</h6>
            
-           <a href="">click here</a><br>
+           <a class="aa" href="staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">click here</a><br>
             </div>
         </div>
     </div>    
+
+    
+
+<!--Modal log in-->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Log In Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Log in</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of modal log in-->
+
+<!--modal register-->
+<div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form 
+        oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" >Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+          </div>
+          <div class="alert alert-warning password-alert" role="alert">
+            <ul>
+              <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+              <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+              <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+            </ul>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Reenter Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end of modal register-->
+
+
+
 </body>
 </html>
+
 
         
     

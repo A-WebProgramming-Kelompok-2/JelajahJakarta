@@ -5,6 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+.bb{
+    position: relative;
+    top:17px;
+    
+}
+.aa{
+    position: relative;
+    bottom:13px;
+    left:200px;
+}
 .header{
     height:625px;
     width:100%;
