@@ -69,7 +69,7 @@ body {
 .carousel-caption{
     font-family: 'Josefin Slab', serif;
     position: absolute;
-    top: 45%;
+    top: 40%;
     text-transform: uppercase;
 }
 
@@ -81,90 +81,79 @@ body {
     padding-bottom: 1rem;
 }
 
-/*----isi----*/
+/*-------ISI--------*/
+
+.jumbotron-tl h1{
+    font-family: 'Courier Prime', monospace;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    color: white;
+}
+.jumbotron-tl{
+    background-color: rgb(90, 88, 88) ;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
 
 .jumbotron{
     background-color: rgb(254, 255, 212) !important;
 }
 .jumbotron h1{
-    font-family: 'Beth Ellen',cursive;
+    font-family:'Beth Ellen',cursive !important;
     margin-left: 50px;
-    font-size: 25px;
+    font-size: 23px;
+    margin-bottom: 40px;
 }
 
 .container {
     display: flex;
-    margin-top: 50px;
+    flex-direction: column;
+    height: 100%;
   }
-/*---first, third, fifth----*/  
-  .left-half {
-    background-color: rgb(255, 236, 219);
+  
+  .row1 {
     flex: 1;
-    padding: 1.5rem;
+    padding: 2rem;
+    margin-left: 80px !important;
+    margin-right: 80px !important;
   }
-  .left-half p{
-      font-size: 20px;
-      font-family: 'Josefin',serif;
-      text-align: justify;
-      margin-top: 20px;
-      margin-left: 30px;
-      margin-bottom: 30px;
-      margin-right: 30px;
-  }
-
-  .left-half .btn{
-      color: black;
-      background-color: peachpuff;
-      font-family: 'Josefin',serif;
-      font-size: 17px;
-      width: 7rem;
-      padding: 10px;
-      margin-left: 30px;
-      position: relative;
-  }
-
-  .right-half {
-    flex: 1;
-    padding: 1rem;
-    background-color: rgb(254, 255, 212);
+  
+  .row1:nth-child(1) {
+    padding: 14rem;
     background-size: cover;
+    background-position: center;
   }
-/*---second, fourth----*/  
-.right-half1 {
+
+  .row1:nth-child(2) {
     background-color: rgb(255, 236, 219);
-    flex: 1;
-    padding: 1.5rem;
-  }
-  .right-half1 p{
-      font-size: 20px;
-      font-family: 'Josefin',serif;
-      text-align: justify;
-      margin-top: 20px;
-      margin-left: 30px;
-      margin-bottom: 30px;
-      margin-right: 30px;
   }
 
-  .right-half1 .btn{
-      color: black;
-      background-color: peachpuff;
-      font-family: 'Josefin',serif;
-      font-size: 17px;
-      width: 7rem;
-      padding: 10px;
-      margin-left: 30px;
-      position: relative;
-  }
+  .row1 p{
+    font-size: 20px;
+    font-family: 'Josefin',serif;
+    text-align: justify;
+    margin-top: px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
 
-  .left-half1 {
-    flex: 1;
-    padding: 1rem;
-    background-color: rgb(254, 255, 212);
-    background-size: cover;
-  }
+.row1 .btn{
+    color: black;
+    background-color: peachpuff;
+    font-family: 'Josefin',serif;
+    font-size: 17px;
+    width: 7rem;
+    padding: 10px;
+    margin-left: 30px;
+    position: relative;
+}
 
   /*----- content slider ------*/
-.jumbotron-cs h1{
+  .jumbotron-cs h1{
     margin-left: 50px;
     font-size: 25px;
     font-family: 'Beth Ellen',cursive;
@@ -218,8 +207,8 @@ body {
 	transition: all ease 0.3s;
 }
 
-  /*----- footer -----*/
-.footer-top{
+/*----- footer -----*/
+  .footer-top{
     background-color: rgb(21, 52, 117);
     height: 50vh;
 }
@@ -258,41 +247,25 @@ body {
 .ul{
     margin-left: 50px !important;
 }
-
-  /*--- media queries --*/
+/*--- media queries --*/
 @media(max-width: 1000px){
 
-    .carousel-caption h1{
-        font-size: 2rem;
-        letter-spacing: .15rem;
-        padding-bottom: .5rem;
-    }
-    .right-half{
-        flex: 0;
-        padding: 1rem;
-        background-image: none !important;
-    }
+    .row1 {
+        flex: 1;
+        padding: 2rem;
+        margin: auto;
+      }
       
-  .left-half{
-    flex: 2;
-  }
-  .left-half .btn{
-      margin-left: auto;
-  }
-
-  .footer-top{
-    height: auto;
-}
-.footer-top .containerft{
-    margin: auto;
-}
-
-.left-half1 {
-    flex: 0;
-    padding: 1rem;
-    background-image: none !important;
-  }
-
+      .row1:nth-child(1) {
+        padding: 10rem;
+      }
+    
+      .row1 p{
+        font-size: 17px;
+        font-family: 'Josefin',serif;
+        text-align: justify;
+    }
+    
 }
 
 @media(max-height: 600px){
@@ -307,4 +280,3 @@ body {
     }
 
 }
-

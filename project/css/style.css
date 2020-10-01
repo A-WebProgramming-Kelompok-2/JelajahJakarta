@@ -212,7 +212,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.link_d:hover{
+.link_a:hover, .link_b:hover,.link_c:hover,.link_d:hover,.link_e:hover, .link_f:hover{
     color: white;
 }
 .box{
@@ -466,4 +466,18 @@ body {
     .lead{
         font-size: 17px !important;
     }
+
+}
+
+@media(max-height: 600px){
+    
+    .box{
+        width: 330px;
+        height: 370px;
+    }
+    .box-1 p{
+        margin-top: 200px;
+
+    }
+
 }
