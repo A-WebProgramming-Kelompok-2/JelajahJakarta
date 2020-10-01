@@ -20,20 +20,20 @@ h2 {
     background-size: cover;
 }
 
-.climate-img {
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/climate.jpg');
+.iklik-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/iklik.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.pesawat-img {
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/pesawat.jfif');
+.transportation-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/transportation.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.book-img {
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/book.jpg');
+.bukuu-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/bukuu.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
