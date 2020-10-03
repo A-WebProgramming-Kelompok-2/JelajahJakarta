@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMUSEMENT-WATER PARK</title>
+
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="css/amusement-water park.css">
+        <link rel="stylesheet" type="text/javascript" href="script.js">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--js bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+        <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+        <script src="https://kit.fontawesome.com/59d975929c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+        <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="bootstrap-show-password.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+        <!--jquery light slider  -->
+        <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+        <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
+        <script type="text/javascript" src="script/lightslider.js"></script>
+        <!--jquery search-->
+        <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+        <script type="text/javascript" src="https://repo.rachmat.id/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+    <!---NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav mr-auto ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mybooking.html">My Booking</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link
+           dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <!--button trigger modal-->
+            <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+            <a class="dropdown-item" href="" data-toggle="modal" data-target="#register">Register</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link
+             dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Place to go
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html" data-toggle="modal">Zoo</a>
+              <a class="dropdown-item" href="" data-toggle="modal" >Beach</a>
+              <a class="dropdown-item" href="" data-toggle="modal" >Museum</a>
+              <a class="dropdown-item" href="" data-toggle="modal" >Amusement Park</a>
+              <a class="dropdown-item" href="" data-toggle="modal" >Foods</a>
+              <a class="dropdown-item" href="" data-toggle="modal" >Another</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link
+             dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plan your trip
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="" data-toggle="modal">Tips</a>
+              <a class="dropdown-item" href="" data-toggle="modal" >Experience</a>
+            </div>
+        </li>
+
+      </ul>
+      <!--search bar-->
+      <script type="text/javascript">
+        $(function(){
+          var data = [
+              "Ancol",
+              "ChinaTown",
+              "Dufan",
+              "Ecopark",
+              "Fauna Land",
+              "Jakarta Aquarium",
+              "Jakarta Cathedral",
+              "Kidzania Pacific Palace",
+              "Kota Tua",
+              "Monumen Nasional",
+              "National Gallery",
+              "Pulau Seribu",
+              "Ragunan Zoo",
+              "Setu Babakan",
+              "Taman Ismail Marzuki",
+              "TMII",
+              "Taman Suropati",
+              "Waterboom",
+          ];
+          $("#auto-complete").autocomplete({
+            source: data
+          });
+        });
+      </script>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="ui-widget">
+        <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+</nav>
+<!--end of modal register-->
+
+<!------END OF NAVBAR---------->
+
+  <!--image slider-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <!--slide 1-->
+      <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/amusement-cover_1.jpg);">
+      </div>
+      <!--slide 2-->
+      <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/water-cover_2.jpg);">
+      </div>
+      <!--slide 3-->
+      <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/amusement-cover_2.jpg);">
+      </div>
+    </div>
+    <!--caption-->
+    <div class="carousel-caption text-center">
+      <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">AMUSEMENT PARK <br>&</br>WATER PARK</h1>
+    </div>
+    <!--prev & next button-->
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<!---------end of image slider-------->
+
+<!------ISI------->
+<div id="isi">
+    <div class="jumbotron-tl jumbotron-fluid">
+        <div class="container">
+          <h1>AMUSEMENT PARK</h1>
+        </div>
+    </div>
+    <!------first------->
+    <div class="jumbotron jumbotron-fluid">
+        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Dufan ( Dunia Fantasi )</h1>
+        <div class="container">
+            <div class="row1" style="background-image: url(img/dufan_3.jpg);"
+            data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+            <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                <p>Dunia Fantasi, which opened to the public on August 29, 1986, and popularly known as Dufan , is the first theme park developed by Ancol. Dufan is the largest outdoor entertainment center in Indonesia that pampers visitors with Fantasy Around the World, through various high-tech game content, which is divided into 8 regions, namely: Indonesia, Jakarta, Asia, Europe, America, Greece, Hikayat and Balada Kera. The company also made Dufan as one of the edutainment centers in Ancol, namely by opening the Fantasy World Physics (Fidufa) and Pentas Prestasi. Dufan has been certified ISO 9001: 2008 since 2009.
+                </p>
+                <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+                <a class="btn btn-outline-light" href="https://goo.gl/maps/gUxkFWuKUUFytRVP8">See on map</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron-tl jumbotron-fluid">
+        <div class="container">
+          <h1>WATER PARK</h1>
+        </div>
+    </div>
+    <!-------second-------->
+    <div class="jumbotron jumbotron-fluid">
+        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Atlantis Water Adventure Ancol</h1>
+        <div class="container">
+            <div class="row1" style="background-image: url(img/atlantis_1.png);"
+            data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"></div>
+            <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                <p>Atlantis Water Adventure (AWA) is the second theme park developed by Ancol and stands on an area of ​​5 hectares. AWA is the result of the revitalization of the Ancol Swimming Pool Water Recreation Park which will provide visitors with water tourism adventures with 8 main pools, namely: Poseidon, Antila, Plaza Atlas, Aquarius, Octopus, Atlantean, and Kiddy Pool.
+                </p>
+                <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+                <a class="btn btn-outline-light" href="https://g.page/atlantiswateradventures?share">See on map</a>
+            </div>
+        </div>
+    </div>
+    <!-------third-------->
+    <div class="jumbotron jumbotron-fluid">
+        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>WaterBom Jakarta</h1>
+        <div class="container">
+            <div class="row1" style="background-image: url(img/waterboom1.jpg);"
+            data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+            <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                <p>Waterbom Jakarta is a family recreation center that focuses on outdoor activities and water activities. Waterbom PIK has been operating since 27 October 2007 with the concept of returning to nature, equipped with tall tropical trees, green and lush shrubs with a beautiful garden setting. Combined with modern and minimalist building architecture, Waterbom PIK takes the theme  Urban Cool .
+                </p>
+                <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+                <a class="btn btn-outline-light" href="https://goo.gl/maps/TTvgjZ6F5EYUfes27">See on map</a>
+            </div>
+        </div>
+    </div>
+
+  <!--content slider-->
+  <div id="slider-content">
+    <div class="jumbotron-cs jumbotron-fluid" data-aos="fade-up" data-aos-duration="2000"
+    data-aos-anchor-placement="top-bottom" data-aos-once="true">
+      <h1>>>>>>Discover another places</h1>
+      <div class="container-1">
+        <!--slider-->
+        <ul id="autoWidth" class="cs-hidden">
+          <!--1-->
+        <li class="item-a">
+        <!--sldier box-->
+        <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content1_2.jpg);
+        ">
+          <div class="box-1">
+            <a class="link_a" href="#"><p>JAKARTA HISTORY PLACES</p></a>
+          </div>
+        </div>
+        </li>
+        <!--2-->
+        <li class="item-a">
+          <!--sldier box-->
+          <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content2_1.jpg);
+          ">
+            <div class="box-1">
+              <a class="link_b" href="#"><p>BEACH & ISLAND</p></a>
+            </div>
+          </div>
+          </li>
+        <!--3-->
+        <li class="item-a">
+          <!--sldier box-->
+          <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content3_3.jpg);
+          ">
+            <div class="box-1">
+              <a class="link_c" href="zoo.html"><p>ZOO & AQUARIUM</p></a>
+            </div>
+          </div>
+          </li>
+          <!--4-->
+          <li class="item-a">
+            <!--sldier box-->
+            <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content4_1.jpg);
+            ">
+              <div class="box-1">
+                <a class="link_d" href="#"><p>CULINARY</p></a>
+              </div>
+            </div>
+            </li>
+            <!--5-->
+            <li class="item-a">
+              <!--sldier box-->
+              <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content5_3.jpg);
+              ">
+                <div class="box-1">
+                  <a class="link_e" href="#" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p></a>
+                </div>
+              </div>
+              </li>
+              <!--6-->
+              <li class="item-a">
+                <!--sldier box-->
+                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content6_1.jpg);
+                ">
+                  <div class="box-1">
+                    <a class="link_f" href="#"><p>ANOTHER TOURIST ATTRACTION</p></a>
+                  </div>
+                </div>
+                </li>    
+          </ul>
+      </div>
+    </div>
+  </div>   
+
+<!-----footer--------->
+<footer>
+  <div class="footer-top mt-3">
+    <div class="containerft">
+      <div class="row">
+        <div class="col-md-4 segment-one">
+          <h2>CONTACT US</h2>
+          <ul>
+         <li><i class="fas fa-phone-square-alt"></i> : 08111222333 / Angellina</li>
+         <span class="ml-3"> : 08867564657 / Yongky</span> <br>
+         <span class="ml-3"> : 08646836491 / Cordellya</span> <br>
+         <span class="ml-3"> : 08967821410 / Vanesa</span> <br>
+         <span class="ml-3"> : 08285301962 / Nicholas</span>
+         <li><i class="fas fa-envelope"></i> : jelajahjakarta@gmail.com</li>
+        </ul>
+        </div>
+        <div class="col-md-4 segment-two">
+          <h2>FOLLOW US ON</h2>
+          <ul>
+         <li><i class="fab fa-instagram-square"></i><a class="link"  href="#"> : jelajahjakarta</a></li>
+         <li><i class="fab fa-facebook-square"></i><a class="link" href="#"> : jelajahjakarta</a></li>
+         <li><i class="fab fa-twitter-square"></i><a  class="link" href="#"> : jelajahjakarta</a></li>
+         <li><i class="fab fa-youtube"></i><a class="link" href="#"> : jelajahjakarta</a></li>
+        </ul>
+
+        </div>
+        <div class="col-md-4 segment-three">
+          <h2>OTHERS</h2>
+          <ul>
+         <li><i class="fas fa-question-circle" ></i> <a class="link" href="#"> About</a></li>
+         <li><i class="fas fa-home"></i> <a class="link" href="#carouselExampleIndicators"> Home</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--end of footer-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

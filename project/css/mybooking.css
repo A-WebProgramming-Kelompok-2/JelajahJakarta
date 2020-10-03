@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.bb{
+    position: relative;
+    top:17px;
+    
+}
+.aa{
+    position: relative;
+    bottom:13px;
+    left:200px;
+}
+.header{
+    height:625px;
+    width:100%;
+    padding:200px 100px 100px;
+    color:#fff;
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+    background-color: rgb(254, 255, 212) !important;
+
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.8)!important;
+}
+
+.nav-link{
+    margin-left: 10px;
+}
+
+.navbar-brand{
+    margin-left: 5px;
+    font-family: 'Pacifico',cursive;
+    font-weight: 400;
+}
+.navbar-nav .nav-link{
+    color: rgba(230, 222, 222, 0.897) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: turquoise !important;
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.5)!important;
+}
+.dropdown-item{
+    color:rgba(230, 222, 222, 0.897) !important;
+    border-bottom: solid white 0.6px !important;
+    font-family: 'Lato', sans-serif;
+    text-transform: none;
+}
+
+.dropdown-item:last-child{
+    border-bottom: transparent !important;
+}
+
+.dropdown-item:hover{
+    background-color: transparent !important;
+    color: turquoise !important;
+}
