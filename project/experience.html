@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!--css-->
+     <link rel="stylesheet" type="text/css" href="css/style.css">
+     <link rel="stylesheet" type="text/css" href="css/experience.css">
+     <link rel="stylesheet" type="text/javascript" href="script.js">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <!--js bootstrap-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+     <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+     <script src="https://kit.fontawesome.com/59d975929c.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+     <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+     <script src="jquery.min.js"></script>
+     <script src="bootstrap.min.js"></script>
+     <script src="bootstrap-show-password.js"></script>
+     <script type="text/javascript" src="script/script.js"></script>
+     <!--jquery light slider  -->
+     <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+     <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
+     <script type="text/javascript" src="script/lightslider.js"></script>
+     <!--jquery search-->
+     <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+     <script type="text/javascript" src="https://repo.rachmat.id/jquery-1.12.4.js"></script>
+     <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+     <!----navbar-->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mybooking.html">My Booking</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link
+               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!--button trigger modal-->
+                <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+                <a class="dropdown-item" href="" data-toggle="modal" data-target="#register">Register</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link
+                 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Place to go
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="index.html" data-toggle="modal">Zoo</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" >Beach</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" >Museum</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" >Amusement Park</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" >Foods</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" >Another</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link
+                 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Plan your trip
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="" data-toggle="modal">Tips</a>
+                  <a class="dropdown-item" href="" data-toggle="modal" >Experience</a>
+                </div>
+            </li>
+
+          </ul>
+          <!--search bar-->
+          <script type="text/javascript">
+            $(function(){
+              var data = [
+                  "Ancol",
+                  "ChinaTown",
+                  "Dufan",
+                  "Ecopark",
+                  "Fauna Land",
+                  "Jakarta Aquarium",
+                  "Jakarta Cathedral",
+                  "Kidzania Pacific Palace",
+                  "Kota Tua",
+                  "Monumen Nasional",
+                  "National Gallery",
+                  "Pulau Seribu",
+                  "Ragunan Zoo",
+                  "Setu Babakan",
+                  "Taman Ismail Marzuki",
+                  "TMII",
+                  "Taman Suropati",
+                  "Waterboom",
+              ];
+              $("#auto-complete").autocomplete({
+                source: data
+              });
+            });
+          </script>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="ui-widget">
+            <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+    </nav>
+    <div class="exp"data-aos="fade-up" data-aos-duration="2000"></div>>
+        
+      <hr class="my-4">
+      <div class="exp-center"><h1 class="exp-class"><br>SHARE YOUR EXPERIENCE WITH US</h1></div>
+      <br> <br>
+
+      <div>
+        <div class="write-name">
+          <div class="card mb-3 bg-name p-20" style="margin-left: 2%; max-width: 50%;">
+            <div class="row no-gutters">
+              <div class="vertical-center">
+              <div class="col-md-2">
+                <img src="img/user.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body bg-name">
+                  <input class="name-line" type="text" placeholder="Write Your Name Here..."><br>
+                </div>
+              </div>
+              </div>
+
+              <div class="vertical-center">
+              <div class="col-md-2 vertical-center" style="margin-top: 2%;">
+                <img src="img/email.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body bg-name">
+                  <input class="name-line" type="text" placeholder="Write Your Email Here..."><br>
+                </div>
+              </div>
+              </div>
+
+              <div class="vertical-center0">
+              <div class="col-md-2" style="margin-top: 2%;">
+                <img src="img/pensil.png" class="card-img" alt="...">
+              </div>
+              <div class="col-md-10">
+                <div class="card-body bg-name">
+                  <textarea class="name-line0" type="text" placeholder="Write Your Review Here..." rows="8"></textarea>
+                </div>
+              </div>
+              </div>
+
+              <div class="card-body bg-name style=" style="text-align: right;">
+                <button type="button" class="btn btn-outline-light btn-lg" >SUBMIT HERE</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div>
+
+      </div>
+
+</body>
+</html>

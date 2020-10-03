@@ -47,7 +47,7 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="mybooking.html">My Booking</a>
+                <a class="nav-link" class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#mybooking">My Booking <span class="badge badge-light">5</span></a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link
@@ -57,7 +57,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <!--button trigger modal-->
                   <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" data-target="#register">Register</a>
+                  <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#register">Register</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -182,6 +182,73 @@
         </div>
       </div>
 <!--end of modal register-->
+
+<!--modal my booking list-->
+<div class="modal fade" id="mybooking" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"><b>MY BOOKING</b></h5>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Booking No.</th>
+              <th scope="col">Name</th>
+              <th scope="col">Place</th>
+              <th scope="col">Date</th>
+              <th scope="col">Price</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">40233</th>
+              <td>Cordellya</td>
+              <td>Ancol</td>
+              <td>1-DEC-2020</td>
+              <td>Rp 60.000</td>
+              <td><span class="badge badge-success">Booked</span></td>
+            </tr>
+            <tr>
+              <th scope="row">55071</th>
+              <td>Angelina</td>
+              <td>TMII</td>
+              <td>1-JAN-2021</td>
+              <td>Rp 100.000</td>
+              <td><span class="badge badge-primary">Confirmed</span></td>
+            </tr>
+            <tr>
+              <th scope="row">61294</th>
+              <td>Yongky</td>
+              <td>Ranggunan Zoo</td>
+              <td>22-FEB-2020</td>
+              <td>Rp 0</td>
+              <td><span class="badge badge-danger">Cancelled</span></td>
+            </tr>
+            <tr>
+              <th scope="row">19583</th>
+              <td>Nicholas</td>
+              <td>Kota Tua</td>
+              <td>19-DEC-2020</td>
+              <td>Rp 40.000</td>
+              <td><span class="badge badge-success">Booked</span></td>
+            </tr>
+            <tr>
+              <th scope="row">59632</th>
+              <td>Vanesa</td>
+              <td>Jakarta Aquarium</td>
+              <td>22-MAR-2021</td>
+              <td>Rp 150.000</td>
+              <td><span class="badge badge-primary">Confirmed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!--image slider-->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
@@ -429,6 +496,10 @@
       <div class="text-center">
         <div class="jumbotron-1 jumbotron-fluid" >
           <h2 class="heading1"><a class="btn btn-outline-light" href="popular.html">See More</a></h2>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ca051e000256789acb5e295df4e2bdfda5ecbb3
           <div class="heading-underline"></div>
         </div>
       </div> 
@@ -547,7 +618,7 @@
             <div class="boxe" data-aos="fade-left"
             data-aos-offset="150" data-aos-duration="1000" data-aos-once="true"
             data-aos-easing="ease-in-sine">
-            <a class="link_te1" href="#">    
+            <a class="link_te1" href="experience.html">    
               <div class="contain-1">
                   <h2>EXPERIENCE</h2>
                   <h5>Let JelajahJakarta walk you through how to have a memorable experience on your trip to Jakarta.</h5>
