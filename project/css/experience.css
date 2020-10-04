@@ -1,7 +1,7 @@
 .left-img {
     float: left;
     padding: 0 2px 2px 0;
-    width: 80px;
+    width: 85px;
     margin-left: 2%;
    }
 
@@ -11,11 +11,11 @@
    }
 
 .bg-name {
-    background-color: transparent !important;
+    background-color: white !important;
 }
 
 .p-20 {
-    padding: 20px;
+    padding: 15px;
 }
 
 .card {
@@ -25,14 +25,14 @@
 
 .name-line {
     width: 100%;
-    background-color: transparent !important;
+    background-color: white !important;
     border: 0px;
     border-bottom: black 1px solid;
 }
 
 .name-line0 {
     width: 100%;
-    background-color: transparent !important;
+    background-color: white !important;
 }
 
 .vertical-center {
@@ -56,4 +56,44 @@
 .btn-outline-light {
     color: black !important;
     border-color: gray !important;
+}
+
+.text-first {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-exp {
+    text-align: center;
+    font-family: fantasy;
+}
+
+.review-exp {
+    text-align: center;
+    font-family: fantasy;
+}
+
+.width-exp {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.jumbo-exp {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.background-jumbo {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/garis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: transparent !important;
 }
