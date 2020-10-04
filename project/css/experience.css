@@ -1,21 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
 .left-img {
     float: left;
     padding: 0 2px 2px 0;
-    width: 80px;
+    width: 85px;
     margin-left: 2%;
    }
 
 .exp-center {
-    color:rgb(248, 218, 45);
+    color:white;
     text-align: center;
+    font-family: 'Courier Prime', monospace;
    }
+.exp-center h1 {
+    font-size: 50px;
+}
 
 .bg-name {
-    background-color: transparent !important;
+    background-color: white !important;
 }
 
 .p-20 {
-    padding: 20px;
+    padding: 15px;
 }
 
 .card {
@@ -25,14 +31,14 @@
 
 .name-line {
     width: 100%;
-    background-color: transparent !important;
+    background-color: white !important;
     border: 0px;
     border-bottom: black 1px solid;
 }
 
 .name-line0 {
     width: 100%;
-    background-color: transparent !important;
+    background-color: white !important;
 }
 
 .vertical-center {
@@ -56,4 +62,141 @@
 .btn-outline-light {
     color: black !important;
     border-color: gray !important;
+}
+
+.text-first {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-exp {
+    text-align: center;
+    font-family: fantasy;
+}
+
+.review-exp {
+    text-align: center;
+    font-family: fantasy;
+}
+
+.width-exp {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.jumbo-exp {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.background-jumbo {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/garis.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: transparent !important;
+}
+
+
+
+*{
+  padding:0px;
+  margin:0px;
+}
+
+.back{
+  height:100vh;
+  width:100%;
+  background:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url(https://i.pinimg.com/originals/96/ca/66/96ca66c6f4baa570172edb27a221318f.jpg);
+  background-size:cover;
+}
+
+.button1{
+  height:70px;
+  width:800px;
+  background:#ecf0f1;
+  margin:auto auto;
+  position:relative;
+  top:50%;
+  transform:translate(0%,-50%);
+  color:#333;
+  text-align:center;
+  line-height:70px;
+  font-size:30px;
+  font-family: 'Courier Prime', monospace;
+  cursor:pointer;
+  transition:all .3s ease-in 1.2s;
+}
+
+.button1:hover{
+  background:transparent;
+  color:#fff;
+  transition:all .3s ease-in;
+}
+
+.bot-bar{
+  position:absolute;
+  bottom:0px;
+  height:2px; 
+  width:0%;
+  left:0px;
+  background:#fff;
+  transition:all .4s ease .8s;
+}
+
+.top-bar{
+  height:2px;
+  width:0%;
+  position:absolute;
+  top:0px;
+  right:0px;
+  background:#fff;
+  transition: all .4s ease .2s;
+}
+
+.left-bar{
+  height:0%;
+  width:2px;
+  background:#fff;
+  position:absolute;
+  left:0px;
+  top:0px;
+  transition:all .2s ease;
+}
+
+.right-bar{
+  height:0%;
+  width:2px;
+  background:#fff;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  transition:all .2s ease .6s;
+}
+
+.button1:hover .bot-bar{
+  width:100%;
+  transition: all .4s ease-in-out;
+}
+
+.button1:hover .top-bar{
+  width:100%;
+  transition: all .4s ease-in-out .6s;
+}
+
+.button1:hover .right-bar{
+  height:100%;
+  transition:all .2s ease-in-out .4s;
+}
+
+.button1:hover .left-bar{
+  height:100%;
+  transition:all .2s ease-in-out 1s;
 }

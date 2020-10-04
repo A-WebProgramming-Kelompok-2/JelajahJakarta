@@ -116,3 +116,10 @@ if (typeof console === "undefined") {
         log: function() { }
     };
 }
+
+jQuery(document).ready(function(){
+    $('.button').click(function(){
+      $('.one').addClass('oneani');
+      $('.two').addClass('twoani');
+    });
+  })
