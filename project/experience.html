@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Experience</title>
 
      <!--css-->
      <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -35,9 +35,9 @@
      <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
 </head>
 
-<body>
-     <!----navbar-->
-     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<body style="background-color: white !important;">
+      <!---NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -46,10 +46,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mr-auto ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="mybooking.html">My Booking</a>
+              <a class="nav-link" class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#mybooking">My Booking <span class="badge badge-light">5</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link
@@ -59,33 +59,33 @@
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <!--button trigger modal-->
                 <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
-                <a class="dropdown-item" href="" data-toggle="modal" data-target="#register">Register</a>
+                <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#register">Register</a>
               </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link
-                 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Place to go
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="index.html" data-toggle="modal">Zoo</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Beach</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Museum</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Amusement Park</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Foods</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Another</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link
-                 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Plan your trip
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="" data-toggle="modal">Tips</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Experience</a>
-                </div>
-            </li>
+              <a class="nav-link
+               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Place to go
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="zoo.html">Zoo & Aquarium</a>
+                <a class="dropdown-item" href="beach-island.html" >Beach & Island</a>
+                <a class="dropdown-item" href="jakarta-history-places.html" >Jakarta History Places</a>
+                <a class="dropdown-item" href="amusement-water park.html"  >Amusement Park & Water Park</a>
+                <a class="dropdown-item" href="culinary.html" >Culinary</a>
+                <a class="dropdown-item" href="lake-garden.html" >Garden & Lake</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link
+             dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plan your trip
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="tips.html">Tips</a>
+              <a class="dropdown-item" href="experience.html">Experience</a>
+            </div>
+        </li>
 
           </ul>
           <!--search bar-->
@@ -118,7 +118,7 @@
           </script>
           <form class="form-inline my-2 my-lg-0">
             <div class="ui-widget">
-            <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" autocomplete="on">
               <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
@@ -129,6 +129,149 @@
           </form>
         </div>
     </nav>
+    <!--Modal log in-->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Log In Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Log in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal log in-->
+
+    <!--modal register-->
+    <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form 
+            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" >Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+              </div>
+              <div class="alert alert-warning password-alert" role="alert">
+                <ul>
+                  <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+                  <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+                  <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Reenter Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of modal register-->
+
+<!--modal my booking list-->
+<div class="modal fade" id="mybooking" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="staticBackdropLabel"><b>MY BOOKING</b></h5>
+    </div>
+    <div class="modal-body">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Booking No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Place</th>
+            <th scope="col">Date</th>
+            <th scope="col">Price</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">40233</th>
+            <td>Cordellya</td>
+            <td>Ancol</td>
+            <td>1-DEC-2020</td>
+            <td>Rp 60.000</td>
+            <td><span class="badge badge-success">Booked</span></td>
+          </tr>
+          <tr>
+            <th scope="row">55071</th>
+            <td>Angelina</td>
+            <td>TMII</td>
+            <td>1-JAN-2021</td>
+            <td>Rp 100.000</td>
+            <td><span class="badge badge-primary">Confirmed</span></td>
+          </tr>
+          <tr>
+            <th scope="row">61294</th>
+            <td>Yongky</td>
+            <td>Ranggunan Zoo</td>
+            <td>22-FEB-2020</td>
+            <td>Rp 0</td>
+            <td><span class="badge badge-danger">Cancelled</span></td>
+          </tr>
+          <tr>
+            <th scope="row">19583</th>
+            <td>Nicholas</td>
+            <td>Kota Tua</td>
+            <td>19-DEC-2020</td>
+            <td>Rp 40.000</td>
+            <td><span class="badge badge-success">Booked</span></td>
+          </tr>
+          <tr>
+            <th scope="row">59632</th>
+            <td>Vanesa</td>
+            <td>Jakarta Aquarium</td>
+            <td>22-MAR-2021</td>
+            <td>Rp 150.000</td>
+            <td><span class="badge badge-primary">Confirmed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+<!------END OF NAVBAR-->
+
     <div class="exp"data-aos="fade-up" data-aos-duration="2000"></div>>
         
       <hr class="my-4">

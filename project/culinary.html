@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakarta History Places</title>
+    <title>CULINARY</title>
        <!--css-->
     <link rel="stylesheet" type="text/css" href="css/zoo.css">
     <link rel="stylesheet" type="text/javascript" href="script.js">
@@ -28,104 +28,248 @@
     <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
     <script type="text/javascript" src="script/lightslider.js"></script>
     <!--jquery search-->
-    <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
-    <script type="text/javascript" src="https://repo.rachmat.id/jquery-1.12.4.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" rel="stylesheet"/>
     <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.js"></script>
 </head>
 <body>
-    <!----navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mr-auto ml-auto">
-            <li class="nav-item">
+        <!---NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+          <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mr-auto ml-auto">
+              <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mybooking.html">My Booking</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link
-               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Account
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <!--button trigger modal-->
-                <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
-                <a class="dropdown-item" href="" data-toggle="modal" data-target="#register">Register</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link" class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#mybooking">My Booking <span class="badge badge-light">5</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link
+                 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Account
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!--button trigger modal-->
+                  <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+                  <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#register">Register</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
                 <a class="nav-link
                  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Place to go
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="index.html" data-toggle="modal">Zoo</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Beach</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Museum</a>
-                  <a class="dropdown-item" href="amusement-water park.html" data-toggle="modal" >Amusement Park</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Foods</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Another</a>
+                  <a class="dropdown-item" href="zoo.html">Zoo & Aquarium</a>
+                  <a class="dropdown-item" href="beach-island.html" >Beach & Island</a>
+                  <a class="dropdown-item" href="jakarta-history-places.html" >Jakarta History Places</a>
+                  <a class="dropdown-item" href="amusement-water park.html"  >Amusement Park & Water Park</a>
+                  <a class="dropdown-item" href="culinary.html" >Culinary</a>
+                  <a class="dropdown-item" href="lake-garden.html" >Garden & Lake</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link
-                 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Plan your trip
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="" data-toggle="modal">Tips</a>
-                  <a class="dropdown-item" href="" data-toggle="modal" >Experience</a>
-                </div>
-            </li>
-
-          </ul>
-          <!--search bar-->
-          <script type="text/javascript">
-            $(function(){
-              var data = [
-                  "Ancol",
-                  "ChinaTown",
-                  "Dufan",
-                  "Ecopark",
-                  "Fauna Land",
-                  "Jakarta Aquarium",
-                  "Jakarta Cathedral",
-                  "Kidzania Pacific Palace",
-                  "Kota Tua",
-                  "Monumen Nasional",
-                  "National Gallery",
-                  "Pulau Seribu",
-                  "Ragunan Zoo",
-                  "Setu Babakan",
-                  "Taman Ismail Marzuki",
-                  "TMII",
-                  "Taman Suropati",
-                  "Waterboom",
-              ];
-              $("#auto-complete").autocomplete({
-                source: data
+              <a class="nav-link
+               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plan your trip
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tips.html">Tips</a>
+                <a class="dropdown-item" href="experience.html">Experience</a>
+              </div>
+          </li>
+  
+            </ul>
+            <!--search bar-->
+            <script type="text/javascript">
+              $(function(){
+                var data = [
+                    "Ancol",
+                    "ChinaTown",
+                    "Dufan",
+                    "Ecopark",
+                    "Fauna Land",
+                    "Jakarta Aquarium",
+                    "Jakarta Cathedral",
+                    "Kidzania Pacific Palace",
+                    "Kota Tua",
+                    "Monumen Nasional",
+                    "National Gallery",
+                    "Pulau Seribu",
+                    "Ragunan Zoo",
+                    "Setu Babakan",
+                    "Taman Ismail Marzuki",
+                    "TMII",
+                    "Taman Suropati",
+                    "Waterboom",
+                ];
+                $("#auto-complete").autocomplete({
+                  source: data
+                });
               });
-            });
-          </script>
-          <form class="form-inline my-2 my-lg-0">
-            <div class="ui-widget">
-            <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                </svg>
+            </script>
+            <form class="form-inline my-2 my-lg-0">
+              <div class="ui-widget">
+              <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" autocomplete="on">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                      <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+      </nav>
+      <!--Modal log in-->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Log In Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
               </button>
             </div>
-          </form>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Log in</button>
+            </div>
+          </div>
         </div>
-    </nav>
+      </div>
+      <!-- end of modal log in-->
+  
+      <!--modal register-->
+      <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form 
+              oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1" >Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+                </div>
+                <div class="alert alert-warning password-alert" role="alert">
+                  <ul>
+                    <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+                    <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+                    <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+                  </ul>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Reenter Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!--end of modal register-->
+  
+  <!--modal my booking list-->
+  <div class="modal fade" id="mybooking" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"><b>MY BOOKING</b></h5>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Booking No.</th>
+              <th scope="col">Name</th>
+              <th scope="col">Place</th>
+              <th scope="col">Date</th>
+              <th scope="col">Price</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">40233</th>
+              <td>Cordellya</td>
+              <td>Ancol</td>
+              <td>1-DEC-2020</td>
+              <td>Rp 60.000</td>
+              <td><span class="badge badge-success">Booked</span></td>
+            </tr>
+            <tr>
+              <th scope="row">55071</th>
+              <td>Angelina</td>
+              <td>TMII</td>
+              <td>1-JAN-2021</td>
+              <td>Rp 100.000</td>
+              <td><span class="badge badge-primary">Confirmed</span></td>
+            </tr>
+            <tr>
+              <th scope="row">61294</th>
+              <td>Yongky</td>
+              <td>Ranggunan Zoo</td>
+              <td>22-FEB-2020</td>
+              <td>Rp 0</td>
+              <td><span class="badge badge-danger">Cancelled</span></td>
+            </tr>
+            <tr>
+              <th scope="row">19583</th>
+              <td>Nicholas</td>
+              <td>Kota Tua</td>
+              <td>19-DEC-2020</td>
+              <td>Rp 40.000</td>
+              <td><span class="badge badge-success">Booked</span></td>
+            </tr>
+            <tr>
+              <th scope="row">59632</th>
+              <td>Vanesa</td>
+              <td>Jakarta Aquarium</td>
+              <td>22-MAR-2021</td>
+              <td>Rp 150.000</td>
+              <td><span class="badge badge-primary">Confirmed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-------END OF NAVBAR-->
+
     <!--slider image-->
     <!--image slider-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
@@ -136,18 +280,18 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <!--slide 1-->
-          <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/zoocover_3.jpg);">
+          <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(http://mahligai-indonesia.com/wp-content/uploads/2017/02/Kerak-telor-e1486718095728.jpg);">
           </div>
           <!--slide 2-->
-          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/zoocover_4.jpg);">
+          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://makananoleholeh.com/wp-content/uploads/2018/09/Semur-jengkol-Betawi.jpg);">
           </div>
           <!--slide 3-->
-          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/zoocover_1.jpg);">
+          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://makananoleholeh.com/wp-content/uploads/2018/09/Gado-gado-Betawi-1.jpg);">
           </div>
         </div>
         <!--caption-->
         <div class="carousel-caption text-center" >
-          <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">ZOO & AQUARIUM</h1>
+          <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">CULINARY</h1>
         </div>
         <!--prev & next button-->
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -164,15 +308,15 @@
     <div id="isi">
         <!------first------->
         <div class="jumbotron jumbotron-fluid">
-            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Ragunan Zoo</h1>
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Kuliner di Jalan Sabang Jakarta Pusat </h1>
             <div class="container">
                 <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                      <p> Ragunan Zoo is located in Pasar Minggu, South Jakarta, Indonesia. The zoo has a land area of 140-hectare (350-acre). The zoo has an aviary and included a primate centre, and employs over 450 people. Many of the animals are endangered and threatened from all parts of Indonesia and the rest of the world. There are a total of 3,122 animal specimens including birds. Laid out in a lush tropical setting, rare animals such as crocodile, gorilla, orangutan, tapir, anoa, sumatran tiger, babirusa and peacocks are given ample room.
+                      <p> Culinary on Jalan Sabang, Central Jakarta has a variety of choices. This area is indeed famous as one of the culinary centers in the capital . Here many visitors come for breakfast, lunch and dinner. Jalan Sabang is very crowded with visitors at night where at night many people want to relax while tasting the delicious culinary delights that are served. The types of snacks that you can find on Jalan Sabang include fried rice, padang satay, chicken noodles, martabak and so on. Sate Jaya Agung is one of the legendary culinary delights in the Jln. Sabang, Central Jakarta. This satay has started serving buyers since 1963. The shop is not that big, but the buyers come from various circles. The reason, of course, is because of the special taste. 
                       </p>
-                      <a class="btn btn-outline-light" href="#">Buy Ticket</a>
-                      <a class="btn btn-outline-light" href="https://goo.gl/maps/Te31ibhqZqhdfXPU8">See on map</a>
+                      <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                      <a class="btn btn-outline-light" href="https://goo.gl/maps/LWqhBZbAzDXoBps99 ">See on map</a>
                   </div>
-                  <div class="right-half" style="background-image: url(img/ragunan_2.jpg);" data-aos="fade-left" 
+                  <div class="right-half" style="background-image: url(img/kulinersebang.png);" data-aos="fade-left" 
                   data-aos-duration="2000" data-aos-once="true">
                   </div>
             </div>
@@ -180,79 +324,124 @@
 
         <!----second------>
         <div class="jumbotron jumbotron-fluid">
-            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Fauna Land</h1>
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Muara Karang</h1>
             <div class="container">
-                <div class="left-half1" data-aos="fade-right" style="background-image: url(img/Faunaland.jpg);"
+                <div class="left-half1" data-aos="fade-right" style="background-image: url(img/muarakarang.png);"
                 data-aos-duration="2000" data-aos-once="true">
                   </div>
                   <div class="right-half1" data-aos="fade-left" 
                   data-aos-duration="2000" data-aos-once="true">
-                  <p> Faunaland is a zoo located inside Allianz Ecopark and stands on an area of approximately 5 hectares consisting of land and water. Faunaland carries the concept of Papua which is a fusion between the continents of Asia and Australia so as to create the beauty of flora, fauna and the cultural arts of the area. This concept presents unique and rare animals from various regions in Indonesia, especially animals from eastern Indonesia. A reptile exhibit is currently under construction.
-                    The zoo have an white siamang named Otong, which is the only one in the world.
+                  <p> The Muara Karang area in North Jakarta is one of Jakarta’s best kept-secrets,  
+                    especially for food enthusiasts. Even those who were born in the city consider the area an exciting discovery as along the muddy alleys one can find a plethora of hawker centers and restaurants offering a wide variety of Indonesian and Chinese cuisines.
+                    Hawker centers are among the icons of Muara Karang. Similar to hawker centers in Singapore or Malaysia, the open-air complexes house many independent food stalls, offering a wide variety of dishes. In Muara Karang, you can find kwetiau (flat rice noodles), nasi campur (rice served with various pork side dishes), sate Padang (Padang-style spicy satay) and bakso (meatballs), all under one roof.                      
                   </p>
-                  <a class="btn btn-outline-light" href="#">Buy Ticket</a>
-                  <a class="btn btn-outline-light" href="https://goo.gl/maps/LVumMfCUFocCLvuQA">See on map</a>
+                  <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                  <a class="btn btn-outline-light" href="https://goo.gl/maps/ixGtBrAap6bVQEzDA ">See on map</a>
                   </div>
             </div>
         </div>
 
         <!----third------>
         <div class="jumbotron jumbotron-fluid">
-            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Suaka Margasatwa Muara Angke</h1>
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Pasar Santa</h1>
                 <div class="container">
                     <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                        <p>  Muara Angke Wildlife Reserve (SMMA) is the home for various species of birds and other animals which have been difficult to find in other Jakarta areas. Jakarta Green Monster recorded that there are a total of 91 bird species, namely 28 water bird species and 63 forest bird species, that live in this area. About 17 of them are protected bird species. 
-                          Apart from bird species, at SMMA there are still groups of wild kra monkeys, another mammal species, and various species of reptile.
-                          SSMA is located in the mangrove forest area(mangrove) on the north coast of Jakarta. 
+                        <p> Santa Market is one of the culinary and hangout spots in Jakarta which has become a favorite for young people. Even though it is a bit dim, this area is never empty of visitors. This is because in this area there are many culinary sellers ranging from food to unique drinks. On the 1st floor of the Santa Market, there are unique culinary delights, namely black hot dog and colorful ice creams. In addition, the santa market is usually used as a gathering place for communities and discussion activities on various topics. It is highly recommended to come to the Santa market at night to make the atmosphere even more pleasant.
                         </p>
-                        <a class="btn btn-outline-light" href="#">Buy Ticket</a>
-                        <a class="btn btn-outline-light" href="https://goo.gl/maps/FrTZt2w8q1x3YREs5">See on map</a>
+                        <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                        <a class="btn btn-outline-light" href="https://goo.gl/maps/UbhFC2jua3HM2HNn7">See on map</a>
                     </div>
-                    <div class="right-half" style="background-image: url(img/suakaangke.jpg);" data-aos="fade-left" 
+                    <div class="right-half" style="background-image: url(img/pasar\ santa.png);" data-aos="fade-left" 
                     data-aos-duration="2000" data-aos-once="true">
                     </div>
                 </div>
         </div>
         <!----fourth------>
         <div class="jumbotron jumbotron-fluid">
-            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Aquarium Jakarta</h1>
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Lenggang Jakarta Monas</h1>
             <div class="container">
-                <div class="left-half1" data-aos="fade-right" style="background-image: url(img/jakarta\ aqua.jpg);"
+                <div class="left-half1" data-aos="fade-right" style="background-image: url(img/lenggangjkt.jpg);"
                 data-aos-duration="2000" data-aos-once="true">
                   </div>
                   <div class="right-half1"  data-aos="fade-left" 
                   data-aos-duration="2000" data-aos-once="true">
-                  <p>The Jakarta Aquarium is a marine and freshwater aquarium located within a retail and leisure complex Neo Soho in Jakarta, Indonesia. The aquarium is home to hundreds of mammal, reptile, insect and various types of Indonesian marine fish, is to introduce to the next generation the biodiversity of the archipelago starting from islands, forests, and mangroves.
+                  <p>When visiting Monas , you will not miss Lenggang Jakarta . Because, the place to eat is right near the car and motorcycle parking lots.This place is the center of culinary tourism in Jakarta, precisely located near the IRTI parking lot.  Since it was opened on May 22, 2015, this place has been visited by many Jakartans who want to taste various delicious snacks while hanging out.  By having a unique place design, culinary tourism and hangout spots in Jakarta are not only comfortable to hang out while enjoying culinary offerings, but also interesting to take pictures and unwind.  Actually, Lenggang Jakarta Monas has a design in the form of a food court so that there are around 329 traders in this place offering a variety of interesting culinary offerings.
                   </p>
-                  <a class="btn btn-outline-light" href="#">Buy Ticket</a>
-                  <a class="btn btn-outline-light" href="https://g.page/JakartaAquarium?share">See on map</a>
+                  <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                  <a class="btn btn-outline-light" href="https://goo.gl/maps/2npL2sPgwGkdLeHL8">See on map</a>
                   </div>
             </div>
         </div>
 
             <!----fifth------>
         <div class="jumbotron jumbotron-fluid">
-            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Sea World</h1>
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Pecenongan</h1>
             <div class="container">
                 <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                      <p>Seaworld Indonesia is a miniature sea charm contained in the first tourist complex at Telaga Golf and the second integrated Ancol Jakarta Baycity.
-                        <br><br><b>Division in Seaworld Indonesia</b></br>
-                        <b>The main aquarium</b> maintains thousands of Indonesian marine animals. A total of 35,500 Indonesian marine fish from 35 different species are kept here.
-                        <br><b>The Freshwater Area</b> is equipped with collections of freshwater animals from various countries, including piranhas and Arapaima gigas from the Amazon river.</br>
-                        <b>Lorong Antasena</b> is an underwater passageway that is 80 m long operated by an automatic walkway with a see-through dome.
-                        <br><b>Aquarium Dugong</b> is home to rare marine mammals, namely Dugong ( Dugong dugon ) and Otter's Track is home to the semi-aquatic mammal Aonyx cinerea .
-                      </br>
-                      </br>
+                      <p>One of Jakarta's night culinary paradises is a cool place to hang out with friends and family while on vacation in Jakarta Pecenongan.  This area is a culinary tourism spot which is dominated by tent stalls and opens at 5 in the eening until late at night, the Pecengan Street area is getting more and more crowded.  Pecenongan culinary spots have been opened since the 1970s and have become popular with many foreign tourists.  There are various types of food in this area and the most sought after by culinary lovers are seafood, chinese food and martabak.  The price is quite expensive, it is not inferior to the price of food in luxury malls, even though it is in the form of tent stalls.  Well, if you visit the capital city, it's a shame if you don't visit the Jalan Pecenongan area and taste the food there.
                       </p>
-                      <a class="btn btn-outline-light" href="#">Buy Ticket</a>
-                      <a class="btn btn-outline-light" href="https://goo.gl/maps/JSZBzZDL83J8cSY77">See on map</a>
+                      <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                      <a class="btn btn-outline-light" href="https://goo.gl/maps/PwnBfHsqd4r5ECqm6">See on map</a>
                   </div>
-                  <div class="right-half" style="background-image: url(img/seaworld2.webp);" data-aos="fade-left" 
+                  <div class="right-half" style="background-image: url(img/pecenongan1.jpg);" data-aos="fade-left" 
                   data-aos-duration="2000" data-aos-once="true">
                   
                   </div>
             </div>
         </div>
+  <!---------6------------>
+  <div class="jumbotron jumbotron-fluid">
+    <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Bandar DJakarta</h1>
+    <div class="container">
+        <div class="left-half1" data-aos="fade-right" style="background-image: url(img/bandar.jpg);"
+        data-aos-duration="2000" data-aos-once="true">
+          </div>
+          <div class="right-half1"  data-aos="fade-left" 
+          data-aos-duration="2000" data-aos-once="true">
+          <p>Established in 2001, Jakarta Airport initially had a capacity of around 200 people.  However, along with the development and the crowds of visitors who came this culinary area was then enlarged and has reached 1600 seats.  This restaurant is located by the sea in the Ancol area of Jakarta various kinds of seafood here while enjoying the You can taste beautiful scenery and the atmosphere is comfortable, perfect for hanging out with family and friends.  You can choose to sit on the floor, by the sea or in the room.  Because of its location close to cooking ingredients, seafood in Bandar Djakarta is guaranteed freshness and price.
+          </p>
+          <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+          <a class="btn btn-outline-light" href="https://goo.gl/maps/ny1LE8TAvNCzhKXx8">See on map</a>
+          </div>
+    </div>
+</div>
+
+      <!--------7---------->
+            <div class="jumbotron jumbotron-fluid">
+              <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Food Plaza PIK</h1>
+              <div class="container">
+                  <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                        <p>The Pantai Indah Kapuk area in North Jakarta is known as one of the capital's rising culinary centers. However, among the various non-halal food choices, there is the Food Plaza which has many variations of halal snacks for ngabuburit. One of the highlights to visit is the Food Plaza, which carries a concept like the BSD Modern Market. Located not far from the Buddha Tzu Chi building, from the outside, you can see various food vendors around the Food Plaza.
+
+                          As for what looks most dominant at the Food Plaza are seafood culinary sellers in a tent format. Interestingly, each restaurant has a special window that is used for displaying fish and various other marine products.                          
+                        </p>
+                        <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                        <a class="btn btn-outline-light" href="https://goo.gl/maps/45UvHsm23rSoE83A6">See on map</a>
+                    </div>
+                    <div class="right-half" style="background-image: url(img/foodplaza.jpg);" data-aos="fade-left" 
+                    data-aos-duration="2000" data-aos-once="true">
+                    
+                    </div>
+              </div>
+          </div>
+  <!---------8------------>
+  <div class="jumbotron jumbotron-fluid">
+    <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Blok M</h1>
+    <div class="container">
+        <div class="left-half1" data-aos="fade-right" style="background-image: url(img/blokm.jpg);"
+        data-aos-duration="2000" data-aos-once="true">
+          </div>
+          <div class="right-half1"  data-aos="fade-left" 
+          data-aos-duration="2000" data-aos-once="true">
+          <p>For those of you who live around South Jakarta, surely you already know that there are a lot of night culinary delights in Blok M Jakarta. Not only a lot, but in the Blok M area it is also fun to be a hangout for young people. For those of you who have never tried the fun of night culinary delights at Blok M Jakarta, you should really try it, t-mate. Apart from being delicious and delicious, the food sold at Blok M night culinary is also cheap, aka it doesn't break the bag! there is a culinary place that is very famous for a long time, called Gulai Tikungan, aka "gultik". Gulai Tikungan, only provides one menu variant. Namely, curry which contains slices of meat with complementary curry soup, and lime juice that makes it feel cracked on the tongue. Coupled with the existence of various satay topings, also a sprinkling of fried onions and crackers that make gultik even more delicious to eat. This food tastes more or less like tongseng, it's just that gultik doesn't have a mixture of vegetables such as cabbage or tomatoes. This is what makes the cult look simpler.
+          </p>
+          <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+          <a class="btn btn-outline-light" href="https://goo.gl/maps/VJ7W8tWmv88KvdTw9">See on map</a>
+          </div>
+    </div>
+</div>
+
+
     </div>
 
   <!--content slider-->
@@ -316,7 +505,7 @@
               <!--6-->
               <li class="item-a">
                 <!--sldier box-->
-                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content6_1.jpg);
+                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/garden1.jpg);
                 ">
                   <div class="box-1">
                     <a class="link_f" href="lake-garden.html"><p>GARDEN & LAKE</p></a>
@@ -331,6 +520,11 @@
   <footer>
     <div class="footer-top mt-3">
       <div class="containerft">
+                 <div class="col-md-12" style="margin-left: 400px;">
+            <div class="btn btn-warning">
+                <a href="#" class="scroll-top" style="color: white; font-size: 17px; font-family:'Oswald',sans-serif;">Back To Top</a>
+            </div>
+          </div>
         <div class="row">
           <div class="col-md-4 segment-one">
             <h2>CONTACT US</h2>

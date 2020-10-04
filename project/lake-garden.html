@@ -37,100 +37,238 @@
 </head>
 
 <body>
-    <!---NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav mr-auto ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+      <!---NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#mybooking">My Booking <span class="badge badge-light">5</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link
+               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!--button trigger modal-->
+                <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+                <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#register">Register</a>
+              </div>
+              <li class="nav-item dropdown">
+                <a class="nav-link
+                 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Place to go
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="zoo.html">Zoo & Aquarium</a>
+                  <a class="dropdown-item" href="beach-island.html" >Beach & Island</a>
+                  <a class="dropdown-item" href="jakarta-history-places.html" >Jakarta History Places</a>
+                  <a class="dropdown-item" href="amusement-water park.html"  >Amusement Park & Water Park</a>
+                  <a class="dropdown-item" href="culinary.html" >Culinary</a>
+                  <a class="dropdown-item" href="lake-garden.html" >Garden & Lake</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link
+               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plan your trip
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="tips.html">Tips</a>
+                <a class="dropdown-item" href="experience.html">Experience</a>
+              </div>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mybooking.html">My Booking</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link
-           dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Account
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <!--button trigger modal-->
-            <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
-            <a class="dropdown-item" href="" data-toggle="modal" data-target="#register">Register</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link
-             dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Place to go
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="index.html" data-toggle="modal">Zoo</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Beach</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Museum</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Amusement Park</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Foods</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Another</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link
-             dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plan your trip
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="tips.html" data-toggle="modal">Tips</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Experience</a>
-            </div>
-        </li>
 
-      </ul>
-      <!--search bar-->
-      <script type="text/javascript">
-        $(function(){
-          var data = [
-              "Ancol",
-              "ChinaTown",
-              "Dufan",
-              "Ecopark",
-              "Fauna Land",
-              "Jakarta Aquarium",
-              "Jakarta Cathedral",
-              "Kidzania Pacific Palace",
-              "Kota Tua",
-              "Monumen Nasional",
-              "National Gallery",
-              "Pulau Seribu",
-              "Ragunan Zoo",
-              "Setu Babakan",
-              "Taman Ismail Marzuki",
-              "TMII",
-              "Taman Suropati",
-              "Waterboom",
-          ];
-          $("#auto-complete").autocomplete({
-            source: data
-          });
-        });
-      </script>
-      <form class="form-inline my-2 my-lg-0">
-        <div class="ui-widget">
-        <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-            </svg>
-          </button>
+          </ul>
+          <!--search bar-->
+          <script type="text/javascript">
+            $(function(){
+              var data = [
+                  "Ancol",
+                  "ChinaTown",
+                  "Dufan",
+                  "Ecopark",
+                  "Fauna Land",
+                  "Jakarta Aquarium",
+                  "Jakarta Cathedral",
+                  "Kidzania Pacific Palace",
+                  "Kota Tua",
+                  "Monumen Nasional",
+                  "National Gallery",
+                  "Pulau Seribu",
+                  "Ragunan Zoo",
+                  "Setu Babakan",
+                  "Taman Ismail Marzuki",
+                  "TMII",
+                  "Taman Suropati",
+                  "Waterboom",
+              ];
+              $("#auto-complete").autocomplete({
+                source: data
+              });
+            });
+          </script>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="ui-widget">
+            <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" autocomplete="on">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
-      </form>
+    </nav>
+    <!--Modal log in-->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Log In Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Log in</button>
+          </div>
+        </div>
+      </div>
     </div>
-</nav>
+    <!-- end of modal log in-->
+
+    <!--modal register-->
+    <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form 
+            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" >Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+              </div>
+              <div class="alert alert-warning password-alert" role="alert">
+                <ul>
+                  <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+                  <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+                  <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Reenter Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 <!--end of modal register-->
+
+<!--modal my booking list-->
+<div class="modal fade" id="mybooking" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="staticBackdropLabel"><b>MY BOOKING</b></h5>
+    </div>
+    <div class="modal-body">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Booking No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Place</th>
+            <th scope="col">Date</th>
+            <th scope="col">Price</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">40233</th>
+            <td>Cordellya</td>
+            <td>Ancol</td>
+            <td>1-DEC-2020</td>
+            <td>Rp 60.000</td>
+            <td><span class="badge badge-success">Booked</span></td>
+          </tr>
+          <tr>
+            <th scope="row">55071</th>
+            <td>Angelina</td>
+            <td>TMII</td>
+            <td>1-JAN-2021</td>
+            <td>Rp 100.000</td>
+            <td><span class="badge badge-primary">Confirmed</span></td>
+          </tr>
+          <tr>
+            <th scope="row">61294</th>
+            <td>Yongky</td>
+            <td>Ranggunan Zoo</td>
+            <td>22-FEB-2020</td>
+            <td>Rp 0</td>
+            <td><span class="badge badge-danger">Cancelled</span></td>
+          </tr>
+          <tr>
+            <th scope="row">19583</th>
+            <td>Nicholas</td>
+            <td>Kota Tua</td>
+            <td>19-DEC-2020</td>
+            <td>Rp 40.000</td>
+            <td><span class="badge badge-success">Booked</span></td>
+          </tr>
+          <tr>
+            <th scope="row">59632</th>
+            <td>Vanesa</td>
+            <td>Jakarta Aquarium</td>
+            <td>22-MAR-2021</td>
+            <td>Rp 150.000</td>
+            <td><span class="badge badge-primary">Confirmed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
 
 <!------END OF NAVBAR---------->
 
@@ -170,6 +308,11 @@
 
 <!------ISI------->
 <div id="isi">
+  <div class="jumbotron-tl jumbotron-fluid">
+    <div class="container">
+      <h1>LAKE</h1>
+    </div>
+</div>
     <!------first------->
     <div class="jumbotron jumbotron-fluid">
         <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Setu Babakan</h1>
@@ -179,8 +322,9 @@
             <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
                 <p>Setu Babakan is a very famous lake in Jakarta and its surroundings. This lake is located in the Jagakarsa area of ​​South Jakarta. This very affordable position makes this lake often visited on weekends. Although not one of  the best lakes in Indonesia , the existence of Setu Babakan in Jakarta is a breath of fresh air for an alternative to urban tourism. The location of Setu Babakan is near the Betawi village. To enjoy a simple tour there, there are actually many activities that can be done. For example, sitting around the lake and enjoying the scenery, or even taking a duck boat and walking around the lake. In addition, because it is close to the Betawi village, you may be able to taste the typical Betawi food around this lake. One of the famous foods is egg crust. Setu Babakan has been used as a close alternative for a long time and is representative of tourism activities. Especially if you do not have long time to vacation out of town.
                 </p>
-                <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+                <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
                 <a class="btn btn-outline-light" href="https://goo.gl/maps/TcPY7jcT9byYcHtJ8">See on map</a>
+                <p id="alert"></p>
             </div>
         </div>
     </div>
@@ -194,7 +338,7 @@
             <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
                 <p>Apart from Setu Babakan, in South Jakarta there is another lake tour in Jakarta that is interesting for you to visit on weekends. Its name is Lake Sunter. This lake is a beautiful lake in Jakarta. Instead of spending your vacation time just visiting the  Mall in South Jakarta , of course visiting this lake can be a more attractive alternative. To enjoy tourist activities there, there are many alternatives that can be done. Most people will probably rent a duck boat and go around the lake. But besides that, visitors can also fish to get freshwater fish. Visitors can also relax while eating, they can also exercise around the lake. Lake Sunter is indeed well managed. Even this lake will be cleaned regularly. The aim is to make the lake clean and tourists still feel comfortable while enjoying a short vacation there.
                 </p>
-                <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+                <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
                 <a class="btn btn-outline-light" href="https://goo.gl/maps/EFg2hWe8AmranP3s8">See on map</a>
             </div>
         </div>
@@ -208,7 +352,7 @@
             <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
                 <p>This lake is in the Menteng area. Yes, this lake is in Situ Lembang Park. Situ Lembang itself is one of the lake tours in Jakarta which is well known by the local community. The interesting thing about this lake is the beautiful scenery. And because there are lotuses there, when the lotuses bloom, the scenery will look much more beautiful. Tourists or visitors can do many activities on the lake. Many fish in this lake. In addition, for those of you who don't like fishing, enjoying the air and the scenery around the lake is enough to give the impression of relaxation on weekends. If you invite your little ones, younger siblings, or other children, there is also a simple playground that you can use. This place, although simple, can be a short and affordable alternative to a short tour in Jakarta. Also suitable for  school children's travel spots in Jakarta  on weekends.
                 </p>
-                <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+                <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
                 <a class="btn btn-outline-light" href="https://goo.gl/maps/i5RBVsaZGon88oNY9">See on map</a>
             </div>
         </div>
@@ -228,7 +372,7 @@
           <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
               <p>Menteng Park is a park located at Menteng, Central Jakarta, Indonesia. This park was formerly occupied by Menteng Stadium. In October 2006 the stadium was demolished and the park was built on the area by the administration of Sutiyoso. The park is located at the center of Menteng residential area. At present it is one of the popular park in Jakarta. The park stands on an area of 30 hectares, and has a collection of 30 different plant species. Menteng Park also has a variety of support facilities such as a playground for children, as well as futsal and basketball courts, jogging track, greenhouse, parking lot and exhibition corner. There are free WiFi facility at different corners of the park. After dark the park area turns into a place for food lovers because of presence of food vendors. Uniquely, in this park there are also 44 absorption wells to help the absorption of rain water into the soil.
                </p>
-              <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+              <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
               <a class="btn btn-outline-light" href="https://goo.gl/maps/buFKPAD2Qv2Eix3H7">See on map</a>
           </div>
       </div>
@@ -242,7 +386,7 @@
         <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
             <p>Located at the Tomang intersection - towards the Kebon Jeruk Toll Road, Cattleya Park is also often referred to as Tomang Park. This park is an open nature tourist attraction in the midst of the dense city of West Jakarta. This place is usually used as a gathering location for young people in the capital city or also used as a location for relaxing the local community. Even in this park, fitness and health facilities are provided free of charge for 24 hours. The word Cattleya is taken from one of the genera in the Orchid Plant, which is because this park is located right across from the west of the Mall and the magnificent Taman Anggrek Apartment.Until now, this park occupies more than 3 hectares of land which has been neatly arranged and also beautiful. In fact, it has also been equipped with various supporting facilities for community activities.
             </p>
-            <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+            <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
             <a class="btn btn-outline-light" href="https://goo.gl/maps/L32PSgPFEc3jc9Mm9">See on map</a>
         </div>
     </div>
@@ -256,7 +400,7 @@
       <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
           <p>TAIP was first opened on April 20, 1993, which was heavily supported by the former first lady ibu Tien Soeharto. In the same year Indonesian government declared one variant of the orchids, the Phalaenopsis amabilis (a.k.a. moth orchid or moon orchid), as Puspa Pesona (Indonesia Flower of Charm). As you can imagine, TAIP has an important role in breeding and disseminating orchids during that period. TAIP is located near Taman Mini Indonesia Indah, but it has different parking lot and gate. Sadly, the street sign to TAIP is almost nonexistent. So, if you are not familiar with the area, you'd better turn on your google map immediately, before you get lost and spend hours circling this heavy traffic area. The address is jalan Raya Taman Mini, Kelurahan Pinangranti, Jakata Timur. TAIP has one function hall, usually rented for wedding receptions, a laboratory to produce seedlings, and many lots rented to orchid vendors. Speaking of price, the price in TAIP is rather expensive. A plant without flower is almost Rp.100,000, while the plants with flower is much more expensive, depending on the variant. One pot of vanda on average is Rp. 200,000, while the exotic orchid from Brazil is Rp.350,000! 
           </p>
-          <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+          <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
           <a class="btn btn-outline-light" href="https://goo.gl/maps/kLRrK9NhX19u1GxD6">See on map</a>
       </div>
   </div>
@@ -270,7 +414,7 @@
       <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
           <p>Spathodea Park is located not far from Tabebuya Park which is also around Jagakarsa. Although Spathodea Park is considered a new park, it has become a favorite for Jagakarsa and surrounding residents to gather and exercise. Even the beauty of Spathodea Park has now become one of the weekend recreational destinations with the family. Spathodea Garden  has many types of plants planted with trees and flowers that adorn the garden area. There is a small lake in the middle of the park that will make visitors comfortable, especially since this park is equipped with various public facilities. Many public facilities are available at Spathodea Park,  such as  a jogging track, fish pond, outdoor gym, children's playground, toilets, a large enough parking area and comfortable seating. Spathodea Park is only open from 05.00 - 18.00 WIB so if it starts at night this park will be closed to the public. 
           </p>
-          <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+          <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
           <a class="btn btn-outline-light" href="https://goo.gl/maps/mUwezHYUV2C631S48">See on map</a>
       </div>
   </div>
@@ -336,7 +480,7 @@
               <!--6-->
               <li class="item-a">
                 <!--sldier box-->
-                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content6_1.jpg);
+                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/garden1.jpg);
                 ">
                   <div class="box-1">
                     <a class="link_f" href="lake-garden.html"><p>GARDEN & LAKE</p></a>
@@ -352,6 +496,11 @@
 <footer>
   <div class="footer-top mt-3">
     <div class="containerft">
+      <div class="col-md-12" style="margin-left: 400px;">
+        <div class="btn btn-warning">
+            <a href="#" class="scroll-top" style="color: white; font-size: 17px; font-family:'Oswald',sans-serif;">Back To Top</a>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-4 segment-one">
           <h2>CONTACT US</h2>

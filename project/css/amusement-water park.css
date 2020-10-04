@@ -91,7 +91,7 @@ body {
     color: white;
 }
 .jumbotron-tl{
-    background-color: rgb(90, 88, 88) ;
+    background-color: rgb(21, 75, 33) ;
     margin-top: 20px;
     padding-bottom: 10px;
 }
@@ -247,6 +247,13 @@ body {
 .ul{
     margin-left: 50px !important;
 }
+/*-----modal buy ticket-----*/
+.modl{
+    background-color: rgb(46, 45, 45) !important;
+    color: white;
+    opacity: 95%;
+  }
+
 /*------search autocomplete------*/
 .ui-autocomplete {
     position: absolute;

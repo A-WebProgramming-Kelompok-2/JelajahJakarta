@@ -37,100 +37,239 @@
 </head>
 
 <body>
-    <!---NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav mr-auto ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+      <!---NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#mybooking">My Booking <span class="badge badge-light">5</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link
+               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!--button trigger modal-->
+                <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+                <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#register">Register</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link
+               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Place to go
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="zoo.html">Zoo & Aquarium</a>
+                <a class="dropdown-item" href="beach-island.html" >Beach & Island</a>
+                <a class="dropdown-item" href="jakarta-history-places.html" >Jakarta History Places</a>
+                <a class="dropdown-item" href="amusement-water park.html"  >Amusement Park & Water Park</a>
+                <a class="dropdown-item" href="culinary.html" >Culinary</a>
+                <a class="dropdown-item" href="lake-garden.html" >Garden & Lake</a>
+              </div>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mybooking.html">My Booking</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link
-           dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Account
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <!--button trigger modal-->
-            <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
-            <a class="dropdown-item" href="" data-toggle="modal" data-target="#register">Register</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link
-             dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Place to go
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="index.html" data-toggle="modal">Zoo</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Beach</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Museum</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Amusement Park</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Foods</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Another</a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link
              dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Plan your trip
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="tips.html" data-toggle="modal">Tips</a>
-              <a class="dropdown-item" href="" data-toggle="modal" >Experience</a>
+              <a class="dropdown-item" href="tips.html">Tips</a>
+              <a class="dropdown-item" href="experience.html">Experience</a>
             </div>
         </li>
 
-      </ul>
-      <!--search bar-->
-      <script type="text/javascript">
-        $(function(){
-          var data = [
-              "Ancol",
-              "ChinaTown",
-              "Dufan",
-              "Ecopark",
-              "Fauna Land",
-              "Jakarta Aquarium",
-              "Jakarta Cathedral",
-              "Kidzania Pacific Palace",
-              "Kota Tua",
-              "Monumen Nasional",
-              "National Gallery",
-              "Pulau Seribu",
-              "Ragunan Zoo",
-              "Setu Babakan",
-              "Taman Ismail Marzuki",
-              "TMII",
-              "Taman Suropati",
-              "Waterboom",
-          ];
-          $("#auto-complete").autocomplete({
-            source: data
-          });
-        });
-      </script>
-      <form class="form-inline my-2 my-lg-0">
-        <div class="ui-widget">
-        <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-            </svg>
-          </button>
+          </ul>
+          <!--search bar-->
+          <script type="text/javascript">
+            $(function(){
+              var data = [
+                  "Ancol",
+                  "ChinaTown",
+                  "Dufan",
+                  "Ecopark",
+                  "Fauna Land",
+                  "Jakarta Aquarium",
+                  "Jakarta Cathedral",
+                  "Kidzania Pacific Palace",
+                  "Kota Tua",
+                  "Monumen Nasional",
+                  "National Gallery",
+                  "Pulau Seribu",
+                  "Ragunan Zoo",
+                  "Setu Babakan",
+                  "Taman Ismail Marzuki",
+                  "TMII",
+                  "Taman Suropati",
+                  "Waterboom",
+              ];
+              $("#auto-complete").autocomplete({
+                source: data
+              });
+            });
+          </script>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="ui-widget">
+            <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" autocomplete="on">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
-      </form>
+    </nav>
+    <!--Modal log in-->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Log In Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Log in</button>
+          </div>
+        </div>
+      </div>
     </div>
-</nav>
+    <!-- end of modal log in-->
+
+    <!--modal register-->
+    <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form 
+            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" >Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+              </div>
+              <div class="alert alert-warning password-alert" role="alert">
+                <ul>
+                  <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+                  <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+                  <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Reenter Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 <!--end of modal register-->
+
+<!--modal my booking list-->
+<div class="modal fade" id="mybooking" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="staticBackdropLabel"><b>MY BOOKING</b></h5>
+    </div>
+    <div class="modal-body">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Booking No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Place</th>
+            <th scope="col">Date</th>
+            <th scope="col">Price</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">40233</th>
+            <td>Cordellya</td>
+            <td>Ancol</td>
+            <td>1-DEC-2020</td>
+            <td>Rp 60.000</td>
+            <td><span class="badge badge-success">Booked</span></td>
+          </tr>
+          <tr>
+            <th scope="row">55071</th>
+            <td>Angelina</td>
+            <td>TMII</td>
+            <td>1-JAN-2021</td>
+            <td>Rp 100.000</td>
+            <td><span class="badge badge-primary">Confirmed</span></td>
+          </tr>
+          <tr>
+            <th scope="row">61294</th>
+            <td>Yongky</td>
+            <td>Ranggunan Zoo</td>
+            <td>22-FEB-2020</td>
+            <td>Rp 0</td>
+            <td><span class="badge badge-danger">Cancelled</span></td>
+          </tr>
+          <tr>
+            <th scope="row">19583</th>
+            <td>Nicholas</td>
+            <td>Kota Tua</td>
+            <td>19-DEC-2020</td>
+            <td>Rp 40.000</td>
+            <td><span class="badge badge-success">Booked</span></td>
+          </tr>
+          <tr>
+            <th scope="row">59632</th>
+            <td>Vanesa</td>
+            <td>Jakarta Aquarium</td>
+            <td>22-MAR-2021</td>
+            <td>Rp 150.000</td>
+            <td><span class="badge badge-primary">Confirmed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
 
 <!------END OF NAVBAR---------->
 
@@ -179,7 +318,7 @@
             <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
                 <p>Taman Impian Jaya Ancol otherwise known as Ancol Dreamland is an integral part of Ancol Bay City, a resort destination located along Jakarta's waterfront, in Ancol (Kelurahan), Pademangan, Indonesia. It is owned by PT. Pembangunan Jaya Ancol Tbk, a subsidiary of Pembangunan Jaya Group. Ancol Dreamland opened in 1966 and is currently the largest integrated tourism area in South East Asia, boasting an international championship golf course, a theme park, hotels and other recreational facilities.
                 </p>
-                <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+                <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
                 <a class="btn btn-outline-light" href="https://goo.gl/maps/6uSZLtbqMkeP7sKh8">See on map</a>
             </div>
         </div>
@@ -196,7 +335,7 @@
                   A decree states that 36 islands may be used for recreation. Of these, only 13 islands are fully developed: 11 islands are homes to resorts and two islands are historic parks. 23 are privately owned and are not open to the public. The rest of the islands are either uninhabited or support a fishing village.
                   
                 </p>
-                <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+                <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
                 <a class="btn btn-outline-light" href="https://goo.gl/maps/53sRs6RZsRWiiMyn9">See on map</a>
             </div>
         </div>
@@ -210,7 +349,7 @@
             <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
                 <p>Bidadari Island is one of the resorts in the Thousand Islands Regency, Jakarta. Before being named Bidadari Island, this island had two names, namely Pulau Sakit and Island of Purmerend.
                 </p>
-                <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+                <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
                 <a class="btn btn-outline-light" href="https://goo.gl/maps/3bLrikM2bxyrmn69A">See on map</a>
             </div>
         </div>
@@ -225,7 +364,7 @@
               <p>Kelurahan Pulau Tidung <br>
                 The Kelurahan (administrative Village) of Pulau Tidung (postal code 14520) consists of seven islands. Officially it is listed as having six islands, in which Karang Beras Kecil Island is not included.                
               </p>
-              <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+              <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
               <a class="btn btn-outline-light" href="https://goo.gl/maps/JQgWMv2cEnLFRvLi8">See on map</a>
           </div>
       </div>
@@ -239,7 +378,7 @@
           <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
               <p>Pramuka is an island in the Thousand Islands archipelago. The archipelago lies in the western part of the Java Sea and is located north of Indonesia's capital Jakarta. The island is the capital and the home to the administrative government of the Thousands Island regency.
               </p>
-              <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+              <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
               <a class="btn btn-outline-light" href="https://goo.gl/maps/s15K4Do5g3cZx2ym6">See on map</a>
           </div>
       </div>
@@ -255,7 +394,7 @@
               The Kelurahan (administrative village) of Pulau Pari (postal code 14520) mainly consists of archipelago of islands around the reef of Pari Island. The boundary of the administrative village is everything to the east of an imaginary line which run north to south between Karang Beras Island (the easternmost island of the Pulau Tidung administrative village) and Gundul Island (the westernmost island of the Pulau Pari administrative village in the official map, but in reality there is no island in the coordinates). Officially, there are ten islands in the administrative village.
               The administrative center of Pulau Pari administrative village is located in Pari Island, which is located in an extensive reef system which also contains the islands of Biawak, Kongsi, Tikus, Burung, and several others.              
             </p>
-            <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+            <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
             <a class="btn btn-outline-light" href="https://goo.gl/maps/k1jEwfdo3vBaYXq57">See on map</a>
         </div>
     </div>
@@ -269,7 +408,7 @@
           <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
               <p>Jakarta Bay (Indonesian: Teluk Jakarta) is a bay north of North Jakarta city. The Thousand Islands are located in Jakarta Bay. 13 rivers flow into the bay. The majority of the bay's coastal communities consist of people living below the poverty line, in conditions of poor sanitation. Nutrient inputs from agricultural runoff, industrial pollution, and wastewater have led to eutrophication, which in turn led to changes in the area's biodiversity. Harmful algal blooms have been observed.
               </p>
-              <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+              <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
               <a class="btn btn-outline-light" href="https://goo.gl/maps/8TzfvgxoZVRTFCPBA">See on map</a>
           </div>
       </div>
@@ -283,7 +422,7 @@
         <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
             <p>Pantai PIK 2 or Golf island is a Island that located at Pantai Indah Kapuk residence. To go PIK 2 Beach you have to cross the bridge from PIK 1 TO PIK 2. PIK 2 called as golf island.
             </p>
-            <a class="btn btn-outline-light" href="#">Buy Ticket</a>
+            <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
             <a class="btn btn-outline-light" href="https://goo.gl/maps/FthCqqUP5m7iRshq6">See on map</a>
         </div>
     </div>
@@ -351,7 +490,7 @@
               <!--6-->
               <li class="item-a">
                 <!--sldier box-->
-                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content6_1.jpg);
+                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/garden1.jpg);
                 ">
                   <div class="box-1">
                     <a class="link_f" href="lake-garden.html"><p>GARDEN & LAKE</p></a>
@@ -367,6 +506,11 @@
 <footer>
   <div class="footer-top mt-3">
     <div class="containerft">
+      <div class="col-md-12" style="margin-left: 400px;">
+        <div class="btn btn-warning">
+            <a href="#" class="scroll-top" style="color: white; font-size: 17px; font-family:'Oswald',sans-serif;">Back To Top</a>
+        </div>
+      </div>
       <div class="row">
         <div class="col-md-4 segment-one">
           <h2>CONTACT US</h2>

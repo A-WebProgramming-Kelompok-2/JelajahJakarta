@@ -1,6 +1,27 @@
+.header{
+    width:100%;
+    padding:200px 100px 100px;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.header h1{
+  font-family: 'Josefin Slab', serif;
+  color: white;
+  font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 23%;
+}
+
+
 h1 {
     color:gold;
     text-align: center;
+    font-weight: 700;
 }
 
 h2 {

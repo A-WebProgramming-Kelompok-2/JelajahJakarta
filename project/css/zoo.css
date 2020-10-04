@@ -261,6 +261,13 @@ body {
     margin-left: 50px !important;
 }
 
+/*-------modal buy ticket-----*/
+.modl{
+    background-color: rgb(46, 45, 45) !important;
+    color: white;
+    opacity: 95%;
+  }
+
 /*------search autocomplete------*/
 .ui-autocomplete {
     position: absolute;
