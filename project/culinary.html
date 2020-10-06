@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CULINARY</title>
+       <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/zoo.css">
+    <link rel="stylesheet" type="text/javascript" href="script.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--js bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+    <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://kit.fontawesome.com/59d975929c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bootstrap-show-password.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <!--jquery light slider  -->
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="script/lightslider.js"></script>
+    <!--jquery search-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.js"></script>
+</head>
+<body>
+        <!---NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+          <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mr-auto ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#mybooking">My Booking <span class="badge badge-light">5</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link
+                 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Account
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!--button trigger modal-->
+                  <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+                  <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#register">Register</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#slider-content">Places to go</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tipsexp">Plan your trip</a>
+              </li>
+
+            </ul>
+            <!--search bar-->
+            <script type="text/javascript">
+              $(function(){
+                var data = [
+                    "Ancol",
+                    "ChinaTown",
+                    "Dufan",
+                    "Ecopark",
+                    "Fauna Land",
+                    "Jakarta Aquarium",
+                    "Jakarta Cathedral",
+                    "Kidzania Pacific Palace",
+                    "Kota Tua",
+                    "Monumen Nasional",
+                    "National Gallery",
+                    "Pulau Seribu",
+                    "Ragunan Zoo",
+                    "Setu Babakan",
+                    "Taman Ismail Marzuki",
+                    "TMII",
+                    "Taman Suropati",
+                    "Waterboom",
+                ];
+                $("#auto-complete").autocomplete({
+                  source: data
+                });
+              });
+            </script>
+            <form class="form-inline my-2 my-lg-0">
+              <div class="ui-widget">
+              <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" autocomplete="on">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                      <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+      </nav>
+      <!--Modal log in-->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Log In Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Log in</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of modal log in-->
+
+      <!--modal register-->
+      <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form 
+              oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1" >Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+                </div>
+                <div class="alert alert-warning password-alert" role="alert">
+                  <ul>
+                    <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+                    <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+                    <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+                  </ul>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Reenter Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+                </div>
+                <div class="modal-footer">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--end of modal register-->
+
+<!--modal my booking list-->
+<div class="modal fade" id="mybooking" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel"><b>MY BOOKING</b></h5>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Booking No.</th>
+              <th scope="col">Name</th>
+              <th scope="col">Place</th>
+              <th scope="col">Date</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">40233</th>
+              <td>Cordellya</td>
+              <td>Ancol</td>
+              <td>1-DEC-2020</td>
+              <td><span class="badge badge-success" id="book1">Booked</span></td>
+              <td><button onclick="cancelB()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book1").innerHTML = "Cancelled";
+                    document.getElementById("book1").style.backgroundColor = "red";
+                  }
+                }
+                </script>
+            </tr>
+            <tr>
+              <th scope="row">55071</th>
+              <td>Angelina</td>
+              <td>TMII</td>
+              <td>1-JAN-2021</td>
+              <td><span class="badge badge-success" id="book2">Booked</span></td>
+              <td><button onclick="cancelB1()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB1() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book2").innerHTML = "Cancelled";
+                    document.getElementById("book2").style.backgroundColor = "red";
+                  }
+                }
+                </script>
+            </tr>
+            <tr>
+              <th scope="row">61294</th>
+              <td>Yongky</td>
+              <td>Ranggunan Zoo</td>
+              <td>22-FEB-2020</td>
+              <td><span class="badge badge-success" id="book3">Booked</span></td>
+              <td><button onclick="cancelB2()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB2() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book3").innerHTML = "Cancelled";
+                    document.getElementById("book3").style.backgroundColor = "red";
+                  }
+                }
+                </script>
+            </tr>
+            <tr>
+              <th scope="row">19583</th>
+              <td>Nicholas</td>
+              <td>Kota Tua</td>
+              <td>19-DEC-2020</td>
+              <td><span class="badge badge-success" id="book4">Booked</span></td>
+              <td><button onclick="cancelB3()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB3() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book4").innerHTML = "Cancelled";
+                    document.getElementById("book4").style.backgroundColor = "red";
+                  }
+                }
+                </script>
+            </tr>
+            <tr>
+              <th scope="row">59632</th>
+              <td>Vanesa</td>
+              <td>Jakarta Aquarium</td>
+              <td>22-MAR-2021</td>
+              <td><span class="badge badge-success" id="book5">Booked</span></td>
+              <td><button onclick="cancelB4()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB4() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book5").innerHTML = "Cancelled";
+                    document.getElementById("book5").style.backgroundColor = "red";
+                  }
+                }
+                </script>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-------END OF NAVBAR-->
+
+    <!--slider image-->
+    <!--image slider-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!--slide 1-->
+          <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(http://mahligai-indonesia.com/wp-content/uploads/2017/02/Kerak-telor-e1486718095728.jpg);">
+          </div>
+          <!--slide 2-->
+          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://makananoleholeh.com/wp-content/uploads/2018/09/Semur-jengkol-Betawi.jpg);">
+          </div>
+          <!--slide 3-->
+          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(https://makananoleholeh.com/wp-content/uploads/2018/09/Gado-gado-Betawi-1.jpg);">
+          </div>
+        </div>
+        <!--caption-->
+        <div class="carousel-caption text-center" >
+          <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">CULINARY</h1>
+        </div>
+        <!--prev & next button-->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+   <!------ISI------>
+    <div id="isi">
+        <!------first------->
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Kuliner di Jalan Sabang Jakarta Pusat </h1>
+            <div class="container">
+                <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                      <p> Culinary on Jalan Sabang, Central Jakarta has a variety of choices. This area is indeed famous as one of the culinary centers in the capital . Here many visitors come for breakfast, lunch and dinner. Jalan Sabang is very crowded with visitors at night where at night many people want to relax while tasting the delicious culinary delights that are served. The types of snacks that you can find on Jalan Sabang include fried rice, padang satay, chicken noodles, martabak and so on. Sate Jaya Agung is one of the legendary culinary delights in the Jln. Sabang, Central Jakarta. This satay has started serving buyers since 1963. The shop is not that big, but the buyers come from various circles. The reason, of course, is because of the special taste. 
+                      </p>
+                      <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                      <a class="btn btn-outline-light" href="https://goo.gl/maps/LWqhBZbAzDXoBps99 ">See on map</a>
+                  </div>
+                  <div class="right-half" style="background-image: url(img/kulinersebang.png);" data-aos="fade-left" 
+                  data-aos-duration="2000" data-aos-once="true">
+                  </div>
+            </div>
+        </div>
+
+        <!----second------>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Muara Karang</h1>
+            <div class="container">
+                <div class="left-half1" data-aos="fade-right" style="background-image: url(img/muarakarang.png);"
+                data-aos-duration="2000" data-aos-once="true">
+                  </div>
+                  <div class="right-half1" data-aos="fade-left" 
+                  data-aos-duration="2000" data-aos-once="true">
+                  <p> The Muara Karang area in North Jakarta is one of Jakarta’s best kept-secrets,  
+                    especially for food enthusiasts. Even those who were born in the city consider the area an exciting discovery as along the muddy alleys one can find a plethora of hawker centers and restaurants offering a wide variety of Indonesian and Chinese cuisines.
+                    Hawker centers are among the icons of Muara Karang. Similar to hawker centers in Singapore or Malaysia, the open-air complexes house many independent food stalls, offering a wide variety of dishes. In Muara Karang, you can find kwetiau (flat rice noodles), nasi campur (rice served with various pork side dishes), sate Padang (Padang-style spicy satay) and bakso (meatballs), all under one roof.                      
+                  </p>
+                  <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                  <a class="btn btn-outline-light" href="https://goo.gl/maps/ixGtBrAap6bVQEzDA ">See on map</a>
+                  </div>
+            </div>
+        </div>
+
+        <!----third------>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Pasar Santa</h1>
+                <div class="container">
+                    <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                        <p> Santa Market is one of the culinary and hangout spots in Jakarta which has become a favorite for young people. Even though it is a bit dim, this area is never empty of visitors. This is because in this area there are many culinary sellers ranging from food to unique drinks. On the 1st floor of the Santa Market, there are unique culinary delights, namely black hot dog and colorful ice creams. In addition, the santa market is usually used as a gathering place for communities and discussion activities on various topics. It is highly recommended to come to the Santa market at night to make the atmosphere even more pleasant.
+                        </p>
+                        <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                        <a class="btn btn-outline-light" href="https://goo.gl/maps/UbhFC2jua3HM2HNn7">See on map</a>
+                    </div>
+                    <div class="right-half" style="background-image: url(img/pasar\ santa.png);" data-aos="fade-left" 
+                    data-aos-duration="2000" data-aos-once="true">
+                    </div>
+                </div>
+        </div>
+        <!----fourth------>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Lenggang Jakarta Monas</h1>
+            <div class="container">
+                <div class="left-half1" data-aos="fade-right" style="background-image: url(img/lenggangjkt.jpg);"
+                data-aos-duration="2000" data-aos-once="true">
+                  </div>
+                  <div class="right-half1"  data-aos="fade-left" 
+                  data-aos-duration="2000" data-aos-once="true">
+                  <p>When visiting Monas , you will not miss Lenggang Jakarta . Because, the place to eat is right near the car and motorcycle parking lots.This place is the center of culinary tourism in Jakarta, precisely located near the IRTI parking lot.  Since it was opened on May 22, 2015, this place has been visited by many Jakartans who want to taste various delicious snacks while hanging out.  By having a unique place design, culinary tourism and hangout spots in Jakarta are not only comfortable to hang out while enjoying culinary offerings, but also interesting to take pictures and unwind.  Actually, Lenggang Jakarta Monas has a design in the form of a food court so that there are around 329 traders in this place offering a variety of interesting culinary offerings.
+                  </p>
+                  <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                  <a class="btn btn-outline-light" href="https://goo.gl/maps/2npL2sPgwGkdLeHL8">See on map</a>
+                  </div>
+            </div>
+        </div>
+
+            <!----fifth------>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Pecenongan</h1>
+            <div class="container">
+                <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                      <p>One of Jakarta's night culinary paradises is a cool place to hang out with friends and family while on vacation in Jakarta Pecenongan.  This area is a culinary tourism spot which is dominated by tent stalls and opens at 5 in the eening until late at night, the Pecengan Street area is getting more and more crowded.  Pecenongan culinary spots have been opened since the 1970s and have become popular with many foreign tourists.  There are various types of food in this area and the most sought after by culinary lovers are seafood, chinese food and martabak.  The price is quite expensive, it is not inferior to the price of food in luxury malls, even though it is in the form of tent stalls.  Well, if you visit the capital city, it's a shame if you don't visit the Jalan Pecenongan area and taste the food there.
+                      </p>
+                      <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                      <a class="btn btn-outline-light" href="https://goo.gl/maps/PwnBfHsqd4r5ECqm6">See on map</a>
+                  </div>
+                  <div class="right-half" style="background-image: url(img/pecenongan1.jpg);" data-aos="fade-left" 
+                  data-aos-duration="2000" data-aos-once="true">
+                  
+                  </div>
+            </div>
+        </div>
+  <!---------6------------>
+  <div class="jumbotron jumbotron-fluid">
+    <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Bandar DJakarta</h1>
+    <div class="container">
+        <div class="left-half1" data-aos="fade-right" style="background-image: url(img/bandar.jpg);"
+        data-aos-duration="2000" data-aos-once="true">
+          </div>
+          <div class="right-half1"  data-aos="fade-left" 
+          data-aos-duration="2000" data-aos-once="true">
+          <p>Established in 2001, Jakarta Airport initially had a capacity of around 200 people.  However, along with the development and the crowds of visitors who came this culinary area was then enlarged and has reached 1600 seats.  This restaurant is located by the sea in the Ancol area of Jakarta various kinds of seafood here while enjoying the You can taste beautiful scenery and the atmosphere is comfortable, perfect for hanging out with family and friends.  You can choose to sit on the floor, by the sea or in the room.  Because of its location close to cooking ingredients, seafood in Bandar Djakarta is guaranteed freshness and price.
+          </p>
+          <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+          <a class="btn btn-outline-light" href="https://goo.gl/maps/ny1LE8TAvNCzhKXx8">See on map</a>
+          </div>
+    </div>
+</div>
+
+      <!--------7---------->
+            <div class="jumbotron jumbotron-fluid">
+              <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Food Plaza PIK</h1>
+              <div class="container">
+                  <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                        <p>The Pantai Indah Kapuk area in North Jakarta is known as one of the capital's rising culinary centers. However, among the various non-halal food choices, there is the Food Plaza which has many variations of halal snacks for ngabuburit. One of the highlights to visit is the Food Plaza, which carries a concept like the BSD Modern Market. Located not far from the Buddha Tzu Chi building, from the outside, you can see various food vendors around the Food Plaza.
+
+                          As for what looks most dominant at the Food Plaza are seafood culinary sellers in a tent format. Interestingly, each restaurant has a special window that is used for displaying fish and various other marine products.                          
+                        </p>
+                        <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                        <a class="btn btn-outline-light" href="https://goo.gl/maps/45UvHsm23rSoE83A6">See on map</a>
+                    </div>
+                    <div class="right-half" style="background-image: url(img/foodplaza.jpg);" data-aos="fade-left" 
+                    data-aos-duration="2000" data-aos-once="true">
+                    
+                    </div>
+              </div>
+          </div>
+  <!---------8------------>
+  <div class="jumbotron jumbotron-fluid">
+    <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Blok M</h1>
+    <div class="container">
+        <div class="left-half1" data-aos="fade-right" style="background-image: url(img/blokm.jpg);"
+        data-aos-duration="2000" data-aos-once="true">
+          </div>
+          <div class="right-half1"  data-aos="fade-left" 
+          data-aos-duration="2000" data-aos-once="true">
+          <p>For those of you who live around South Jakarta, surely you already know that there are a lot of night culinary delights in Blok M Jakarta. Not only a lot, but in the Blok M area it is also fun to be a hangout for young people. For those of you who have never tried the fun of night culinary delights at Blok M Jakarta, you should really try it, t-mate. Apart from being delicious and delicious, the food sold at Blok M night culinary is also cheap, aka it doesn't break the bag! there is a culinary place that is very famous for a long time, called Gulai Tikungan, aka "gultik". Gulai Tikungan, only provides one menu variant. Namely, curry which contains slices of meat with complementary curry soup, and lime juice that makes it feel cracked on the tongue. Coupled with the existence of various satay topings, also a sprinkling of fried onions and crackers that make gultik even more delicious to eat. This food tastes more or less like tongseng, it's just that gultik doesn't have a mixture of vegetables such as cabbage or tomatoes. This is what makes the cult look simpler.
+          </p>
+          <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+          <a class="btn btn-outline-light" href="https://goo.gl/maps/VJ7W8tWmv88KvdTw9">See on map</a>
+          </div>
+    </div>
+</div>
+
+
+    </div>
+
+  <!--content slider-->
+  <div id="slider-content">
+    <div class="jumbotron-cs jumbotron-fluid" data-aos="fade-up" data-aos-duration="2000"
+    data-aos-anchor-placement="top-bottom" data-aos-once="true">
+      <h1>>>>>>Discover another places</h1>
+      <div class="container-1">
+        <!--slider-->
+        <ul id="autoWidth" class="cs-hidden">
+          <!--1-->
+        <li class="item-a">
+        <!--sldier box-->
+        <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content1_2.jpg);
+        ">
+          <div class="box-1">
+            <a class="link_a" href="jakarta-history-places.html"><p>JAKARTA HISTORY PLACES</p></a>
+          </div>
+        </div>
+        </li>
+        <!--2-->
+        <li class="item-a">
+          <!--sldier box-->
+          <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content2_1.jpg);
+          ">
+            <div class="box-1">
+              <a class="link_b" href="beach-island.html"><p>BEACH & ISLAND</p></a>
+            </div>
+          </div>
+          </li>
+        <!--3-->
+        <li class="item-a">
+          <!--sldier box-->
+          <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content3_3.jpg);
+          ">
+            <div class="box-1">
+              <a class="link_c" href="zoo.html"><p>ZOO & AQUARIUM</p></a>
+            </div>
+          </div>
+          </li>
+          <!--4-->
+          <li class="item-a">
+            <!--sldier box-->
+            <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content4_1.jpg);
+            ">
+              <div class="box-1">
+                <a class="link_d" href="culinary.html"><p>CULINARY</p></a>
+              </div>
+            </div>
+            </li>
+            <!--5-->
+            <li class="item-a">
+              <!--sldier box-->
+              <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content5_3.jpg);
+              ">
+                <div class="box-1">
+                  <a class="link_e" href="amusement-water park.html" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p></a>
+                </div>
+              </div>
+              </li>
+              <!--6-->
+              <li class="item-a">
+                <!--sldier box-->
+                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/garden1.jpg);
+                ">
+                  <div class="box-1">
+                    <a class="link_f" href="lake-garden.html"><p>GARDEN & LAKE</p></a>
+                  </div>
+                </div>
+                </li>     
+          </ul>
+      </div>
+    </div>
+  </div>
+  <!-----footer--------->
+  <footer>
+    <div class="footer-top mt-3">
+      <div class="containerft">
+                 <div class="col-md-12" style="margin-left: 400px;">
+            <div class="btn btn-warning">
+                <a href="#" class="scroll-top" style="color: white; font-size: 17px; font-family:'Oswald',sans-serif;">Back To Top</a>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-md-4 segment-one">
+            <h2>CONTACT US</h2>
+            <ul>
+           <li><i class="fas fa-phone-square-alt"></i> : 08111222333 / Angellina</li>
+           <span class="ml-3"> : 08867564657 / Yongky</span> <br>
+           <span class="ml-3"> : 08646836491 / Cordellya</span> <br>
+           <span class="ml-3"> : 08967821410 / Vanesa</span> <br>
+           <span class="ml-3"> : 08285301962 / Nicholas</span>
+           <li><i class="fas fa-envelope"></i> : jelajahjakarta@gmail.com</li>
+          </ul>
+          </div>
+          <div class="col-md-4 segment-two">
+            <h2>FOLLOW US ON</h2>
+            <ul>
+           <li><i class="fab fa-instagram-square"></i><a class="link"  href="#"> : jelajahjakarta</a></li>
+           <li><i class="fab fa-facebook-square"></i><a class="link" href="#"> : jelajahjakarta</a></li>
+           <li><i class="fab fa-twitter-square"></i><a  class="link" href="#"> : jelajahjakarta</a></li>
+           <li><i class="fab fa-youtube"></i><a class="link" href="#"> : jelajahjakarta</a></li>
+          </ul>
+
+          </div>
+          <div class="col-md-4 segment-three">
+            <h2>OTHERS</h2>
+            <ul>
+           <li><i class="fas fa-question-circle" ></i> <a class="link" href="#"> About</a></li>
+           <li><i class="fas fa-home"></i> <a class="link" href="#carouselExampleIndicators"> Home</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--end of footer-->
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>

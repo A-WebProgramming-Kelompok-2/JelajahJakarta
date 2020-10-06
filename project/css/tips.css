@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+.header{
+    width:100%;
+    padding:200px 100px 100px;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.header h1{
+  font-family: 'Josefin Slab', serif;
+  color: white;
+  font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 23%;
+}
+
+
+h1 {
+    color:gold;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    color:black;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold !important;
+    border-bottom: double black;
+}
+.jj{
+    color:rgb(241, 223, 117);
+    text-align: center;
+}
+
+.background-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/jakarta.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.iklik-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/iklik.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.transportation-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/transportation.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bukuu-img {
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('../img/bukuu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vertical-center {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.half-width {
+    width: 50%;
+    display: inline-block;
+}
+
+.height-400 {
+    height: 400px;
+}
+
+.padding-40 {
+    padding: 0px 40px;
+}
+
+.background-one-color {
+    background-color: #cb8929;
+}
+
+.text-white {
+    color: white;
+}
+
+.margin-left-2percent {
+    margin-left: 2%;
+}
+
+.margin-right-2percent {
+    margin-right: 2%;
+}
+
+.margin-top-40 {
+    margin-top: 40px;
+}
+
+.footer-top .container h2{
+    color: white!important;
+    border-bottom: none !important;
+}
+
+
+
+*{
+    padding:0px;
+    margin:0px;
+  }
+  
+  .back{
+    height:100vh;
+    width:100%;
+    background-size:cover;
+  }
+  
+  .button1{
+    height:70px;
+    width:600px;
+    background:#ecf0f1;
+    margin:auto auto;
+    position:relative;
+    top:50%;
+    transform:translate(0%,-50%);
+    color:#333;
+    text-align:center;
+    line-height:70px;
+    font-size:30px;
+    font-family: 'Courier Prime', monospace;
+    cursor:pointer;
+    transition:all .3s ease-in 1.2s;
+  }
+  
+  .button1:hover{
+    background:transparent;
+    color:#fff;
+    transition:all .3s ease-in;
+  }
+  
+  .bot-bar{
+    position:absolute;
+    bottom:0px;
+    height:2px; 
+    width:0%;
+    left:0px;
+    background:#fff;
+    transition:all .4s ease .8s;
+  }
+  
+  .top-bar{
+    height:2px;
+    width:0%;
+    position:absolute;
+    top:0px;
+    right:0px;
+    background:#fff;
+    transition: all .4s ease .2s;
+  }
+  
+  .left-bar{
+    height:0%;
+    width:2px;
+    background:#fff;
+    position:absolute;
+    left:0px;
+    top:0px;
+    transition:all .2s ease;
+  }
+  
+  .right-bar{
+    height:0%;
+    width:2px;
+    background:#fff;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    transition:all .2s ease .6s;
+  }
+  
+  .button1:hover .bot-bar{
+    width:100%;
+    transition: all .4s ease-in-out;
+  }
+  
+  .button1:hover .top-bar{
+    width:100%;
+    transition: all .4s ease-in-out .6s;
+  }
+  
+  .button1:hover .right-bar{
+    height:100%;
+    transition:all .2s ease-in-out .4s;
+  }
+  
+  .button1:hover .left-bar{
+    height:100%;
+    transition:all .2s ease-in-out 1s;
+  }

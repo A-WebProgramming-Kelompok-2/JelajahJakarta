@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jakarta History Places</title>
+       <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/zoo.css">
+    <link rel="stylesheet" type="text/css" href="css/jakarta.css">
+    <link rel="stylesheet" type="text/javascript" href="script.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--js bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+    <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://kit.fontawesome.com/59d975929c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bootstrap-show-password.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <!--jquery light slider  -->
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="script/lightslider.js"></script>
+    <!--jquery search-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/css/custom-theme/jquery-ui-1.10.0.custom.css" rel="stylesheet"/>
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.js"></script>
+
+    <style>
+
+    </style>
+
+</head>
+<body>
+      <!---NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#" style="font-size: 18px;">JEJALAH JAKARTA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#mybooking">My Booking <span class="badge badge-light">5</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link
+               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!--button trigger modal-->
+                <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+                <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#register">Register</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#slider-content">Places to go</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tipsexp">Plan your trip</a>
+            </li>
+
+          </ul>
+          <!--search bar-->
+          <script type="text/javascript">
+            $(function(){
+              var data = [
+                  "Ancol",
+                  "ChinaTown",
+                  "Dufan",
+                  "Ecopark",
+                  "Fauna Land",
+                  "Jakarta Aquarium",
+                  "Jakarta Cathedral",
+                  "Kidzania Pacific Palace",
+                  "Kota Tua",
+                  "Monumen Nasional",
+                  "National Gallery",
+                  "Pulau Seribu",
+                  "Ragunan Zoo",
+                  "Setu Babakan",
+                  "Taman Ismail Marzuki",
+                  "TMII",
+                  "Taman Suropati",
+                  "Waterboom",
+              ];
+              $("#auto-complete").autocomplete({
+                source: data
+              });
+            });
+          </script>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="ui-widget">
+            <input id="auto-complete" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" autocomplete="on">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+    </nav>
+    <!--Modal log in-->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Log In Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Log in</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal log in-->
+
+    <!--modal register-->
+    <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form 
+            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" >Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+              </div>
+              <div class="alert alert-warning password-alert" role="alert">
+                <ul>
+                  <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+                  <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+                  <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+                </ul>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Reenter Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+              </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of modal register-->
+
+<!--modal my booking list-->
+<div class="modal fade" id="mybooking" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="staticBackdropLabel"><b>MY BOOKING</b></h5>
+    </div>
+    <div class="modal-body">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Booking No.</th>
+            <th scope="col">Name</th>
+            <th scope="col">Place</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">40233</th>
+            <td>Cordellya</td>
+            <td>Ancol</td>
+            <td>1-DEC-2020</td>
+            <td><span class="badge badge-success" id="book1">Booked</span></td>
+            <td><button onclick="cancelB()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book1").innerHTML = "Cancelled";
+                  document.getElementById("book1").style.backgroundColor = "red";
+                }
+              }
+              </script>
+          </tr>
+          <tr>
+            <th scope="row">55071</th>
+            <td>Angelina</td>
+            <td>TMII</td>
+            <td>1-JAN-2021</td>
+            <td><span class="badge badge-success" id="book2">Booked</span></td>
+            <td><button onclick="cancelB1()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB1() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book2").innerHTML = "Cancelled";
+                  document.getElementById("book2").style.backgroundColor = "red";
+                }
+              }
+              </script>
+          </tr>
+          <tr>
+            <th scope="row">61294</th>
+            <td>Yongky</td>
+            <td>Ranggunan Zoo</td>
+            <td>22-FEB-2020</td>
+            <td><span class="badge badge-success" id="book3">Booked</span></td>
+            <td><button onclick="cancelB2()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB2() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book3").innerHTML = "Cancelled";
+                  document.getElementById("book3").style.backgroundColor = "red";
+                }
+              }
+              </script>
+          </tr>
+          <tr>
+            <th scope="row">19583</th>
+            <td>Nicholas</td>
+            <td>Kota Tua</td>
+            <td>19-DEC-2020</td>
+            <td><span class="badge badge-success" id="book4">Booked</span></td>
+            <td><button onclick="cancelB3()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB3() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book4").innerHTML = "Cancelled";
+                  document.getElementById("book4").style.backgroundColor = "red";
+                }
+              }
+              </script>
+          </tr>
+          <tr>
+            <th scope="row">59632</th>
+            <td>Vanesa</td>
+            <td>Jakarta Aquarium</td>
+            <td>22-MAR-2021</td>
+            <td><span class="badge badge-success" id="book5">Booked</span></td>
+            <td><button onclick="cancelB4()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB4() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book5").innerHTML = "Cancelled";
+                  document.getElementById("book5").style.backgroundColor = "red";
+                }
+              }
+              </script>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+
+
+    <!--slider image-->
+    <!--image slider-->
+<div id="header" class="header" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/content1_2.jpg);">   
+  <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">JAKARTA HISTORY PLACES</h1>
+</div>
+   <!------ISI------>
+    <div id="isi">
+        <!------first------->
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Museum Nasional /Museum Gajah</h1>
+            <div class="container">
+                <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                      <p>The National Museum of Indonesia (Indonesian: Museum Nasional), is an archeological, historical, ethnological, and geographical museum located in Jalan Medan Merdeka Barat, Central Jakarta, right on the west side of Merdeka Square. Popularly known as the Elephant Museum (Indonesian: Museum Gajah) after the elephant statue in its forecourt. Its broad collections cover all of Indonesia's territory and almost all of its history. The museum has endeavoured to preserve Indonesia's heritage for two centuries.
+                      </p>
+                      <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+                      <a class="btn btn-outline-light" href="https://goo.gl/maps/w59c5uRVRZAkTLzN9">See on map</a>
+                  </div>
+                  <div class="right-half" style="background-image: url(https://www.pegipegi.com/travel/wp-content/uploads/2018/05/shutterstock_364969625-2.jpg);" data-aos="fade-left" 
+                  data-aos-duration="2000" data-aos-once="true">
+                  </div>
+            </div>
+        </div>
+
+        <!----second------>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Bank Indonesia</h1>
+            <div class="container">
+                <div class="left-half1" data-aos="fade-right" style="background-image: url(https://www.bi.go.id/id/tentang-bi/museum/PublishingImages/foto%20museum%20BI.jpg);"
+                data-aos-duration="2000" data-aos-once="true">
+                  </div>
+                  <div class="right-half1" data-aos="fade-left" 
+                  data-aos-duration="2000" data-aos-once="true">
+                  <p> Bank Indonesia Museum (Indonesian Museum Bank Indonesia) is a bank museum located in Jakarta, Indonesia. It was founded by Bank Indonesia and opened on 21 July 2009. The museum is housed in a heritage building in Jakarta Old Town that had been the first headquarters of the Netherlands Indies gulden (De Javasche bank), the central bank of the Dutch East Indies. The bank was nationalized as Bank Indonesia in 1953, after Indonesia gained its independence. It is located next to Bank Mandiri Museum.
+                  </p>
+                  <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+                  <a class="btn btn-outline-light" href="https://g.page/museum-bi?share">See on map</a>
+                  </div>
+            </div>
+        </div>
+
+        <!----third------>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Museum Fatahilah</h1>
+                <div class="container">
+                    <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                        <p> The Jakarta History Museum (Indonesian: Museum Sejarah Jakarta), also known as Fatahillah Museum or Batavia Museum, is located in the Old Town (known as Kota Tua) of Jakarta, Indonesia. The building was built in 1710 as the Stadhuis (city hall) of Batavia. Jakarta History Museum opened in 1974 and displays objects from the prehistory period of the city region, the founding of Jayakarta in 1527, and the Dutch colonization period from the 16th century until Indonesia's Independence in 1945.
+                          The museum is located in south side of Fatahillah Square (former Batavia city square) near Wayang Museum and Fine Art and Ceramic Museum. The building is believed to be modeled after Dam Palace.                          
+                        </p>
+                        <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+                        <a class="btn btn-outline-light" href="https://goo.gl/maps/NqWGeDkfZWjU3q5C8">See on map</a>
+                    </div>
+                    <div class="right-half" style="background-image: url(https://www.pedomanwisata.com/md.716.641.1429437606.jpg);" data-aos="fade-left" 
+                    data-aos-duration="2000" data-aos-once="true">
+                    </div>
+                </div>
+        </div>
+        <!----fourth------>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Kota Tua</h1>
+            <div class="container">
+                <div class="left-half1" data-aos="fade-right" style="background-image: url(https://www.bobobox.co.id/blog/wp-content/uploads/2019/12/Capture-16.jpg);"
+                data-aos-duration="2000" data-aos-once="true">
+                  </div>
+                  <div class="right-half1"  data-aos="fade-left" 
+                  data-aos-duration="2000" data-aos-once="true">
+                  <p>Kota Tua Jakarta ("Jakarta Old Town"), officially known as Kota Tua, is a neighborhood comprising the original downtown area of Jakarta, Indonesia. It is also known as Oud Batavia (Dutch "Old Batavia"), Benedenstad (Dutch "Lower City", contrasting it with Weltevreden, de Bovenstad ("Upper City")), or Kota Lama (Indonesian "Old Town").
+                    The site contains Dutch-style structures mostly dated from 17th century, when the port city served as the Asian headquarter of VOC during the heyday of spice trade. It spans 1.3 square kilometres within North Jakarta and West Jakarta (Kelurahan Pinangsia, Taman Sari and Kelurahan Roa Malaka, Tambora). The largely Chinese downtown area of Glodok is a part of Kota Tua.
+                    
+                  </p>
+                  <a class="btn btn-outline-light" href="#"  data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+                  <a class="btn btn-outline-light" href="https://goo.gl/maps/fUZiXBrSHhXnRH8u9">See on map</a>
+                  </div>
+            </div>
+        </div>
+
+            <!----fifth------>
+        <div class="jumbotron jumbotron-fluid">
+            <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Lubang Buaya</h1>
+            <div class="container">
+                <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                      <p>Lubang Buaya (literally "crocodile's pit") is the suburb on the South East part of Jakarta which is also the site of the murder of seven Indonesian army officers during the 1 October coup attempt of the 30 September Movement . It is located on the outskirts of Jakarta near the Halim Perdanakusuma Air Force Base. On 31 May 1965, President Sukarno called for the establishment of a "fifth force", in addition to the three existing armed forces (Army, Navy and Air Force) and the police, to be made up of workers and peasants. This attracted strong opposition from Army commander Ahmad Yani  but soon training commenced at the swampy region near Halim called Lubang Buaya. It was under the control of Major Sujono, commander of the Halim base ground defense. Among the participants were members of the PKI-affiliated youth group Pemuda Rakyat .
+                      </p>
+                      <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+                      <a class="btn btn-outline-light" href="https://goo.gl/maps/xLufvEPjZEx2r2Sd8">See on map</a>
+                  </div>
+                  <div class="right-half" style="background-image: url(https://res.cloudinary.com/wegowordpress/image/upload/v1474743513/Monumen-Kesaktian-Pancasila-1-1-624x7291-1_jfc1de.jpg);" data-aos="fade-left" 
+                  data-aos-duration="2000" data-aos-once="true">
+                  </div>
+            </div>
+        </div>
+
+                <!----6------>
+                <div class="jumbotron jumbotron-fluid">
+                  <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Monumen Nasional</h1>
+                  <div class="container">
+                      <div class="left-half1" data-aos="fade-right" style="background-image: url(https://i1.wp.com/www.hisour.com/wp-content/uploads/2017/03/Monumen-Nasional%E2%80%8E-Indonesia.jpg?fit=983%2C640&ssl=1);"
+                      data-aos-duration="2000" data-aos-once="true">
+                        </div>
+                        <div class="right-half1"  data-aos="fade-left" 
+                        data-aos-duration="2000" data-aos-once="true">
+                        <p>The National Monument (Indonesian: Monumen Nasional, abbreviated Monas) is a 132 m (433 ft) obelisk in the centre of Merdeka Square, Central Jakarta, symbolizing the fight for Indonesia. It is the national monument of the Republic of Indonesia, built to commemorate the struggle for Indonesian independence.
+                          Construction began in 1961 under the direction of President Sukarno. Monas was opened to the public in 1975. It is topped by a flame covered with gold foil.
+                          The monument and the museum are open daily from 08.00 until 16.00 Western Indonesia Time (UTC+7) throughout the week except for the Mondays when the monument is closed. Since April 2016, the monument also opens during night time, from 19.00 until 22.00 in Tuesday to Friday, and from 19.00 until 00.00 in Saturday and Sunday.                          
+                        </p>
+                        <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+                        <a class="btn btn-outline-light" href="https://goo.gl/maps/uRzuFtnsEHmxefZv5">See on map</a>
+                        </div>
+                  </div>
+              </div>
+
+          <!------7------->
+        <div class="jumbotron jumbotron-fluid">
+          <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Museum Bahari</h1>
+          <div class="container">
+              <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                    <p>The Maritime Museum (Indonesian: Museum Bahari) is located in the old Sunda Kelapa harbor area in Penjaringan Administrative Village, Penjaringan Subdistrict, Jakarta, Indonesia. The museum was inaugurated inside the former Dutch East India Company warehouses. The museum focuses on the maritime history of Indonesia and the importance of the sea to the economy of present-day Indonesia.
+                      The museum displays models of fishing boats and other maritime objects from different parts of Indonesia. The museum also exhibits the celebrated Pinisi schooners of the Bugis people of South Sulawesi, which at present make up one of the last sea-going sailing fleets in the world.[1] In January 2018, much of the museum was destroyed by a fire.                      
+                    </p>
+                    <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+                    <a class="btn btn-outline-light" href="https://goo.gl/maps/1GvuH9eaBDQWVuQG9">See on map</a>
+                </div>
+                <div class="right-half" style="background-image: url(https://blog.reservasi.com/wp-content/uploads/2018/01/museum-bahari.jpg);" data-aos="fade-left" 
+                data-aos-duration="2000" data-aos-once="true">
+                </div>
+          </div>
+      </div>
+      <!----8------>
+        <div class="jumbotron jumbotron-fluid">
+          <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Museum Satria Mandala</h1>
+          <div class="container">
+            <div class="left-half1" data-aos="fade-right" style="background-image: url(https://jakarta-tourism.go.id/2017/uploads/default/files/museum-satria-mandala.jpg);"
+              data-aos-duration="2000" data-aos-once="true">
+            </div>
+          <div class="right-half1"  data-aos="fade-left" 
+              data-aos-duration="2000" data-aos-once="true">
+            <p>The Satriamandala Museum (also spelled Satria Mandala Museum) is the main museum for the Indonesian Armed Forces. Opened on 5 October 1972, it is located on 5.6 hectares (14 acres) of land in South Jakarta and holds numerous artefacts, weapons, and vehicles.The museum is located on Gatot Soebroto Street in West Kuningan, Mampang, South Jakarta, and sits on 5.6 hectares (14 acres) of land the exhibitions are divided amongst three buildings and the grounds.[4] It is the main military museum in Indonesia. The name Satria Mandala derives from Sanskrit and translates as "a sacred place for the knights". The museum is open to the general public and has archives for persons researching the history of the armed forces.
+            </p>
+            <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+            <a class="btn btn-outline-light" href="https://goo.gl/maps/bRaPsnj5Q5SjE8Fu6">See on map</a>
+          </div>
+          </div>
+        </div>
+         <!------9------->
+         <div class="jumbotron jumbotron-fluid">
+          <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Museum Kebangkitan Nasional</h1>
+          <div class="container">
+              <div class="left-half" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                    <p>Museum Kebangkitan Nasional or "Museum of National Awakening" is a history museum in Jakarta, Indonesia. The museum is dedicated for the history of Indonesian National Awakening. The building of the museum was constructed from 1899 to 1901. In March 1902, the building was officially opened under the name of STOVIA, the colonial medicine school for the Javanese and other native people. Students were obliged to live in the dorm until the completion of the 10 years study. 
+                    </p>
+                    <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+                    <a class="btn btn-outline-light" href="https://goo.gl/maps/4gmqs4dnkaNKBMdg7">See on map</a>
+                </div>
+                <div class="right-half" style="background-image: url(https://cdn-2.tstatic.net/tribunnews/foto/bank/images/museum-kebangkitan-nasional-jakarta_20150624_164930.jpg);" data-aos="fade-left" 
+                data-aos-duration="2000" data-aos-once="true">
+                </div>
+          </div>
+      </div>
+      <!-------10------>
+      <div class="jumbotron jumbotron-fluid">
+        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Tugu Proklamasi</h1>
+        <div class="container">
+          <div class="left-half1" data-aos="fade-right" style="background-image: url(https://cdn2.tstatic.net/tribunnewswiki/foto/bank/images/tugu-proklamasi.jpg);"
+            data-aos-duration="2000" data-aos-once="true">
+          </div>
+        <div class="right-half1"  data-aos="fade-left" 
+            data-aos-duration="2000" data-aos-once="true">
+          <p>Taman Proklamasi (Proclamation Park) is a park complex located in Central Jakarta, Indonesia. The park is located at the former property of Sukarno at what was known as the house at Jalan Pegangsaan Timur 56. The house, now demolished, is where the Proclamation of Indonesian Independence was first read by Sukarno. Taman Proklamasi complex was located at a plot of land where the former residence of Sukarno at Jalan Pegangsaan Timur 56. President Sukarno declared the independence of Indonesia on August 17, 1945 from the front porch of this house. The house then became known as Gedung Proklamasi (Proclamation Building).
+            To mark the first anniversary of the declaration of Indonesian independence, a memorial – in the shape of a small obelisk – was built in 1946 by a group of women if Hajarta. This memorial, known as the Memorial Satoe Tahoen Repoeblik Indonesia (One Year Anniversary of Indonesian Republic Memorial), was built at the front lawn of the Proclamation Building. Later the memorial was renamed Tugu Proklamasi.            
+          </p>
+          <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+          <a class="btn btn-outline-light" href="https://goo.gl/maps/wUU56UKvzCHyA5cd9">See on map</a>
+        </div>
+        </div>
+
+    </div>
+
+  <!--content slider-->
+  <div id="slider-content">
+    <div class="jumbotron-cs jumbotron-fluid" data-aos="fade-up" data-aos-duration="2000"
+    data-aos-anchor-placement="top-bottom" data-aos-once="true">
+      <h1>>>>>>Discover another places</h1>
+      <div class="container-1">
+        <!--slider-->
+        <ul id="autoWidth" class="cs-hidden">
+          <!--1-->
+        <li class="item-a">
+        <!--sldier box-->
+        <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content1_2.jpg);
+        ">
+          <div class="box-1">
+            <a class="link_a" href="jakarta-history-places.html"><p>JAKARTA HISTORY PLACES</p></a>
+          </div>
+        </div>
+        </li>
+        <!--2-->
+        <li class="item-a">
+          <!--sldier box-->
+          <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content2_1.jpg);
+          ">
+            <div class="box-1">
+              <a class="link_b" href="beach-island.html"><p>BEACH & ISLAND</p></a>
+            </div>
+          </div>
+          </li>
+        <!--3-->
+        <li class="item-a">
+          <!--sldier box-->
+          <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content3_3.jpg);
+          ">
+            <div class="box-1">
+              <a class="link_c" href="zoo.html"><p>ZOO & AQUARIUM</p></a>
+            </div>
+          </div>
+          </li>
+          <!--4-->
+          <li class="item-a">
+            <!--sldier box-->
+            <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content4_1.jpg);
+            ">
+              <div class="box-1">
+                <a class="link_d" href="culinary.html"><p>CULINARY</p></a>
+              </div>
+            </div>
+            </li>
+            <!--5-->
+            <li class="item-a">
+              <!--sldier box-->
+              <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content5_3.jpg);
+              ">
+                <div class="box-1">
+                  <a class="link_e" href="amusement-water park.html" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p></a>
+                </div>
+              </div>
+              </li>
+              <!--6-->
+              <li class="item-a">
+                <!--sldier box-->
+                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/garden1.jpg);
+                ">
+                  <div class="box-1">
+                      <a class="link_f" href="lake-garden.html"><p>GARDEN & LAKE</p></a>
+                    </div>
+                  </div>
+                  </li>    
+          </ul>
+      </div>
+    </div>
+  </div>
+  <!-----footer--------->
+  <footer>
+    <div class="footer-top mt-3">
+      <div class="containerft">
+        <div class="col-md-12" style="margin-left: 400px;">
+          <div class="btn btn-warning">
+              <a href="#" class="scroll-top" style="color: white; font-size: 17px; font-family:'Oswald',sans-serif;">Back To Top</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 segment-one">
+            <h2>CONTACT US</h2>
+            <ul>
+           <li><i class="fas fa-phone-square-alt"></i> : 08111222333 / Angellina</li>
+           <span class="ml-3"> : 08867564657 / Yongky</span> <br>
+           <span class="ml-3"> : 08646836491 / Cordellya</span> <br>
+           <span class="ml-3"> : 08967821410 / Vanesa</span> <br>
+           <span class="ml-3"> : 08285301962 / Nicholas</span>
+           <li><i class="fas fa-envelope"></i> : jelajahjakarta@gmail.com</li>
+          </ul>
+          </div>
+          <div class="col-md-4 segment-two">
+            <h2>FOLLOW US ON</h2>
+            <ul>
+           <li><i class="fab fa-instagram-square"></i><a class="link"  href="#"> : jelajahjakarta</a></li>
+           <li><i class="fab fa-facebook-square"></i><a class="link" href="#"> : jelajahjakarta</a></li>
+           <li><i class="fab fa-twitter-square"></i><a  class="link" href="#"> : jelajahjakarta</a></li>
+           <li><i class="fab fa-youtube"></i><a class="link" href="#"> : jelajahjakarta</a></li>
+          </ul>
+
+          </div>
+          <div class="col-md-4 segment-three">
+            <h2>OTHERS</h2>
+            <ul>
+           <li><i class="fas fa-question-circle" ></i> <a class="link" href="#"> About</a></li>
+           <li><i class="fas fa-home"></i> <a class="link" href="#carouselExampleIndicators"> Home</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--end of footer-->
+
+
+  <!-------modal buy ticket------>
+<!-- Modal -->
+<div class="modal fade" id="book_ticket" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modl">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Booking Ticket</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputDate">date</label>
+            <input type="date" class="form-control select-date" id="bookingdate">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputCount">How many ticket?</label>
+            <input type="number" class="form-control" id="countticket" value="0">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-warning">Book now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
