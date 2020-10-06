@@ -335,11 +335,10 @@ body {
     background-color: rgb(21, 52, 117);
     height: 50vh;
 }
-
-.link {
+.link, .link1, .link2, .link3, .link4 {
     color: white;
 }
-.link:hover{
+.link:hover, .link1:hover, .link2:hover, .link3:hover, .link4:hover{
     background-color: white;
     color: black;
 }

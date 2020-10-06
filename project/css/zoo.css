@@ -226,10 +226,10 @@ body {
     height: 50vh;
 }
 
-.link {
+.link,.link1, .link2, .link3, .link4 {
     color: white;
 }
-.link:hover{
+.link:hover, .link1:hover, .link2:hover, .link3:hover, .link4:hover{
     background-color: white;
     color: black;
 }
@@ -354,6 +354,9 @@ body {
     padding: 1rem;
     background-image: none !important;
   }
+.col-md-12{
+    margin-left: 200px !important;
+}
 
 }
 
@@ -367,6 +370,5 @@ body {
         margin-top: 200px;
 
     }
-
 }
 
