@@ -31,7 +31,6 @@
         <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.css" rel="stylesheet"/>
         <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.js"></script>
-    
 </head>
 <body data-spy="Scroll" data-target="#navbarResponsive">
     <!---NAVBAR-->
@@ -198,8 +197,8 @@
               <th scope="col">Name</th>
               <th scope="col">Place</th>
               <th scope="col">Date</th>
-              <th scope="col">Price</th>
               <th scope="col">Status</th>
+              <th scope="col">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -208,40 +207,85 @@
               <td>Cordellya</td>
               <td>Ancol</td>
               <td>1-DEC-2020</td>
-              <td>Rp 60.000</td>
-              <td><span class="badge badge-success">Booked</span></td>
+              <td><span class="badge badge-success" id="book1">Booked</span></td>
+              <td><button onclick="cancelB()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book1").innerHTML = "Cancelled";
+                    document.getElementById("book1").style.backgroundColor = "red";
+                  }
+                }
+                </script>
             </tr>
             <tr>
               <th scope="row">55071</th>
               <td>Angelina</td>
               <td>TMII</td>
               <td>1-JAN-2021</td>
-              <td>Rp 100.000</td>
-              <td><span class="badge badge-primary">Confirmed</span></td>
+              <td><span class="badge badge-success" id="book2">Booked</span></td>
+              <td><button onclick="cancelB1()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB1() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book2").innerHTML = "Cancelled";
+                    document.getElementById("book2").style.backgroundColor = "red";
+                  }
+                }
+                </script>
             </tr>
             <tr>
               <th scope="row">61294</th>
               <td>Yongky</td>
               <td>Ranggunan Zoo</td>
               <td>22-FEB-2020</td>
-              <td>Rp 0</td>
-              <td><span class="badge badge-danger">Cancelled</span></td>
+              <td><span class="badge badge-success" id="book3">Booked</span></td>
+              <td><button onclick="cancelB2()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB2() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book3").innerHTML = "Cancelled";
+                    document.getElementById("book3").style.backgroundColor = "red";
+                  }
+                }
+                </script>
             </tr>
             <tr>
               <th scope="row">19583</th>
               <td>Nicholas</td>
               <td>Kota Tua</td>
               <td>19-DEC-2020</td>
-              <td>Rp 40.000</td>
-              <td><span class="badge badge-success">Booked</span></td>
+              <td><span class="badge badge-success" id="book4">Booked</span></td>
+              <td><button onclick="cancelB3()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB3() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book4").innerHTML = "Cancelled";
+                    document.getElementById("book4").style.backgroundColor = "red";
+                  }
+                }
+                </script>
             </tr>
             <tr>
               <th scope="row">59632</th>
               <td>Vanesa</td>
               <td>Jakarta Aquarium</td>
               <td>22-MAR-2021</td>
-              <td>Rp 150.000</td>
-              <td><span class="badge badge-primary">Confirmed</span></td>
+              <td><span class="badge badge-success" id="book5">Booked</span></td>
+              <td><button onclick="cancelB4()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB4() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book5").innerHTML = "Cancelled";
+                    document.getElementById("book5").style.backgroundColor = "red";
+                  }
+                }
+                </script>
             </tr>
           </tbody>
         </table>
@@ -330,7 +374,7 @@
                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" >
                      View More 
                     </a>
-                    <a class="btn btn-success">Buy Ticket</a>
+                    <a class="btn btn-success" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
                     </p>
                   <div class="collapse" id="collapseExample">
                     <div class="card card-body">
@@ -358,7 +402,7 @@
                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" >
                       View More 
                      </a>
-                     <a class="btn btn-success">Buy Ticket</a>
+                     <a class="btn btn-success"data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
                      </p>
                    <div class="collapse" id="collapseExample1">
                      <div class="card card-body">
@@ -385,7 +429,7 @@
                         <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" >
                           View More 
                          </a>
-                         <a class="btn btn-success">Buy Ticket</a>
+                         <a class="btn btn-success"data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
                          </p>
                        <div class="collapse" id="collapseExample2">
                          <div class="card card-body">
@@ -418,7 +462,7 @@
                 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
                   View More
                 </a>
-                <a class="btn btn-success">Buy Ticket</a>
+                <a class="btn btn-success"data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
                 <p>
                   
                 </p>
@@ -446,7 +490,7 @@
                     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
                       View More
                     </a>
-                    <a class="btn btn-success">Buy Ticket</a>
+                    <a class="btn btn-success"data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
                     <p>
                       
                     </p>
@@ -474,7 +518,7 @@
                       <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
                         View More
                       </a>
-                      <a class="btn btn-success">Buy Ticket</a>
+                      <a class="btn btn-success"data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
                       <p>
                         
                       </p>
@@ -652,6 +696,46 @@
       </div>
     </footer>
     <!--end of footer-->
+
+<!-------modal buy ticket------>
+<!-- Modal -->
+<div class="modal fade" id="book_ticket" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modl">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Booking Ticket</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputDate">date</label>
+            <input type="date" class="form-control select-date" id="bookingdate">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputCount">How many ticket?</label>
+            <input type="number" class="form-control" id="countticket" value="0">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-warning">Book now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

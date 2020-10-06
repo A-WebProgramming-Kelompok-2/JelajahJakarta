@@ -66,30 +66,12 @@
                 <a class="dropdown-item" href="#staticBackdrop" data-toggle="modal" data-target="#register">Register</a>
               </div>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link
-               dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Place to go
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="zoo.html">Zoo & Aquarium</a>
-                <a class="dropdown-item" href="beach-island.html" >Beach & Island</a>
-                <a class="dropdown-item" href="jakarta-history-places.html" >Jakarta History Places</a>
-                <a class="dropdown-item" href="amusement-water park.html"  >Amusement Park & Water Park</a>
-                <a class="dropdown-item" href="culinary.html" >Culinary</a>
-                <a class="dropdown-item" href="lake-garden.html" >Garden & Lake</a>
-              </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link
-             dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plan your trip
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="tips.html">Tips</a>
-              <a class="dropdown-item" href="experience.html">Experience</a>
-            </div>
-        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#slider-content">Places to go</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tipsexp">Plan your trip</a>
+            </li>
 
           </ul>
           <!--search bar-->
@@ -222,8 +204,8 @@
             <th scope="col">Name</th>
             <th scope="col">Place</th>
             <th scope="col">Date</th>
-            <th scope="col">Price</th>
             <th scope="col">Status</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -232,40 +214,85 @@
             <td>Cordellya</td>
             <td>Ancol</td>
             <td>1-DEC-2020</td>
-            <td>Rp 60.000</td>
-            <td><span class="badge badge-success">Booked</span></td>
+            <td><span class="badge badge-success" id="book1">Booked</span></td>
+            <td><button onclick="cancelB()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book1").innerHTML = "Cancelled";
+                  document.getElementById("book1").style.backgroundColor = "red";
+                }
+              }
+              </script>
           </tr>
           <tr>
             <th scope="row">55071</th>
             <td>Angelina</td>
             <td>TMII</td>
             <td>1-JAN-2021</td>
-            <td>Rp 100.000</td>
-            <td><span class="badge badge-primary">Confirmed</span></td>
+            <td><span class="badge badge-success" id="book2">Booked</span></td>
+            <td><button onclick="cancelB1()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB1() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book2").innerHTML = "Cancelled";
+                  document.getElementById("book2").style.backgroundColor = "red";
+                }
+              }
+              </script>
           </tr>
           <tr>
             <th scope="row">61294</th>
             <td>Yongky</td>
             <td>Ranggunan Zoo</td>
             <td>22-FEB-2020</td>
-            <td>Rp 0</td>
-            <td><span class="badge badge-danger">Cancelled</span></td>
+            <td><span class="badge badge-success" id="book3">Booked</span></td>
+            <td><button onclick="cancelB2()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB2() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book3").innerHTML = "Cancelled";
+                  document.getElementById("book3").style.backgroundColor = "red";
+                }
+              }
+              </script>
           </tr>
           <tr>
             <th scope="row">19583</th>
             <td>Nicholas</td>
             <td>Kota Tua</td>
             <td>19-DEC-2020</td>
-            <td>Rp 40.000</td>
-            <td><span class="badge badge-success">Booked</span></td>
+            <td><span class="badge badge-success" id="book4">Booked</span></td>
+            <td><button onclick="cancelB3()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB3() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book4").innerHTML = "Cancelled";
+                  document.getElementById("book4").style.backgroundColor = "red";
+                }
+              }
+              </script>
           </tr>
           <tr>
             <th scope="row">59632</th>
             <td>Vanesa</td>
             <td>Jakarta Aquarium</td>
             <td>22-MAR-2021</td>
-            <td>Rp 150.000</td>
-            <td><span class="badge badge-primary">Confirmed</span></td>
+            <td><span class="badge badge-success" id="book5">Booked</span></td>
+            <td><button onclick="cancelB4()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+            <script>
+              function cancelB4() {
+                var r = confirm("Are you sure to cancel your booking");
+                if (r == true) {
+                  document.getElementById("book5").innerHTML = "Cancelled";
+                  document.getElementById("book5").style.backgroundColor = "red";
+                }
+              }
+              </script>
           </tr>
         </tbody>
       </table>

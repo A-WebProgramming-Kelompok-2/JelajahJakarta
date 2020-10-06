@@ -493,3 +493,10 @@ body {
     position: absolute;
     width: 1px;
   }
+
+  /*-----modal buy ticket-----*/
+.modl{
+    background-color: rgb(46, 45, 45) !important;
+    color: white;
+    opacity: 95%;
+  }
