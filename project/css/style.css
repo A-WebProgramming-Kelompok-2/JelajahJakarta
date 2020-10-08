@@ -248,47 +248,6 @@ body {
 	transition: all ease 0.3s;
 }
 
-/*-----buy ticket box------*/
-
-
-.buy_t{
-    margin-top: 30px;
-    background-size: cover;
-    height: 100vh;
-}
-.b_t{
-    text-align: center;
-    position: relative;
-    margin-top: 170px;
-    margin-left: 110px !important;
-}
-
-.b_t span{
-    color: white;
-    display: block;
-}
-
-.text_1{
-    font-size: 45px;
-    background: rgb(255, 216, 41);
-    position: relative;
-    font-family: 'Oswald',sans-serif;
-}
-.lead{
-    font-family: 'josefin',serif;
-    font-size: 30px;
-}
-
-.headingbt{
-    padding: 10px;
-}
-.headingbt .btn{
-    font-family: 'Oswald', sans-serif;
-    width: 8rem !important;
-    letter-spacing: 0.06rem;
-    padding: 10px;
-    position: relative;
-}
 
 /*-----tips and experience box-----*/
 
@@ -376,11 +335,10 @@ body {
     background-color: rgb(21, 52, 117);
     height: 50vh;
 }
-
-.link {
+.link, .link1, .link2, .link3, .link4 {
     color: white;
 }
-.link:hover{
+.link:hover, .link1:hover, .link2:hover, .link3:hover, .link4:hover{
     background-color: white;
     color: black;
 }
@@ -481,3 +439,64 @@ body {
     }
 
 }
+
+
+.ui-autocomplete {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+  }
+  
+  .ui-autocomplete > li > div {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333333;
+    white-space: nowrap;
+    margin-top: 10px;
+  }
+  
+  .ui-state-hover,
+  .ui-state-active,
+  .ui-state-focus {
+    text-decoration: none;
+    color: #262626;
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .ui-helper-hidden-accessible {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  /*-----modal buy ticket-----*/
+.modl{
+    background-color: rgb(46, 45, 45) !important;
+    color: white;
+    opacity: 95%;
+  }
