@@ -139,7 +139,7 @@
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1">Email or username</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
@@ -170,6 +170,14 @@
           <div class="modal-body">
             <form 
             oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+            <div class="form-group">
+              <label for="exampleInputname1" >Name</label>
+              <input type="text" class="form-control" id="name"required name=un>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputname1" >Username</label>
+              <input type="text" class="form-control" id="username"required name=un>
+            </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
@@ -348,16 +356,55 @@
   </div>
 <!---------end of image slider-------->
 
-<!------ISI------->
-<div id="isi">
-    <div class="jumbotron-tl jumbotron-fluid">
-        <div class="container">
-          <h1>AMUSEMENT PARK</h1>
-        </div>
+<!-------ISI------>
+<!-- Tabs navs -->
+<ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist" style="margin-top: 10px">
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link active"
+      id="ex3-tab-1"
+      data-toggle="tab"
+      href="#ex3-tabs-1"
+      role="tab"
+      aria-controls="ex3-tabs-1"
+      aria-selected="true"
+      style="background-color: rgb(241, 168, 103); color: white;  font-family: 'Courier Prime', monospace;"
+      >AMUSEMENT PARK</a
+    >
+
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link"
+      id="ex3-tab-3"
+      data-toggle="tab"
+      href="#ex3-tabs-3"
+      role="tab"
+      aria-controls="ex3-tabs-3"
+      aria-selected="false"
+      style="background-color: rgb(82, 142, 253); color: white; font-family: 'Courier Prime', monospace;"
+      >WATER PARK</a
+    >
+  </li>
+</ul>
+<!-- Tabs navs -->
+
+<!-- Tabs content -->
+<div class="tab-content" id="ex2-content">
+  <!-----AMUSEMENT PARK CONTENT-->
+  <div
+    class="tab-pane fade show active"
+    id="ex3-tabs-1"
+    role="tabpanel"
+    aria-labelledby="ex3-tab-1"
+  >
+  <div class="jumbotron-tl jumbotron-fluid">
+    <div class="container">
+      <h1>AMUSEMENT PARK</h1>
     </div>
-    <!------1------->
-    <div class="jumbotron jumbotron-fluid">
-        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Dufan ( Dunia Fantasi )</h1>
+</div>
+<!-------1-------->
+      <div class="jumbotron jumbotron-fluid">
+        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>> Dufan ( Dunia Fantasi )</h1>
         <div class="container">
             <div class="row1" style="background-image: url(img/dufan_3.jpg);"
             data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
@@ -371,7 +418,7 @@
     </div>
     <!------2------->
     <div class="jumbotron jumbotron-fluid">
-      <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>TMII (Taman Mini Indonesia Indah)</h1>
+      <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>> TMII (Taman Mini Indonesia Indah)</h1>
       <div class="container">
           <div class="row1" style="background-image: url(img/tmii.jpg);"
           data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"></div>
@@ -385,7 +432,7 @@
   </div>
     <!------3------->
     <div class="jumbotron jumbotron-fluid">
-      <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Kidzania</h1>
+      <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>> Kidzania</h1>
       <div class="container">
           <div class="row1" style="background-image: url(https://cakrawalatour.com/wp-content/uploads/2020/01/KidZania-Pacific-Place.jpg);"
           data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
@@ -397,6 +444,14 @@
           </div>
       </div>
   </div>
+  </div>
+<!-----WATER PARK CONTENT-->
+  <div
+    class="tab-pane fade"
+    id="ex3-tabs-3"
+    role="tabpanel"
+    aria-labelledby="ex3-tab-3"
+  >
 
 <!--------------water park------------->
     <div class="jumbotron-tl jumbotron-fluid">
@@ -404,76 +459,85 @@
           <h1>WATER PARK</h1>
         </div>
     </div>
-    <!-------1-------->
-    <div class="jumbotron jumbotron-fluid">
-        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Atlantis Water Adventure Ancol</h1>
-        <div class="container">
-            <div class="row1" style="background-image: url(img/atlantis_1.png);"
-            data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"></div>
-            <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                <p>Atlantis Water Adventure (AWA) is the second theme park developed by Ancol and stands on an area of ​​5 hectares. AWA is the result of the revitalization of the Ancol Swimming Pool Water Recreation Park which will provide visitors with water tourism adventures with 8 main pools, namely: Poseidon, Antila, Plaza Atlas, Aquarius, Octopus, Atlantean, and Kiddy Pool.
-                </p>
-                <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
-                <a class="btn btn-outline-light" href="https://g.page/atlantiswateradventures?share">See on map</a>
-            </div>
+<!-------1-------->
+<div class="jumbotron jumbotron-fluid">
+    <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>> Atlantis Water Adventure Ancol</h1>
+    <div class="container">
+        <div class="row1" style="background-image: url(img/atlantis_1.png);"
+        data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"></div>
+        <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+            <p>Atlantis Water Adventure (AWA) is the second theme park developed by Ancol and stands on an area of ​​5 hectares. AWA is the result of the revitalization of the Ancol Swimming Pool Water Recreation Park which will provide visitors with water tourism adventures with 8 main pools, namely: Poseidon, Antila, Plaza Atlas, Aquarius, Octopus, Atlantean, and Kiddy Pool.
+            </p>
+            <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+            <a class="btn btn-outline-light" href="https://g.page/atlantiswateradventures?share">See on map</a>
         </div>
     </div>
-    <!-------2-------->
-    <div class="jumbotron jumbotron-fluid">
-        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>WaterBom Jakarta</h1>
-        <div class="container">
-            <div class="row1" style="background-image: url(img/waterboom1.jpg);"
-            data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
-            <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-                <p>Waterbom Jakarta is a family recreation center that focuses on outdoor activities and water activities. Waterbom PIK has been operating since 27 October 2007 with the concept of returning to nature, equipped with tall tropical trees, green and lush shrubs with a beautiful garden setting. Combined with modern and minimalist building architecture, Waterbom PIK takes the theme  Urban Cool .
-                </p>
-                <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
-                <a class="btn btn-outline-light" href="https://goo.gl/maps/TTvgjZ6F5EYUfes27">See on map</a>
-            </div>
+</div>
+<!-------2-------->
+<div class="jumbotron jumbotron-fluid">
+    <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>> WaterBom Jakarta</h1>
+    <div class="container">
+        <div class="row1" style="background-image: url(img/waterboom1.jpg);"
+        data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+        <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+            <p>Waterbom Jakarta is a family recreation center that focuses on outdoor activities and water activities. Waterbom PIK has been operating since 27 October 2007 with the concept of returning to nature, equipped with tall tropical trees, green and lush shrubs with a beautiful garden setting. Combined with modern and minimalist building architecture, Waterbom PIK takes the theme  Urban Cool .
+            </p>
+            <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+            <a class="btn btn-outline-light" href="https://goo.gl/maps/TTvgjZ6F5EYUfes27">See on map</a>
         </div>
     </div>
-     <!-------3-------->
-    <div class="jumbotron jumbotron-fluid">
-      <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Snowbay</h1>
-      <div class="container">
-          <div class="row1" style="background-image: url(https://www.jalanjalanyuk.com/wp-content/uploads/2012/05/Snowbay.jpg);"
-          data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"></div>
-          <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-              <p>Snowbay is a Waterpark specifically designed as a world-class adventure recreation park, located in the Taman Mini Indonesia Indah Complex, with a mountain concept that provides a comfortable and pleasant atmosphere so that it can become a favorite tourist  for families.
-              </p>
-              <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
-              <a class="btn btn-outline-light" href="https://goo.gl/maps/hEZCVdrwbpmUuxtG7">See on map</a>
-          </div>
+</div>
+ <!-------3-------->
+<div class="jumbotron jumbotron-fluid">
+  <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>> Snowbay</h1>
+  <div class="container">
+      <div class="row1" style="background-image: url(https://www.jalanjalanyuk.com/wp-content/uploads/2012/05/Snowbay.jpg);"
+      data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"></div>
+      <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+          <p>Snowbay is a Waterpark specifically designed as a world-class adventure recreation park, located in the Taman Mini Indonesia Indah Complex, with a mountain concept that provides a comfortable and pleasant atmosphere so that it can become a favorite tourist  for families.
+          </p>
+          <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+          <a class="btn btn-outline-light" href="https://goo.gl/maps/hEZCVdrwbpmUuxtG7">See on map</a>
       </div>
   </div>
-     <!-------4-------->
-     <div class="jumbotron jumbotron-fluid">
-      <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Palm Bay Waterpark</h1>
-      <div class="container">
-          <div class="row1" style="background-image: url(https://ngetripkemana.com/wp-content/uploads/2019/12/Palm-Bay-Waterpark-ramai.jpg);"
-          data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
-          <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-              <p>Palm bayis a Waterpark specifically designed as a world-class adventure recreation park, located in kalideres Complex, with a mountain concept that provides a comfortable and pleasant atmosphere so that it can become a favorite tourist for families.
-              </p>
-              <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
-              <a class="btn btn-outline-light" href="https://goo.gl/maps/TnPBwDSiBoqt4TzW8">See on map</a>
-          </div>
+</div>
+ <!-------4-------->
+ <div class="jumbotron jumbotron-fluid">
+  <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>> Palm Bay Waterpark</h1>
+  <div class="container">
+      <div class="row1" style="background-image: url(https://ngetripkemana.com/wp-content/uploads/2019/12/Palm-Bay-Waterpark-ramai.jpg);"
+      data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+      <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+          <p>Palm bayis a Waterpark specifically designed as a world-class adventure recreation park, located in kalideres Complex, with a mountain concept that provides a comfortable and pleasant atmosphere so that it can become a favorite tourist for families.
+          </p>
+          <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+          <a class="btn btn-outline-light" href="https://goo.gl/maps/TnPBwDSiBoqt4TzW8">See on map</a>
       </div>
   </div>
-     <!-------4-------->
-     <div class="jumbotron jumbotron-fluid">
-      <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Pondok Indah Waterpark</h1>
-      <div class="container">
-          <div class="row1" style="background-image: url(https://www.pondokindahmall.co.id/assets/img/news/1544064452_248_0_IMG_3444e.jpg);"
-          data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"></div>
-          <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+</div>
+ <!-------4-------->
+ <div class="jumbotron jumbotron-fluid">
+  <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>> Pondok Indah Waterpark</h1>
+  <div class="container">
+      <div class="row1" style="background-image: url(https://www.pondokindahmall.co.id/assets/img/news/1544064452_248_0_IMG_3444e.jpg);"
+      data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"></div>
+      <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+          <p>Pondok indah waterpark located at pondok indah mall. Pondok Indah Water Park, which was officially soft opened on February 3rd 2014, is ready for you to create your personal out-of-the-world surfing experience! For thrill-lovers out there, we encourage you to try out our new FlowRider and delight in the comfort of the first surf machines in Indonesia with cushioned surface. The adrenaline rush you get from the FlowRider is in no way inferior to that when you surf at the beach! The FlowRider, with double engines will fulfil your adventurous streak. 
               <p>Pondok indah waterpark located at pondok indah mall. Pondok Indah Water Park, which was officially soft opened on February 3rd 2014, is ready for you to create your personal out-of-the-world surfing experience! For thrill-lovers out there, we encourage you to try out our new FlowRider and delight in the comfort of the first surf machines in Indonesia with cushioned surface. The adrenaline rush you get from the FlowRider is in no way inferior to that when you surf at the beach! The FlowRider, with double engines will fulfil your adventurous streak. 
-              </p>
-              <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
-              <a class="btn btn-outline-light" href="https://goo.gl/maps/9YP889ZbKPUC8XudA">See on map</a>
-          </div>
+          <p>Pondok indah waterpark located at pondok indah mall. Pondok Indah Water Park, which was officially soft opened on February 3rd 2014, is ready for you to create your personal out-of-the-world surfing experience! For thrill-lovers out there, we encourage you to try out our new FlowRider and delight in the comfort of the first surf machines in Indonesia with cushioned surface. The adrenaline rush you get from the FlowRider is in no way inferior to that when you surf at the beach! The FlowRider, with double engines will fulfil your adventurous streak. 
+          </p>
+          <a class="btn btn-outline-light" href="#" data-toggle="modal" data-target="#book_ticket">Buy Ticket</a>
+          <a class="btn btn-outline-light" href="https://goo.gl/maps/9YP889ZbKPUC8XudA">See on map</a>
       </div>
   </div>
+</div>
+  </div>
+</div>
+<!-- Tabs content -->
+
+  
+
+
 
   <!-------modal buy ticket------>
 <!-- Modal -->

@@ -57,6 +57,29 @@ body {
     background-color: transparent !important;
     color: turquoise !important;
 }
+/*-- MODAL LOGIN/SIGN UP --*/
+.modal-dialog{
+    width: 100% !important;
+}
+.alert
+{
+    display: none;
+}
+
+.requirements
+{
+    list-style-type: none;
+}
+
+.wrong .fa-check
+{
+    display: none;
+}
+
+.good .fa-times
+{
+    display: none;
+}
 
 /*--- slider --*/
 

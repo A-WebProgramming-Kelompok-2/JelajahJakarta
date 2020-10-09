@@ -6,7 +6,7 @@
     <title>Zoo-Aquarium</title>
        <!--css-->
     <link rel="stylesheet" type="text/css" href="css/zoo.css">
-    <link rel="stylesheet" type="text/javascript" href="script.js">
+    <link rel="stylesheet" type="text/javascript" href="script/script.js">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--js bootstrap-->
@@ -138,7 +138,7 @@
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
+                <label for="exampleInputEmail1">Email or username</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
@@ -156,47 +156,55 @@
     </div>
     <!-- end of modal log in-->
 
-    <!--modal register-->
-    <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+  <!--modal register-->
+  <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Register Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form 
+          oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+          <div class="form-group">
+            <label for="exampleInputname1" >Name</label>
+            <input type="text" class="form-control" id="name"required name=un>
           </div>
-          <div class="modal-body">
-            <form 
-            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1" >Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
-              </div>
-              <div class="alert alert-warning password-alert" role="alert">
-                <ul>
-                  <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
-                  <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
-                  <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
-                </ul>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Reenter Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
-              </div>
-              <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Register</button>
-              </div>
-            </form>
+          <div class="form-group">
+            <label for="exampleInputname1" >Username</label>
+            <input type="text" class="form-control" id="username"required name=un>
           </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1" >Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+            </div>
+            <div class="alert alert-warning password-alert" role="alert">
+              <ul>
+                <li class="requirements leng"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 8 chars.</li>
+                <li class="requirements big-letter"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 uppercase letter.</li>
+                <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
+              </ul>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Reenter Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+  </div>
 <!--end of modal register-->
 
 <!--modal my booking list-->
