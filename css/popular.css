@@ -2,7 +2,7 @@
     text-align: center;
     object-fit: cover;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 iframe {
     height:80vh;
@@ -10,7 +10,6 @@ iframe {
 }
 .jumbotron-ys {
     
-    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
     background-color:  rgb(254, 255, 212);
