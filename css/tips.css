@@ -276,3 +276,43 @@ color:  #00060a;
   text-decoration: none;
 }
 /***end of popup about jj***/
+
+@media(max-width: 970px){
+  .vertical-center {
+    display: inline-block !important;
+    justify-content: center;
+    align-items: center;
+}
+ .half-width{
+   width: 100%;
+ }
+ .padding-40 {
+  padding-top: 50px;
+}
+.margin-right-2percent {
+  margin-bottom: 2%;
+}
+.margin-left-2percent {
+  margin-top: 2%;
+}
+.margin-top-40 {
+  margin-top: 5px !important;
+}
+.padding-40 p {
+  font-size: 16px;
+}
+}
+
+@media(max-width: 700px){
+
+  .padding-40 p {
+    font-size: 14px !important;
+  }
+  .padding-40 {
+    padding-top: 40px !important;
+  }
+  .button1{
+    width: 80%;
+  }
+}
+  

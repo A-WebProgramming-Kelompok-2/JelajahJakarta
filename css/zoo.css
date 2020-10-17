@@ -346,20 +346,22 @@ body {
   /*--- media queries --*/
 @media(max-width: 1000px){
 
+    .isi{
+        display: inline-block;
+    }
     .carousel-caption h1{
         font-size: 2rem;
         letter-spacing: .15rem;
         padding-bottom: .5rem;
     }
-    .right-half{
-        flex: 0;
-        padding: 1rem;
-        background-image: none !important;
-    }
-      
-  .left-half{
-    flex: 2;
-  }
+    .right-half {
+        padding: 12rem;
+
+      }
+      .left-half1 {
+        padding: 12rem;
+      }
+    
   .left-half .btn{
       margin-left: auto;
   }
@@ -371,11 +373,6 @@ body {
     margin: auto;
 }
 
-.left-half1 {
-    flex: 0;
-    padding: 1rem;
-    background-image: none !important;
-  }
 .col-md-12{
     margin-left: 200px !important;
 }

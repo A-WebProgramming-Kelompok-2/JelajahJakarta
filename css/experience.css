@@ -277,3 +277,39 @@ color:  #00060a;
   text-decoration: none;
 }
 /***end of popup about jj***/
+
+
+@media(max-width: 900px){
+
+  .p-20{
+    max-width: 100% !important;
+  }
+  .p-20 img{
+    width: 60px !important;
+  }
+  .name-line{
+    width: 500px !important;
+  }
+  .name-line0{
+    width: 500px !important;
+  }
+  .form-exp{
+    width: auto !important;
+  }
+}
+  
+@media(max-width: 700px){
+  .button1{
+    width: 80%;
+    height: 125px;
+  }
+  .form-exp{
+    width: auto !important;
+  }
+  .name-line{
+    width: 250px !important;
+  }
+  .name-line0{
+    width:250px !important;
+  }
+}
