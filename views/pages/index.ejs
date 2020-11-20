@@ -32,19 +32,9 @@
         <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
         <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
 
-        <script>
-          $(function () {
-            $('#navbarhome').load('navbarhome.html');
-            $('#footer').load('footer.html');
-          })
-        </script>
-
-        
+    <%- include('../layouts/navbarhome.ejs'); %>
 </head>
 <body data-spy="Scroll" data-target="#navbarResponsive">
-
-   <!----NAVBAR-->
-  <div id="navbarhome"></div>
 
     <!--image slider-->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
@@ -291,7 +281,7 @@
       <!--second jumbotron-->
       <div class="text-center">
         <div class="jumbotron-1 jumbotron-fluid" >
-          <h2 class="heading1"><a class="btn btn-outline-light" href="popular.html">See More</a></h2>
+          <h2 class="heading1"><a class="btn btn-outline-light" href="/popular">See More</a></h2>
           <div class="heading-underline"></div>
         </div>
       </div> 
@@ -313,7 +303,7 @@
         <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content1_2.jpg);
         ">
           <div class="box-1">
-            <a class="link_a" href="jakarta-history-places.html"><p>JAKARTA HISTORY PLACES</p></a>
+            <a class="link_a" href="/jakarta-history-places"><p>JAKARTA HISTORY PLACES</p></a>
           </div>
         </div>
         </li>
@@ -323,7 +313,7 @@
           <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content2_1.jpg);
           ">
             <div class="box-1">
-              <a class="link_b" href="beach-island.html"><p>BEACH & ISLAND</p></a>
+              <a class="link_b" href="/beach-island"><p>BEACH & ISLAND</p></a>
             </div>
           </div>
           </li>
@@ -333,7 +323,7 @@
           <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content3_3.jpg);
           ">
             <div class="box-1">
-              <a class="link_c" href="zoo.html"><p>ZOO & AQUARIUM</p></a>
+              <a class="link_c" href="/zoo"><p>ZOO & AQUARIUM</p></a>
             </div>
           </div>
           </li>
@@ -343,7 +333,7 @@
             <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content4_1.jpg);
             ">
               <div class="box-1">
-                <a class="link_d" href="culinary.html"><p>CULINARY</p></a>
+                <a class="link_d" href="/culinary"><p>CULINARY</p></a>
               </div>
             </div>
             </li>
@@ -353,7 +343,7 @@
               <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content5_3.jpg);
               ">
                 <div class="box-1">
-                  <a class="link_e" href="amusement-water park.html" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p></a>
+                  <a class="link_e" href="/amusement-water park" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p></a>
                 </div>
               </div>
               </li>
@@ -363,7 +353,7 @@
                 <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/garden1.jpg);
                 ">
                   <div class="box-1">
-                    <a class="link_f" href="lake-garden.html"><p>GARDEN & LAKE</p></a>
+                    <a class="link_f" href="/lake-garden"><p>GARDEN & LAKE</p></a>
                   </div>
                 </div>
                 </li>    
@@ -382,7 +372,7 @@
           <div class="boxt" data-aos="fade-right"
             data-aos-offset="300" data-aos-duration="1000" data-aos-once="true"
             data-aos-easing="ease-in-sine">
-            <a class="link_te" href="tips.html">  
+            <a class="link_te" href="/tips">  
               <div class="contain"> 
                   <h2>TIPS</h2>
                   <h5>
@@ -393,7 +383,7 @@
             <div class="boxe" data-aos="fade-left"
             data-aos-offset="150" data-aos-duration="1000" data-aos-once="true"
             data-aos-easing="ease-in-sine">
-            <a class="link_te1" href="experience.html">    
+            <a class="link_te1" href="/experience">    
               <div class="contain-1">
                   <h2>EXPERIENCE</h2>
                   <h5>Let JelajahJakarta walk you through how to have a memorable experience on your trip to Jakarta.</h5>
@@ -406,8 +396,6 @@
   </div>
     <!--end of jumbotron-->
 
-<!--Footer-->
-<div id="footer"></div>
 
 <!-------modal buy ticket------>
 <!-- Modal -->
@@ -421,7 +409,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form method="" action="">
           <div class="form-group">
             <label for="exampleInputName">Name</label>
             <input type="text" class="form-control" id="name" placeholder="Full name">
@@ -448,7 +436,7 @@
   </div>
 </div>
 
-
+<%- include('../layouts/navbarhome.ejs'); %>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
