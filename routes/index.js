@@ -9,7 +9,7 @@ const express= require('express'),
         res.render('pages/popular');
     });
     
-    router.get('/amusement-water park',(req,res)=>{
+    router.get('/amusement-water-park',(req,res)=>{
         res.render('pages/amusement-water park');
     });
     
@@ -31,10 +31,6 @@ const express= require('express'),
     
     router.get('/lake-garden',(req,res)=>{
         res.render('pages/lake-garden');
-    });
-    
-    router.get('/amusement-water park',(req,res)=>{
-        res.render('pages/amusement-water park');
     });
     
     router.get('/tips',(req,res)=>{
