@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+.header{
+    width:100%;
+    padding:200px 100px 100px;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.header h1{
+  font-family: 'Josefin Slab', serif;
+  color: white;
+  font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 15%;
+}
+
+  /*--- media queries --*/
+  @media(max-width: 1000px){
+    .header h1{
+          position: absolute;
+          margin-top: 5% ;
+          font-size: 2rem ;
+      } 
+
+}
