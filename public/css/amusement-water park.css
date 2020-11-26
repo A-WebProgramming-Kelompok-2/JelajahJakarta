@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+    background-color: rgb(254, 255, 212) !important;
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.8)!important;
+}
+
+.nav-link{
+    margin-left: 10px;
+}
+
+.navbar-brand{
+    margin-left: 5px;
+    font-family: 'Pacifico',cursive;
+    font-weight: 400;
+}
+.navbar-nav .nav-link{
+    color: rgba(230, 222, 222, 0.897) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: turquoise !important;
+}
+
+.dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.5)!important;
+}
+.dropdown-item{
+    color:rgba(230, 222, 222, 0.897) !important;
+    border-bottom: solid white 0.6px !important;
+    font-family: 'Lato', sans-serif;
+    text-transform: none;
+}
+
+.dropdown-item:last-child{
+    border-bottom: transparent !important;
+}
+
+.dropdown-item:hover{
+    background-color: transparent !important;
+    color: turquoise !important;
+}
+
+/*--- slider --*/
+
+.carousel-item{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption{
+    font-family: 'Josefin Slab', serif;
+    position: absolute;
+    top: 40%;
+    text-transform: uppercase;
+}
+
+.carousel-caption h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+/*-- MODAL LOGIN/SIGN UP --*/
+.modal-dialog{
+    width: 100% !important;
+}
+.alert
+{
+    display: none;
+}
+
+.requirements
+{
+    list-style-type: none;
+}
+
+.wrong .fa-check
+{
+    display: none;
+}
+
+.good .fa-times
+{
+    display: none;
+}
+
+/*-------ISI--------*/
+
+.jumbotron-tl h1{
+    font-family: 'Courier Prime', monospace;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.jumbotron-tl{
+    background-color:none ;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.jumbotron{
+    background-color: white !important;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.jumbotron h1{
+    font-family:'Courier Prime', monospace!important;
+    margin-left: 50px;
+    font-size: 23px;
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .row1 {
+    flex: 1;
+    padding: 2rem;
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+  }
+  
+  .row1:nth-child(1) {
+    padding: 14rem;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .row1:nth-child(2) {
+    background-color: rgb(255, 236, 219);
+  }
+
+  .row1 p{
+    font-size: 20px;
+    font-family: 'Josefin',serif;
+    text-align: justify;
+    margin-top: px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.row1 .btn{
+    color: black;
+    background-color: peachpuff;
+    font-family: 'Josefin',serif;
+    font-size: 17px;
+    width: 7rem;
+    padding: 10px;
+    margin-left: 30px;
+    position: relative;
+}
+
+  /*----- content slider ------*/
+  .jumbotron-cs h1{
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Courier Prime', monospace;
+}
+
+.jumbotron-cs{
+    padding-top: 20px;
+    background-color: rgb(254, 255, 212) !important;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 40px;
+}
+.container-1{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link_a:hover, .link_b:hover,.link_c:hover,.link_d:hover,.link_e:hover, .link_f:hover{
+    color: white;
+}
+.box{
+    width: 330px;
+    height: 520px;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 20px 10px;
+    background-size: cover;
+    margin-left: 20px;
+}
+.box-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+.box-1 p{
+    font-family: 'Oswald',sans-serif;
+    margin-top: 260px;
+    font-size: 30px;
+    color: white;
+    margin-left: 30px;
+}
+.box:hover{
+	background-color: #17171d;
+	transform-style: preserve-3d;
+	transform: scale(1.02);
+	transition: all ease 0.3s;
+}
+/***popup about jj***/
+
+.popup-photo{
+  
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+    max-height: 500px;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    bottom:50px;
+    top:0px;
+    
+}
+.popup-inner {
+    position: relative;
+    bottom: 50px;
+    top:10px;
+    right:200px !important;
+    
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    max-height: 500px;
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    
+  }
+.popup-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    padding: 4rem;
+  }
+  
+  .popup-text h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #0A0A0A;
+  }
+  .popup-text p {
+    font-size: .875rem;
+    color: #686868;
+    line-height: 1.5;
+  }
+  .popuptext a {
+	text-decoration: none;
+	color:  #00060a;
+}
+.popup:target{
+    visibility:visible;
+    opacity:1;
+}
+.popup:target .popup-inner {
+    bottom: 0;
+    right: 0;
+    transform: rotate(0);
+  }
+.closepopup {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: .875rem;
+    font-weight: 300;
+    border-radius: 100%;
+    background-color: #47BDFF;
+    z-index: 4;
+    color: #fff;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+/***end of popup about jj***/
+
+/*----- footer -----*/
+.fb-ic, .ins-ic,.yt-ic,.tw-ic {
+    color: white;
+}
+.fb-ic:hover, .ins-ic:hover,.yt-ic:hover,.tw-ic:hover{
+    color: cyan;
+}
+
+/*-----modal buy ticket-----*/
+.modl{
+    background-color: rgb(46, 45, 45) !important;
+    color: white;
+    opacity: 95%;
+  }
+
+/*------search autocomplete------*/
+
+/*--- media queries --*/
+@media(max-width: 1000px){
+
+    .row1 {
+        flex: 1;
+        padding: 2rem;
+        margin: auto;
+      }
+      
+      .row1:nth-child(1) {
+        padding: 10rem;
+      }
+    
+      .row1 p{
+        font-size: 17px;
+        font-family: 'Josefin',serif;
+        text-align: justify;
+    }
+    
+}
+
+@media(max-height: 600px){
+    
+    .box{
+        width: 330px;
+        height: 370px;
+    }
+    .box-1 p{
+        margin-top: 200px;
+
+    }
+
+}
+
+@media(max-width: 600px){
+    .btn-warning{
+        margin-left: 40% !important;
+    }
+}

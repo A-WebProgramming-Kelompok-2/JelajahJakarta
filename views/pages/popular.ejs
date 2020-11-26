@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Place</title>
+      <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/zoo.css">
+    <link rel="stylesheet" type="text/javascript" href="script.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/popular.css">
+    <!--js bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+    <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://kit.fontawesome.com/59d975929c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="bootstrap-show-password.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <!--jquery light slider  -->
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
+    <script type="text/javascript" src="script/lightslider.js"></script>
+    <!--jquery search-->
+    <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+    <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+    <%- include('../layouts/navbar.ejs'); %>
+</head>
+<body>
+     <!-------NAVBAR-->
+    <div id="navbar"></div>
+    
+    <!--slider image-->
+    <!--image slider-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!--slide 1-->
+          <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/tamanismailmarzuki.jpg);">
+          </div>
+          <!--slide 2-->
+          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/bridge.jpeg);">
+          </div>
+          <!--slide 3-->
+          <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/cathedral.jpg);">
+          </div>
+        </div>
+        <!--caption-->
+        <div class="carousel-caption text-center" >
+          <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">Popular Place</h1>
+        </div>
+        <!--prev & next button-->
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      
+      
+      <!--video-->
+      <div class="jumbotron-ys" data-aos="zoom-in" data-aos-duration="3000"
+      data-aos-anchor-placement="top-bottom" data-aos-once="true">
+        <div class="video">
+          <div style="overflow:hidden;position: relative;"><iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="800" height="443" type="text/html" src="https://www.youtube.com/embed/Ve226c1sllE?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"></iframe><div style="position: absolute;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"> <a href="https://logines.co.uk/" rel="nofollow">Logines UK</a> </small></div><style>.newst{position:relative;text-align:right;height:420px;width:520px;} #gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+        </div>
+      </div>
+
+  
+      <!--vacation-->
+      <div id="Vocation">
+        <div class="text-center">
+        <div class="jumbotron jumbotron-fluid" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-anchor-placement="top-bottom" data-aos-once="true">
+
+        <!--first card-->
+        <div class="container">
+          <div class="row">
+          <div class="col-md-4">
+            <div class="card-1">
+              <img src="img/ancol.jpg" class="card-img-top" alt="ancol">
+                <div class="card-body">
+                  <h5 class="card-title m-1 ">Ancol</h5>
+                  <p class="card-text m-1 ">North Jakarta</p>
+                  <p class="m-1 mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </p>
+                   <p>
+                   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                     View More 
+                    </a>
+                    <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(50000)" data-target="#book_ticket">Buy Ticket</a>
+                    </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Taman Impian Jaya Ancol otherwise known as Ancol Dreamland is an integral part of Ancol Bay City, a resort destination located along Jakarta's waterfront, in Ancol (Kelurahan), Pademangan, Indonesia. It is owned by PT. Pembangunan Jaya Ancol Tbk, a subsidiary of Pembangunan Jaya Group. Ancol Dreamland opened in 1966 and is currently the largest integrated tourism area in South East Asia, boasting an international championship golf course, a theme park, hotels and other recreational facilities.
+                    </div>
+                  </div>   
+                    
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-1">
+                <img src="img/tmii.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title m-1 ">TMII</h5>
+                    <p class="card-text m-1 ">East Jakarta</p>
+                    <p class="m-1 mb-3">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </p>
+                    <p>
+                     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                      View More 
+                     </a>
+                     <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(40000)" data-target="#book_ticket">Buy Ticket</a>
+                     </p>
+                   <div class="collapse" id="collapseExample1">
+                     <div class="card card-body">
+                      Taman Mini "Indonesia Indah" (TMII) is a culture-based recreational area located in East Jakarta, Indonesia. It is operated by Yayasan Harapan Kita, a foundation established by Siti Hartinah, the first lady during most of the New Order and wife of Suharto, and still run by Suharto's descendants since his death. It has an area of about 100 hectares (250 acres). The park is a synopsis of Indonesian culture, with virtually all aspects of daily life in Indonesia's 26 (in 1975) provinces encapsulated in separate pavilions with the collections of rumah adat as the example of Indonesian vernacular architecture, clothing, dances and traditions are all depicted impeccably.
+                     </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-1">
+                  <img src="img/ragunan.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title m-1 ">Ragunan Zoo</h5>
+                      <p class="card-text m-1 ">South Jakarta</p>
+                      <p class="m-1 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </p>
+                      <p>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                          View More 
+                         </a>
+                         <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(90000)" data-target="#book_ticket">Buy Ticket</a>
+                         </p>
+                       <div class="collapse" id="collapseExample2">
+                         <div class="card card-body">
+                          Ragunan Zoo is located in Pasar Minggu, South Jakarta, Indonesia. The zoo has a land area of 140-hectare (350-acre). The zoo has an aviary and included a primate centre, and employs over 450 people. Many of the animals are endangered and threatened from all parts of Indonesia and the rest of the world. There are a total of 3,122 animal specimens including birds. Laid out in a lush tropical setting, rare animals such as crocodile, gorilla, orangutan, tapir, anoa, sumatran tiger, babirusa and peacocks are given ample room.
+                         </div>
+                       </div>   
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div> 
+        <!--end of first card-->
+
+      <!--second card-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card-2">
+              <img src="img/Monas2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Monumen Nasional</h5>
+                <p class="card-text">Central Jakarta</p>
+                <p class="mb-3 mb-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  View More
+                </a>
+                <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(10000)" data-target="#book_ticket">Buy Ticket</a>
+                <p>
+                  
+                </p>
+                <div class="collapse" id="collapseExample3">
+                  <div class="card card-body">
+                    The National Monument is a 132 memorial tower-like monument buit to commemorate the fight for the independence of Indonesia from the colonialsm of the Dutch. It is topped by a flame covered with gold foil, symbolizing the flame of fighting spirits. The National Monument is located at the center of Medan Merdeka Square.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <div class="col-md-4">
+                <div class="card-2">
+                  <img src="img/kotu.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Kota Tua</h5>
+                    <p class="card-text">North Jakarta</p>
+                    <p class="mb-3 mb-1">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                    </p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      View More
+                    </a>
+                    <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(10000)" data-target="#book_ticket">Buy Ticket</a>
+                    <p>
+                      
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                      <div class="card card-body">
+                        Kota Tua is one of most popular places to visit in Jakarta. It is ‘Jakarta’s Old Town’. This is an area about 4.5 km north of the Monas that mainly consists of Dutch colonial buildings that were built during the 17th century. When you visit Kota Tua, you will see an area of the city that is quite distinct from other areas of Jakarta. It noticeably feels more European.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                <div class="col-md-4">
+                  <div class="card-2">
+                    <img src="img/jktaqua.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jakarta Aquarium</h5>
+                      <p class="card-text">West Jakarta</p>
+                      <p class="mb-3 mb-1">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </p>
+                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        View More
+                      </a>
+                      <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(250000)" data-target="#book_ticket">Buy Ticket</a>
+                      <p>
+                        
+                      </p>
+                      <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                          The Jakarta Aquarium is a marine and freshwater aquarium located within a retail and leisure complex Neo Soho in Jakarta, Indonesia. The aquarium is home to hundreds of mammal, reptile, insect and various types of Indonesian marine fish, is to introduce to the next generation the biodiversity of the archipelago starting from islands, forests, and mangroves.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div> 
+        </div>
+      <!--end of second card-->
+      
+      </div>
+    </div>
+  </div>
+ <!--end of vacation-->
+ <!--vacation 1-->
+ <div id="Vocation">
+    <div class="text-center">
+    <div class="jumbotron jumbotron-fluid" data-aos="fade-up" data-aos-duration="1500"
+    data-aos-anchor-placement="top-bottom" data-aos-once="true">
+
+    <!--first card-->
+    <div class="container">
+      <div class="row">
+      <div class="col-md-4">
+        <div class="card-2">
+          <img src="img/seribu.jpg" class="card-img-top" alt="ancol">
+            <div class="card-body">
+              <h5 class="card-title m-1 ">Pulau Seribu</h5>
+              <p class="card-text m-1 ">Jakarta</p>
+              <p class="m-1 mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </p>
+               <p>
+               <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                 View More 
+                </a>
+                <a class="btn btn-success" onclick="myFunction()">Buy Ticket</a>
+                </p>
+              <div class="collapse" id="collapseExample6">
+                <div class="card card-body">
+                    The Thousand Islands (officially Kepulauan Seribu) are a chain of islands to the north of Jakarta's coast. It forms the only regency of Jakarta, the capital of Indonesia. It consists of a string of 342 islands stretching 45 km (28 mi) north into the Java Sea at West Jakarta Bay and in fact north of Banten Province.
+                </div>
+              </div>   
+                
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-2">
+            <img src="img/halilintar.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title m-1 ">Dunia Fantasi</h5>
+                <p class="card-text m-1 ">North Jakarta</p>
+                <p class="m-1 mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </p>
+                <p>
+                 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                  View More 
+                 </a>
+                 <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(200000)" data-target="#book_ticket">Buy Ticket</a>
+                 </p>
+               <div class="collapse" id="collapseExample7">
+                 <div class="card card-body">
+                    Dufan is a fun park located in Ancol, North Jakarta, Indonesia. It is similar to the Disneyland or the Universal Studio. It has many attractions and fun rides that you can enjoy if you have one day to spend in Jakarta. Dufan is short for “Dunia Fantasi” or in English: “Fantasy World” The great coincidence about the name Dufan is that it is pronounced as “Do Fun”. So you can say that you go to Dufan to “do fun”.
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-2">
+              <img src="img/Faunaland.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title m-1 ">Fauna Land</h5>
+                  <p class="card-text m-1 ">North Jakarta</p>
+                  <p class="m-1 mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </p>
+                  <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                      View More 
+                     </a>
+                     <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(120000)" data-target="#book_ticket">Buy Ticket</a>
+                     </p>
+                   <div class="collapse" id="collapseExample8">
+                     <div class="card card-body">
+                        Faunaland is a zoo located inside Allianz Ecopark and stands on an area of approximately 5 hectares consisting of land and water. Faunaland carries the concept of Papua which is a fusion between the continents of Asia and Australia so as to create the beauty of flora, fauna and the cultural arts of the area. This concept presents unique and rare animals from various regions in Indonesia, especially animals from eastern Indonesia
+                     </div>
+                   </div>   
+                </div>
+              </div>
+            </div>
+      </div>
+    </div> 
+    <!--end of first card-->
+
+  <!--second card-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card-2">
+          <img src="img/ecopark.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ecopark</h5>
+            <p class="card-text">North Jakarta</p>
+            <p class="mb-3 mb-1">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample9" role="button" aria-expanded="false" aria-controls="collapseExample">
+              View More
+            </a>
+            <a class="btn btn-success" onclick="myFunction()">Buy Ticket</a>
+            <p>
+              
+            </p>
+            <div class="collapse" id="collapseExample9">
+              <div class="card card-body">
+                It was built in 2011 by PT Global Land Development Tbk with a budget of Rp.15 billion ($1.7 million). This area consists of 4 themes, Eco Energy, Eco Care, Eco Nature and Eco Art. It once hosted the 2013 World Robot Olympiad and the finale and result and reunion show of Indonesian Idol 2012.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="col-md-4">
+            <div class="card-2">
+              <img src="img/cathedral.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jakarta Cathedral</h5>
+                <p class="card-text">Central Jakarta</p>
+                <p class="mb-3 mb-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample10" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  View More
+                </a>
+                <a class="btn btn-success" onclick="myFunction()">Buy Ticket</a>
+                <p>
+                  
+                </p>
+                <div class="collapse" id="collapseExample10">
+                  <div class="card card-body">
+                    Jakarta Cathedral (Indonesian: Gereja Katedral Jakarta, Dutch: Kathedraal van Jakarta) is a Roman Catholic cathedral in Jakarta, Indonesia, which is also the seat of the Roman Catholic Archbishop of Jakarta, currently Archbishop Ignatius Suharyo Hardjoatmodjo. Its official name is Gereja Santa Perawan Maria Diangkat ke Surga (from Dutch, De Kerk van Onze Lieve Vrouwe ten Hemelopneming, in English: The Church of Our Lady of the Assumption). This current cathedral was consecrated in 1901 and built in the neo-gothic style, a common architectural style to build churches at that time. The Jakarta Cathedral is located in Central Jakarta near Merdeka Square and Merdeka Palace, right in-front of the cathedral stands the Istiqlal Mosque.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4">
+              <div class="card-2">
+                <img src="img/national.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">National Gallery</h5>
+                  <p class="card-text">Central Jakarta</p>
+                  <p class="mb-3 mb-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </p>
+                  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample11" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    View More
+                  </a>
+                  <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(20000)" data-target="#book_ticket">Buy Ticket</a>
+                  <p>
+                    
+                  </p>
+                  <div class="collapse" id="collapseExample11">
+                    <div class="card card-body">
+                        The National Gallery of Indonesia is an art gallery and museum in Jakarta, Indonesia. The National Gallery of Indonesia has existed as a cultural institution in the field of visual arts since May 8, 1999. The institution plays an important role in expanding public's awareness of artworks through preservation, development and exploitation of the visual arts in Indonesia.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div> 
+    </div>
+  <!--end of second card-->
+  
+  </div>
+</div>
+</div>
+<!--end of vacation 1-->
+<!--vacation 2-->
+<div id="Vocation">
+    <div class="text-center">
+    <div class="jumbotron jumbotron-fluid" data-aos="fade-up" data-aos-duration="1500"
+    data-aos-anchor-placement="top-bottom" data-aos-once="true">
+
+    <!--first card-->
+    <div class="container">
+      <div class="row">
+      <div class="col-md-4">
+        <div class="card-2">
+          <img src="img/chinatown.png" class="card-img-top" alt="ancol">
+            <div class="card-body">
+              <h5 class="card-title m-1 ">Glodok / Chinatown</h5>
+              <p class="card-text m-1 ">West Jakarta</p>
+              <p class="m-1 mb-3">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </p>
+               <p>
+               <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample12" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                 View More 
+                </a>
+                <a class="btn btn-success" onclick="myFunction()">Buy Ticket</a>
+                </p>
+              <div class="collapse" id="collapseExample12">
+                <div class="card card-body">
+                    Glodok (Chinese: 裹踱刻; pinyin: guǒ duó kè; Pe̍h-ōe-jī: kó tho̍h khek) is an urban village of Taman Sari, West Jakarta, Indonesia. The area is also known as Pecinan or Chinatown since the Dutch colonial era, and is considered the biggest in Indonesia. Majority of the traders and residents of Glodok are Chinese descent. The area dates back to colonial times when in November 1740, Dutch East Indies Company (VOC) designated Glodok as a residential area for ethnic Chinese. Administratively, the area is a kelurahan under the Taman Sari subdistrict, West Jakarta.
+                </div>
+              </div>   
+                
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-2">
+            <img src="img/suropati.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title m-1 ">Taman Suropati</h5>
+                <p class="card-text m-1 ">Central Jakarta</p>
+                <p class="m-1 mb-3">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+                <p>
+                 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample13" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                  View More 
+                 </a>
+                 <a class="btn btn-success" onclick="myFunction()">Buy Ticket</a>
+                 </p>
+               <div class="collapse" id="collapseExample13">
+                 <div class="card card-body">
+                    Taman Suropati or Suropati Park is a public park located in Menteng, Jakarta, Indonesia. The park is located in the center of Menteng and is the meeting point of three streets: Teuku Umar Street, Diponegoro Street, and Imam Bonjol Street.
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card-2">
+              <img src="img/tamanismailmarzuki.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title m-1 ">Taman Ismail Marzuki</h5>
+                  <p class="card-text m-1 ">Central Jakarta</p>
+                  <p class="m-1 mb-3">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </p>
+                  <p>
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample14" role="button" aria-expanded="false" aria-controls="collapseExample" >
+                      View More 
+                     </a>
+                     <a class="btn btn-success" data-toggle="modal" onclick="setPriceVariable(12000)" data-target="#book_ticket">Buy Ticket</a>
+                     </p>
+                   <div class="collapse" id="collapseExample14">
+                     <div class="card card-body">
+                        Taman Ismail Marzuki, popularly known as TIM, (English: Ismail Marzuki Park), is an arts, cultural, and science center located at Cikini in Jakarta, Indonesia. Taman Ismail Marzuki complex comprises a number of facilities including six performing arts theaters, cinemas, exhibition hall, gallery, libraries and an archive building.[1]The complex is built on an 9 hectares land area, which was previously a zoo. TIM is named after Ismail Marzuki, one of Indonesia's most influential composers.
+                     </div>
+                   </div>   
+                </div>
+              </div>
+            </div>
+      </div>
+    </div> 
+    <!--end of first card-->
+
+  <!--second card-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card-2">
+          <img src="img/setu.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Setu Babakan</h5>
+            <p class="card-text">South Jakarta</p>
+            <p class="mb-3 mb-1">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <i class="far fa-star"></i>
+            </p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample15" role="button" aria-expanded="false" aria-controls="collapseExample">
+              View More
+            </a>
+            <a class="btn btn-success" onclick="myFunction()">Buy Ticket</a>
+            <p>
+              
+            </p>
+            <div class="collapse" id="collapseExample15">
+              <div class="card card-body">
+                Setu Babakan (or Situ Babakan), is a Batavian village in South Jakarta that is best known for its preserved heritage. Although popular with tourists, Setu Babakan is an actual village, but one that has decided to hold onto many traditional ways of life. Here, visitors will enjoy a good break from the hectic Jakarta traffic and the modern bustle of the capital city. It is a 19km journey south from the city centre, in the sub-district of Jagaraksa, which offers landscapes dominated by manmade lakes and plantations.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class="col-md-4">
+            <div class="card-2">
+              <img src="img/kid.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Kidzania Pasific Palace</h5>
+                <p class="card-text">South Jakarta</p>
+                <p class="mb-3 mb-1">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample16" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  View More
+                </a>
+                <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(125000)" data-target="#book_ticket">Buy Ticket</a>
+                <p>
+                  
+                </p>
+                <div class="collapse" id="collapseExample16">
+                  <div class="card card-body">
+                    Kidzania Jakarta is the first South East Asia's edutheme park or a 'city' for children which mix the elements of edutainment.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4">
+              <div class="card-2">
+                <img src="img/water.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Waterboom</h5>
+                  <p class="card-text">West Jakarta</p>
+                  <p class="mb-3 mb-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </p>
+                  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample17" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    View More
+                  </a>
+                  <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(99000)" data-target="#book_ticket">Buy Ticket</a>
+                  <p>
+                    
+                  </p>
+                  <div class="collapse" id="collapseExample17">
+                    <div class="card card-body">
+                        This water paradise is located at Pantai Indah Kapuk, 10 minutes away from Soekarno - Hatta International Airport and 15 minutes from downtown. Waterbom Jakarta with it's international standards offering high quality facilities and amenities,
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div> 
+    </div>
+  <!--end of second card-->
+  
+  </div>
+</div>
+</div>
+<!--end of vacation 2-->
+
+   <!-------modal buy ticket------>
+<!-- Modal -->
+<div class="modal fade" id="book_ticket" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modl">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Booking Ticket</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="" action="">
+          <div class="form-group">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputDate">date</label>
+            <input type="date" class="form-control select-date" id="bookingdate">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputCount">How many ticket?</label>
+            <input type="number" min=0 class="form-control" id="countticket" onchange="calculate()" value="0" />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputCount">Price</label>
+            <input type="number" class="form-control" id="price" value={{$priceVar}} />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-warning">Book now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<%- include('../layouts/footer.ejs'); %>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+     <script>
+      
+      
+      function setPriceVariable(harga){
+        console.log(harga);
+        var priceVar = harga;
+        document.getElementById("price").value = harga;
+      } 
+
+      function calculate(){
+          var count = document.getElementById("countticket").value;
+          var price = document.getElementById("price").value;
+
+          var total_price = count * price;
+          document.getElementById("price").value = total_price;
+      }
+    </script>
+</body>
+</html>

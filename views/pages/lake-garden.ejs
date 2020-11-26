@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden-Lake</title>
+
+        <!--css-->
+        <link rel="stylesheet" type="text/css" href="css/amusement-water park.css">
+        <link rel="stylesheet" type="text/javascript" href="script.js">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!--js bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css">
+        <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+        <script src="https://kit.fontawesome.com/59d975929c.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+        <script src="https://unpkg.com/bootstrap-show-password@1.2.1/dist/bootstrap-show-password.min.js"></script>
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script src="bootstrap-show-password.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
+        <!--jquery light slider  -->
+        <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+        <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
+        <script type="text/javascript" src="script/lightslider.js"></script>
+        <!--jquery search-->
+        <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+        <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+        <%- include('../layouts/navbar.ejs'); %>
+</head>
+
+<body>
+    <!-------NAVBAR-->
+    <div id="navbar"></div>
+
+<!------END OF NAVBAR---------->
+
+  <!--image slider-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="7000">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <!--slide 1-->
+      <div class="carousel-item active" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(img/garden.jpg);">
+      </div>
+      <!--slide 2-->
+      <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/lake.jpg);">
+      </div>
+      <!--slide 3-->
+      <div class="carousel-item" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/garden1.jpg);">
+      </div>
+    </div>
+    <!--caption-->
+    <div class="carousel-caption text-center">
+      <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">GARDEN & LAKE</h1>
+    </div>
+    <!--prev & next button-->
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+<!---------end of image slider-------->
+
+<!------ISI------->
+
+<!-- Tabs navs -->
+<ul class="nav nav-tabs nav-justified mb-3" id="ex1" role="tablist" style="margin-top: 10px">
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link active"
+      id="ex3-tab-1"
+      data-toggle="tab"
+      href="#ex3-tabs-1"
+      role="tab"
+      aria-controls="ex3-tabs-1"
+      aria-selected="true"
+      style="background-color: rgb(31, 80, 38); color: white;  font-family: 'Courier Prime', monospace;"
+      >LAKE</a
+    >
+  </li>
+  <li class="nav-item" role="presentation">
+    <a
+      class="nav-link "
+      id="ex3-tab-2"
+      data-toggle="tab"
+      href="#ex3-tabs-2"
+      role="tab"
+      aria-controls="ex3-tabs-2"
+      aria-selected="false"
+      style="background-color: rgb(122, 77, 38); color: white;  font-family: 'Courier Prime', monospace;"
+      >GARDEN</a
+    >
+  </li>
+
+</ul>
+<!-- Tabs navs -->
+
+<!-- Tabs content -->
+<div class="tab-content" id="ex2-content">
+  <div
+    class="tab-pane fade show active"
+    id="ex3-tabs-1"
+    role="tabpanel"
+    aria-labelledby="ex3-tab-1"
+  >
+    <!------LAKE-->
+  <div class="jumbotron-tl jumbotron-fluid">
+    <div class="container">
+      <h1>LAKE</h1>
+    </div>
+</div>
+    <!------first------->
+    <div class="jumbotron jumbotron-fluid">
+        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Setu Babakan</h1>
+        <div class="container">
+            <div class="row1" style="background-image: url(img/setubabakan.jpg);"
+            data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+            <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                <p>Setu Babakan is a very famous lake in Jakarta and its surroundings. This lake is located in the Jagakarsa area of ​​South Jakarta. This very affordable position makes this lake often visited on weekends. Although not one of  the best lakes in Indonesia , the existence of Setu Babakan in Jakarta is a breath of fresh air for an alternative to urban tourism. The location of Setu Babakan is near the Betawi village. To enjoy a simple tour there, there are actually many activities that can be done. For example, sitting around the lake and enjoying the scenery, or even taking a duck boat and walking around the lake. In addition, because it is close to the Betawi village, you may be able to taste the typical Betawi food around this lake. One of the famous foods is egg crust. Setu Babakan has been used as a close alternative for a long time and is representative of tourism activities. Especially if you do not have long time to vacation out of town.
+                </p>
+                <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                <a class="btn btn-outline-light" href="https://goo.gl/maps/TcPY7jcT9byYcHtJ8">See on map</a>
+                <p id="alert"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-------second-------->
+    <div class="jumbotron jumbotron-fluid">
+        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>LAKE SUNTER</h1>
+        <div class="container">
+            <div class="row1" style="background-image: url(img/danausunter.jpeg);"
+            data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"></div>
+            <div class="row1" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                <p>Apart from Setu Babakan, in South Jakarta there is another lake tour in Jakarta that is interesting for you to visit on weekends. Its name is Lake Sunter. This lake is a beautiful lake in Jakarta. Instead of spending your vacation time just visiting the  Mall in South Jakarta , of course visiting this lake can be a more attractive alternative. To enjoy tourist activities there, there are many alternatives that can be done. Most people will probably rent a duck boat and go around the lake. But besides that, visitors can also fish to get freshwater fish. Visitors can also relax while eating, they can also exercise around the lake. Lake Sunter is indeed well managed. Even this lake will be cleaned regularly. The aim is to make the lake clean and tourists still feel comfortable while enjoying a short vacation there.
+                </p>
+                <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                <a class="btn btn-outline-light" href="https://goo.gl/maps/EFg2hWe8AmranP3s8">See on map</a>
+            </div>
+        </div>
+    </div>
+    <!-------third-------->
+    <div class="jumbotron jumbotron-fluid">
+        <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Situ Lembang Menteng, Central Jakarta</h1>
+        <div class="container">
+            <div class="row1" style="background-image: url(img/situlembang.jpg);"
+            data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+            <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+                <p>This lake is in the Menteng area. Yes, this lake is in Situ Lembang Park. Situ Lembang itself is one of the lake tours in Jakarta which is well known by the local community. The interesting thing about this lake is the beautiful scenery. And because there are lotuses there, when the lotuses bloom, the scenery will look much more beautiful. Tourists or visitors can do many activities on the lake. Many fish in this lake. In addition, for those of you who don't like fishing, enjoying the air and the scenery around the lake is enough to give the impression of relaxation on weekends. If you invite your little ones, younger siblings, or other children, there is also a simple playground that you can use. This place, although simple, can be a short and affordable alternative to a short tour in Jakarta. Also suitable for  school children's travel spots in Jakarta  on weekends.
+                </p>
+                <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+                <a class="btn btn-outline-light" href="https://goo.gl/maps/i5RBVsaZGon88oNY9">See on map</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <div
+    class="tab-pane fade"
+    id="ex3-tabs-2"
+    role="tabpanel"
+    aria-labelledby="ex3-tab-2"
+  >
+<!--------------Garden------------->
+<div class="jumbotron-tl jumbotron-fluid">
+  <div class="container">
+    <h1>GARDEN</h1>
+  </div>
+</div>
+ <!-------forth-------->
+ <div class="jumbotron jumbotron-fluid">
+  <h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Menteng Park</h1>
+  <div class="container">
+      <div class="row1" style="background-image: url(img/garden.jpg);"
+      data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+      <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+          <p>Menteng Park is a park located at Menteng, Central Jakarta, Indonesia. This park was formerly occupied by Menteng Stadium. In October 2006 the stadium was demolished and the park was built on the area by the administration of Sutiyoso. The park is located at the center of Menteng residential area. At present it is one of the popular park in Jakarta. The park stands on an area of 30 hectares, and has a collection of 30 different plant species. Menteng Park also has a variety of support facilities such as a playground for children, as well as futsal and basketball courts, jogging track, greenhouse, parking lot and exhibition corner. There are free WiFi facility at different corners of the park. After dark the park area turns into a place for food lovers because of presence of food vendors. Uniquely, in this park there are also 44 absorption wells to help the absorption of rain water into the soil.
+           </p>
+          <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+          <a class="btn btn-outline-light" href="https://goo.gl/maps/buFKPAD2Qv2Eix3H7">See on map</a>
+      </div>
+  </div>
+</div>
+<!-------fifth-------->
+<div class="jumbotron jumbotron-fluid">
+<h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Cattleya Park</h1>
+<div class="container">
+    <div class="row1" style="background-image: url(img/cattleyapark.jpg);"
+    data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+    <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+        <p>Located at the Tomang intersection - towards the Kebon Jeruk Toll Road, Cattleya Park is also often referred to as Tomang Park. This park is an open nature tourist attraction in the midst of the dense city of West Jakarta. This place is usually used as a gathering location for young people in the capital city or also used as a location for relaxing the local community. Even in this park, fitness and health facilities are provided free of charge for 24 hours. The word Cattleya is taken from one of the genera in the Orchid Plant, which is because this park is located right across from the west of the Mall and the magnificent Taman Anggrek Apartment.Until now, this park occupies more than 3 hectares of land which has been neatly arranged and also beautiful. In fact, it has also been equipped with various supporting facilities for community activities.
+        </p>
+        <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+        <a class="btn btn-outline-light" href="https://goo.gl/maps/L32PSgPFEc3jc9Mm9">See on map</a>
+    </div>
+</div>
+</div>
+<!-------sixth-------->
+<div class="jumbotron jumbotron-fluid">
+<h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Taman Anggrek Indonesia Permai (TAIP)</h1>
+<div class="container">
+  <div class="row1" style="background-image: url(img/anggrek.jpg);"
+  data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+  <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+      <p>TAIP was first opened on April 20, 1993, which was heavily supported by the former first lady ibu Tien Soeharto. In the same year Indonesian government declared one variant of the orchids, the Phalaenopsis amabilis (a.k.a. moth orchid or moon orchid), as Puspa Pesona (Indonesia Flower of Charm). As you can imagine, TAIP has an important role in breeding and disseminating orchids during that period. TAIP is located near Taman Mini Indonesia Indah, but it has different parking lot and gate. Sadly, the street sign to TAIP is almost nonexistent. So, if you are not familiar with the area, you'd better turn on your google map immediately, before you get lost and spend hours circling this heavy traffic area. The address is jalan Raya Taman Mini, Kelurahan Pinangranti, Jakata Timur. TAIP has one function hall, usually rented for wedding receptions, a laboratory to produce seedlings, and many lots rented to orchid vendors. Speaking of price, the price in TAIP is rather expensive. A plant without flower is almost Rp.100,000, while the plants with flower is much more expensive, depending on the variant. One pot of vanda on average is Rp. 200,000, while the exotic orchid from Brazil is Rp.350,000! 
+      </p>
+      <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+      <a class="btn btn-outline-light" href="https://goo.gl/maps/kLRrK9NhX19u1GxD6">See on map</a>
+  </div>
+</div>
+</div>
+<!-------sixth-------->
+<div class="jumbotron jumbotron-fluid">
+<h1 data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"> >>>>>Spathodea Park</h1>
+<div class="container">
+  <div class="row1" style="background-image: url(img/spathodea.jpg);"
+  data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"></div>
+  <div class="row1" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+      <p>Spathodea Park is located not far from Tabebuya Park which is also around Jagakarsa. Although Spathodea Park is considered a new park, it has become a favorite for Jagakarsa and surrounding residents to gather and exercise. Even the beauty of Spathodea Park has now become one of the weekend recreational destinations with the family. Spathodea Garden  has many types of plants planted with trees and flowers that adorn the garden area. There is a small lake in the middle of the park that will make visitors comfortable, especially since this park is equipped with various public facilities. Many public facilities are available at Spathodea Park,  such as  a jogging track, fish pond, outdoor gym, children's playground, toilets, a large enough parking area and comfortable seating. Spathodea Park is only open from 05.00 - 18.00 WIB so if it starts at night this park will be closed to the public. 
+      </p>
+      <a class="btn btn-outline-light" onclick="myFunction()">Buy Ticket</a>
+      <a class="btn btn-outline-light" href="https://goo.gl/maps/mUwezHYUV2C631S48">See on map</a>
+  </div>
+</div>
+</div>
+  </div>
+ 
+<!-- Tabs content -->
+
+
+      <!--content slider-->
+      <div id="slider-content">
+        <div class="jumbotron-cs jumbotron-fluid" data-aos="fade-right" data-aos-duration="2000"
+        data-aos-anchor-placement="top-bottom" data-aos-once="true">
+          <h1>>>>>>Discover another places</h1>
+          <div class="container-1">
+            <!--slider-->
+            <ul id="autoWidth" class="cs-hidden">
+              <!--1-->
+            <li class="item-a">
+            <!--sldier box-->
+            <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content1_2.jpg);
+            ">
+              <div class="box-1">
+                <a class="link_a" href="/jakarta-history-places"><p>JAKARTA HISTORY PLACES</p></a>
+              </div>
+            </div>
+            </li>
+            <!--2-->
+            <li class="item-a">
+              <!--sldier box-->
+              <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content2_1.jpg);
+              ">
+                <div class="box-1">
+                  <a class="link_b" href="/beach-island"><p>BEACH & ISLAND</p></a>
+                </div>
+              </div>
+              </li>
+            <!--3-->
+            <li class="item-a">
+              <!--sldier box-->
+              <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content3_3.jpg);
+              ">
+                <div class="box-1">
+                  <a class="link_c" href="/zoo"><p>ZOO & AQUARIUM</p></a>
+                </div>
+              </div>
+              </li>
+              <!--4-->
+              <li class="item-a">
+                <!--sldier box-->
+                <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content4_1.jpg);
+                ">
+                  <div class="box-1">
+                    <a class="link_d" href="/culinary"><p>CULINARY</p></a>
+                  </div>
+                </div>
+                </li>
+                <!--5-->
+                <li class="item-a">
+                  <!--sldier box-->
+                  <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content5_3.jpg);
+                  ">
+                    <div class="box-1">
+                      <a class="link_e" href="/amusement-water-park" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p></a>
+                    </div>
+                  </div>
+                  </li>
+                  <!--6-->
+                  <li class="item-a">
+                    <!--sldier box-->
+                    <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/garden1.jpg);
+                    ">
+                      <div class="box-1">
+                        <a class="link_f" href="/lake-garden"><p>GARDEN & LAKE</p></a>
+                      </div>
+                    </div>
+                    </li>    
+              </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+<%- include('../layouts/footer.ejs'); %>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
