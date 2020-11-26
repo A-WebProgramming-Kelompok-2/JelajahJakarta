@@ -437,11 +437,12 @@
           </div>
           <div class="form-group">
             <label for="exampleInputCount">How many ticket?</label>
-            <input type="number" min=0 class="form-control" id="countticket" onchange="calculate()" value="0" />
+            <input type="number" min=0 class="form-control" id="countticket" onchange="calculate()" value="1" />
           </div>
           <div class="form-group">
             <label for="exampleInputCount">Price</label>
-            <input type="number" class="form-control" id="price" value={{$priceVar}} />
+            <input type="number" class="form-control" id="price"/>
+            <label id="price2"></label>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
@@ -465,13 +466,14 @@
         console.log(harga);
         var priceVar = harga;
         document.getElementById("price").value = harga;
+        document.getElementById("price2").value = harga;
       } 
 
       function calculate(){
           var count = document.getElementById("countticket").value;
-          var price = document.getElementById("price").value;
-
-          var total_price = count * price;
+          var price = document.getElementById("price2").value;
+          var total_price=0;
+          total_price = count * price;
           document.getElementById("price").value = total_price;
       }
     </script>
