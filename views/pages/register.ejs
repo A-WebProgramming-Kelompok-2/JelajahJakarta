@@ -32,6 +32,20 @@
             <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
             <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
             <script type="text/javascript" src="script/navbarscript.js"></script>
+
+            <script>
+              var xmlhttp = new XMLHttpRequest();
+             
+              xmlhttp.onreadystatechange = function(){
+                   if(this.readyState == 4 && this.status == 200){
+                      console.log(xmlhttp.response);
+                   }
+              }
+              
+              xmlhttp.open("GET","http://localhost/JelajahJakarta/register.php",true);
+              xmlhttp.send();
+            </script>
+
 </head>
 <body>
     <style>
@@ -55,23 +69,24 @@
     <div class="card-body px-lg-5 pt-0">
 
         <form
-            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'
+            action="" method="POST">
             <div class="form-group">
               <label for="exampleInputname1" >Name</label>
-              <input type="text" class="form-control" id="name"required name=un>
+              <input type="text" class="form-control" id="name"required name=name>
             </div>
             <div class="form-group">
               <label for="exampleInputname1" >Username</label>
-              <input type="text" class="form-control" id="username"required name=un>
+              <input type="text" class="form-control" id="username"required name=username>
             </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required name=email>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1" >Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
+                <input type="password" class="form-control" id="password" data-toggle="password" required name=password>
               </div>
               <div class="alert alert-warning password-alert" role="alert">
                 <ul>
@@ -80,12 +95,8 @@
                   <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
                 </ul>
               </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Reenter Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
-              </div>
               <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-primary" name="register">Register</button>
               </div>
             </form>
 
