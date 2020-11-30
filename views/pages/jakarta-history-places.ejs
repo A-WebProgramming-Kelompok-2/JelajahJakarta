@@ -296,7 +296,7 @@
     <div class="modal-content modl">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Booking Ticket</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="reset()">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -316,16 +316,17 @@
           </div>
           <div class="form-group">
             <label for="exampleInputCount">How many ticket?</label>
-            <input type="number" min=0 class="form-control" id="countticket" onchange="calculate()" value="0" />
+            <input type="number" min=0 class="form-control" id="countticket" onchange="calculate()" value="1" />
           </div>
           <div class="form-group">
             <label for="exampleInputCount">Price</label>
-            <input type="number" class="form-control" id="price" value={{$priceVar}} />
+            <input type="number" class="form-control" id="price"/>
+            <label id="price2"></label>
           </div>
-           <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="reset()">Cancel</button>
             <button type="submit" class="btn btn-warning">Book now</button>
-         </div>
+          </div>
         </form>
       </div>
     </div>
@@ -338,21 +339,29 @@
       <script>
         AOS.init();
       </script>
-      <script>
+    <script>
       
       
       function setPriceVariable(harga){
         console.log(harga);
         var priceVar = harga;
         document.getElementById("price").value = harga;
+        document.getElementById("price2").value = harga;
       } 
 
       function calculate(){
           var count = document.getElementById("countticket").value;
-          var price = document.getElementById("price").value;
-
-          var total_price = count * price;
+          var price = document.getElementById("price2").value;
+          var total_price=0;
+          total_price = count * price;
           document.getElementById("price").value = total_price;
+      }
+    </script>
+
+    <!---to reset data in form-->
+    <script>
+      function reset() {
+        document.getElementById("bookticket").reset();
       }
     </script>
 </body>

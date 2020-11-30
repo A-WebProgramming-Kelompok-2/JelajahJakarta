@@ -12,3 +12,7 @@ router.get('/register', (req,res)=>{
 
     res.render('pages/register');
 });
+
+router.post('/register',(req,res)=>{
+    res.render('pages/register');
+});
