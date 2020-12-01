@@ -7,7 +7,7 @@ app.set('view engine','ejs');
 app.use(express.static('public'));
 app.use(bodyparser.urlencoded());
 
-const port = process.env.port || 8000;
+const port = process.env.PORT || 8000;
 
 //routes
 const indexRoutes = require('./routes/index');
