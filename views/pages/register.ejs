@@ -6,6 +6,7 @@
     <title>Register Account</title>
 
         <!--css-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--js bootstrap-->
@@ -22,6 +23,7 @@
         <script src="jquery.min.js"></script>
         <script src="bootstrap.min.js"></script>
         <script src="bootstrap-show-password.js"></script>
+        <script type="text/javascript" src="script/script.js"></script>
         <!--jquery light slider  -->
         <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
         <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
@@ -30,50 +32,17 @@
             <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
             <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
             <script type="text/javascript" src="script/navbarscript.js"></script>
-
-            <script>
-              var xmlhttp = new XMLHttpRequest();
-             
-              xmlhttp.onreadystatechange = function(){
-                   if(this.readyState == 4 && this.status == 200){
-                      console.log(xmlhttp.response);
-                   }
-              }
-              
-              xmlhttp.open("GET","http://localhost/JelajahJakarta/register.php",true);
-              xmlhttp.send();
-            </script>
 </head>
 <body>
-  <style>
-    .card{
-        width: 50%;
-        margin-left: 25%;
-    }
-    body{
-       background-color: cadetblue;
-    }
-    .alert
-    {
-      display: none;
-    }
-
-    .requirements
-    {
-      list-style-type: none;
-    }
-
-    .wrong .fa-check
-    {
-      display: none;
-    }
-
-    .good .fa-times
-  {
-    display: none;
-  }
-
-</style>
+    <style>
+        .card{
+            width: 50%;
+            margin-left: 25%;
+        }
+        body{
+           background-color: cadetblue;
+        }
+    </style>
     <div class="container-md mt-5">
     <!-- Material form register -->
 <div class="card">
@@ -86,24 +55,23 @@
     <div class="card-body px-lg-5 pt-0">
 
         <form
-            oninput='password.setCustomValidity(password.value != password2.value ? "Passwords do not match." : "")'
-            action="" method="POST">
+            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
             <div class="form-group">
               <label for="exampleInputname1" >Name</label>
-              <input type="text" class="form-control" id="name"required name=name>
+              <input type="text" class="form-control" id="name"required name=un>
             </div>
             <div class="form-group">
               <label for="exampleInputname1" >Username</label>
-              <input type="text" class="form-control" id="username"required name=username>
+              <input type="text" class="form-control" id="username"required name=un>
             </div>
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required name=email>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name=un>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
               </div>
               <div class="form-group">
                 <label for="exampleInputPassword1" >Password</label>
-                <input type="password" class="form-control" id="password" data-toggle="password" required name=password>
+                <input type="password" class="form-control" id="exampleInputPassword1" data-toggle="password" required name=up>
               </div>
               <div class="alert alert-warning password-alert" role="alert">
                 <ul>
@@ -113,13 +81,14 @@
                 </ul>
               </div>
               <div class="form-group">
-                <label for="password" >Re-enter Password</label>
-                <input type="password" class="form-control" id="password2" data-toggle="password" required name=password2>
+                <label for="exampleInputPassword1">Reenter Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" data-toggle="password" name=up2>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" onclick="submitRegister()">Register</button>
               </div>
             </form>
+
     </div>
 
 </div>
@@ -129,19 +98,16 @@
         <script>
           function submitRegister(){
             var xmlhttp = new XMLHttpRequest();
-
             var name = document.getElementById("name").value;
             console.log(name);
             var username = document.getElementById("username").value;
             var email = document.getElementById("exampleInputEmail1").value;
             var password = document.getElementById("exampleInputPassword1").value;
-
             var param = "name="+name+"&username="+username+"&email="+email+"&password="+password;
           
             xmlhttp.onreadystatechange = function(){
                 if(this.readyState == 4 && this.status == 200){
                     console.log(xmlhttp.response);
-
                     if(xmlhttp.response = 1){
                       setTimeout(function(){
                         window.location.replace('/'); 

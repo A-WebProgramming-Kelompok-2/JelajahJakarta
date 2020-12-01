@@ -31,22 +31,7 @@
         <!--jquery search-->
         <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
         <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
-
         <%- include('../layouts/navbar.ejs'); %>
-
-
-        <script>
-          var xmlhttp = new XMLHttpRequest();
-         
-          xmlhttp.onreadystatechange = function(){
-               if(this.readyState == 4 && this.status == 200){
-                  console.log(xmlhttp.response);
-               }
-          }
-          
-          xmlhttp.open("GET","http://localhost/JelajahJakarta/RestAPI.php",true);
-          xmlhttp.send();
-        </script>
 </head>
 
 <body>
