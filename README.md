@@ -1,5 +1,5 @@
 LINK WEB:
-https://jelajahjakarta.netlify.app/
+jelajahjakarta.herokuapp.com
 
 
 kelompok :
