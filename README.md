@@ -1,6 +1,6 @@
 LINK WEB:
 
-jelajahjakarta.heroku.app
+https://jelajahjakarta.herokuapp.com/
 
 
 kelompok :
