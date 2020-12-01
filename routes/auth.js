@@ -16,3 +16,5 @@ router.get('/register', (req,res)=>{
 router.post('/register',(req,res)=>{
     res.render('pages/register');
 });
+
+router.use(express.static('public'));

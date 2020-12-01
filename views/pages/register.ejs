@@ -6,7 +6,6 @@
     <title>Register Account</title>
 
         <!--css-->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--js bootstrap-->
@@ -23,7 +22,6 @@
         <script src="jquery.min.js"></script>
         <script src="bootstrap.min.js"></script>
         <script src="bootstrap-show-password.js"></script>
-        <script type="text/javascript" src="script/script.js"></script>
         <!--jquery light slider  -->
         <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
         <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
@@ -47,15 +45,35 @@
             </script>
 </head>
 <body>
-    <style>
-        .card{
-            width: 50%;
-            margin-left: 25%;
-        }
-        body{
-           background-color: cadetblue;
-        }
-    </style>
+  <style>
+    .card{
+        width: 50%;
+        margin-left: 25%;
+    }
+    body{
+       background-color: cadetblue;
+    }
+    .alert
+    {
+      display: none;
+    }
+
+    .requirements
+    {
+      list-style-type: none;
+    }
+
+    .wrong .fa-check
+    {
+      display: none;
+    }
+
+    .good .fa-times
+  {
+    display: none;
+  }
+
+</style>
     <div class="container-md mt-5">
     <!-- Material form register -->
 <div class="card">
@@ -68,7 +86,7 @@
     <div class="card-body px-lg-5 pt-0">
 
         <form
-            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'
+            oninput='password.setCustomValidity(password.value != password2.value ? "Passwords do not match." : "")'
             action="" method="POST">
             <div class="form-group">
               <label for="exampleInputname1" >Name</label>
@@ -94,16 +112,52 @@
                   <li class="requirements num"><i class="fas fa-check green-text"></i><i class="fas fa-times red-text"></i> Your password must have at least 1 number.</li>
                 </ul>
               </div>
+              <div class="form-group">
+                <label for="password" >Re-enter Password</label>
+                <input type="password" class="form-control" id="password2" data-toggle="password" required name=password2>
+              </div>
               <div class="modal-footer">
-                <button type="submit" class="btn btn-primary" value="add account" name="register">Register </button>
+                <button type="button" class="btn btn-primary" onclick="submitRegister()">Register</button>
               </div>
             </form>
-
     </div>
 
 </div>
 <!-- Material form register -->
 </div>
+
+        <script>
+          function submitRegister(){
+            var xmlhttp = new XMLHttpRequest();
+
+            var name = document.getElementById("name").value;
+            console.log(name);
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("exampleInputEmail1").value;
+            var password = document.getElementById("exampleInputPassword1").value;
+
+            var param = "name="+name+"&username="+username+"&email="+email+"&password="+password;
+          
+            xmlhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    console.log(xmlhttp.response);
+
+                    if(xmlhttp.response = 1){
+                      setTimeout(function(){
+                        window.location.replace('/'); 
+                      }, 100);
+                    }
+                    else {
+                      alert("Gagal Register");
+                    }
+                }
+            }
+            
+            xmlhttp.open("POST","http://localhost/JelajahJakarta/Register.php",true);
+            xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xmlhttp.send(param);
+          }
+        </script>
 
 
 </body>
