@@ -6,7 +6,7 @@ For the live demo of Jelajah Jakarta which is our first web project, click :arro
 
 # TEAM MEMBERS :busts_in_silhouette:
 
-This is the list of our development team, without them this oh so lovely project won't be exist. With all the thougths and hard work that our team put on this project, hopes to benefit many people. 
+This is the list of our development team, without them this oh so lovely project won't be exist. With all the thoughts and hard work that our team put on this project, hopes to benefit many people. 
 
 Name | NIM
 -----|-----
