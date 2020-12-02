@@ -1,16 +1,38 @@
-LINK WEB:
+# JELAJAH JAKARTA :sunrise:
 
-https://jelajahjakarta.herokuapp.com/
+Jelajah Jakarta is a web application that offers information about various vacation spots in Jakarta. With features such as booking ticket, review (you can do a review about the vacation spot), and see on map (just click the button and it will redirect you to google maps of the place you want).
 
+For the live demo of Jelajah Jakarta which is our first web project, click :arrow_right: [Jelajah Jakarta website](https://jelajahjakarta.herokuapp.com/) 
 
-kelompok :
+# TEAM MEMBERS :busts_in_silhouette:
 
-angellina (535190018)
+This is the list of our development team, without them this oh so lovely project won't be exist. With all the thougths and hard work that our team put on this project, hopes to benefit many people. 
 
-yongky s (535190009)
+Name | NIM
+-----|-----
+Angellina | 535190018
+Yongky Saputra | 535190009
+Vanesa Nellie | 535190010
+Cordellya Agatha | 535190014
+Nicholas Hadi | 535190048
 
-vanesa nellie (535190010)
+# Pages :page_facing_up:
 
-cordellya (535190014)
+Here are the list of [Jelajah Jakarta](https://jelajahjakarta.herokuapp.com/) pages: 
+- Account
+  - Sign Up
+  - Login
 
-nicholas hadi (535190048)
+- Place to go
+  - Zoo & Aquarium
+  - Jakarta History Places
+  - Beach and Island
+  - Amusement park & Water park
+  - Culinary
+  - Garden & Lake
+
+- Plan your trip
+  - Experience
+  - Tips
+  
+- My Booking
