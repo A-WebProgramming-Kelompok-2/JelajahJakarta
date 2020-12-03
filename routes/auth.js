@@ -1,6 +1,7 @@
 const express= require('express'),
     router = express.Router();
 
+router.use(express.static('public'));    
 module.exports = router;
 
 router.get('/login', (req,res)=>{

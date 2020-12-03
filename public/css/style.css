@@ -167,25 +167,6 @@ body {
 .modal-dialog{
     width: 100% !important;
 }
-.alert
-{
-    display: none;
-}
-
-.requirements
-{
-    list-style-type: none;
-}
-
-.wrong .fa-check
-{
-    display: none;
-}
-
-.good .fa-times
-{
-    display: none;
-}
 
 /*----- content slider ------*/
 .jumbotron-cs h1{

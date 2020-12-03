@@ -1,5 +1,5 @@
 $(function () {
-    var $password = $(".form-control[password='exampleInputPassword1']");
+    var $password = $(".form-control[id='exampleInputPassword1']");
     var $passwordAlert = $(".password-alert");
     var $requirements = $(".requirements");
     var leng, bigLetter, num;
