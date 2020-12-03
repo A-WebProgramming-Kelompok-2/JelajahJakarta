@@ -7,7 +7,6 @@
     <link rel = "shortcut icon" type="image" href="img/jj.png">
 
         <!--css-->
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--js bootstrap-->
@@ -24,15 +23,10 @@
         <script src="jquery.min.js"></script>
         <script src="bootstrap.min.js"></script>
         <script src="bootstrap-show-password.js"></script>
-        <script type="text/javascript" src="script/script.js"></script>
-        <!--jquery light slider  -->
-        <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+                      
         <script type="text/javascript" src="script/JQuery3.3.1.js"></script>
-        <script type="text/javascript" src="script/lightslider.js"></script>
-            <!--jquery search-->
-            <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
-            <script type="text/javascript" src="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.js"></script>
-            <script type="text/javascript" src="script/navbarscript.js"></script>
+        
+        <script type="text/javascript" src="script/navbarscript.js"></script>
 </head>
 <body>
     <style>
@@ -43,6 +37,26 @@
         body{
            background-color: cadetblue;
         }
+        .alert
+{
+    display: none;
+}
+
+.requirements
+{
+    list-style-type: none;
+}
+
+.wrong .fa-check
+{
+    display: none;
+}
+
+.good .fa-times
+{
+    display: none;
+}
+
     </style>
     <div class="container-md mt-5">
     <!-- Material form register -->
@@ -56,7 +70,7 @@
     <div class="card-body px-lg-5 pt-0">
 
         <form
-            oninput='up2.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
+            oninput='up.setCustomValidity(up2.value != up.value ? "Passwords do not match." : "")'>
             <div class="form-group">
               <label for="exampleInputname1" >Name</label>
               <input type="text" class="form-control" id="name"required name=un>
