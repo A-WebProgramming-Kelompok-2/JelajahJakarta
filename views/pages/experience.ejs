@@ -61,41 +61,19 @@
         <div class="write-name container" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
           <div class="card mb-3 bg-name p-20">
             <div class="row no-gutters">
-              <div class="vertical-center">
-              <div class="col-md-2">
-                <img src="img/user.png" class="card-img" alt="..."> 
-              </div>
-              <div class="col-md-10">
-                <div class="card-body bg-name">
-                  <input class="name-line" type="text" placeholder="Write Your Name Here..." required name=un><br>
-                </div>
-              </div>
-              </div>
-
-              <div class="vertical-center">
-              <div class="col-md-2 vertical-center" style="margin-top: 2%;">
-                <img src="img/email.png" class="card-img" alt="...">
-              </div>
-              <div class="col-md-10">
-                <div class="card-body bg-name">
-                  <input class="name-line" type="email" placeholder="Write Your Email Here..." aria-describedby="emailHelp" required name=un><br>
-                </div>
-              </div>
-              </div>
-
               <div class="vertical-center0" style="width: 100%;">
               <div class="col-md-2" style="margin-top: 2%;">
                 <img src="img/pensil.png" class="card-img" alt="...">
               </div>
               <div class="col-md-10">
                 <div class="card-body bg-name">
-                  <textarea class="name-line0" type="text" placeholder="Write Your Review Here..." rows="8" required name=un></textarea>
+                  <textarea class="name-line0" id="review" type="text" placeholder="Write Your Review Here..." rows="8" required name=un></textarea>
                 </div>
               </div>
               </div>
 
               <div class="card-body bg-name style=" style="text-align: right;">
-                <button type="submit" class="btn btn-outline-light btn-lg" >SUBMIT HERE</button>
+                <button type="button" class="btn btn-outline-light btn-lg" onclick="submitReview()" >SUBMIT HERE</button>
               </div>
             </div>
           </div>
@@ -105,163 +83,166 @@
   
 
   
-      <div class="container width-exp background-jumbo">
+    <div class="container width-exp background-jumbo">
       <div class="jumbotron jumbo-exp">
         <div class="review-exp" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
           <h1 style="margin-top: 20px; margin-bottom: 30px; border-bottom: double white; color: white;">OTHERS REVIEW</h1>
         </div>
       <div>
-        <div>
+        <div id="Review">
           <div class="write-name" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
             <div class="card mb-3 bg-name p-20" style="max-width: 49%; display: inline-block;">
               <div class="row no-gutters">
                 <div class="vertical-center">
-                <div class="col-md-2">
-                  <img src="img/user.png" class="card-img" alt="...">
-                </div>
-                <div class="col-md-10">
-                  <div class="card-body bg-name">
-                    <input class="name-line" type="text" placeholder="Angellina" disabled><br>
-                  </div>
-                </div>
-                </div>
-  
-                <div class="vertical-center0">
-                <div class="col-md-2" style="margin-top: 2%;">
-                  <img src="img/pensil.png" class="card-img" alt="...">
-                </div>
-                <div class="col-md-10">
-                  <div class="card-body bg-name">
-                    <textarea class="name-line0" type="text" placeholder="I go to Ancol Beaches, and turn out it's not too bad, clean and organized. If you grow up in Jakarta, this is a place of memories and fun times. Not really spacious, but clean and tidy. A very colourful place, kids and adults can have a great time here. Try to avoid coming during weekends if you want to take all the rides. Tickets are at $20, quite a reasonable price for this kind of theme park." rows="8" disabled></textarea>
-                  </div>
-                </div>
-                </div>
-              </div>
-      </div>
-
-      <div class="card mb-3 bg-name p-20" style="margin-left: 1.5%; max-width: 49%; display: inline-block;">
-        <div class="row no-gutters">
-          <div class="vertical-center">
-          <div class="col-md-2">
-            <img src="img/user.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-10">
-            <div class="card-body bg-name">
-              <input class="name-line" type="text" placeholder="Cordellya" disabled><br>
-            </div>
-          </div>
-          </div>
-
-          <div class="vertical-center0">
-          <div class="col-md-2" style="margin-top: 2%;">
-            <img src="img/pensil.png" class="card-img" alt="...">
-          </div>
-          <div class="col-md-10">
-            <div class="card-body bg-name">
-              <textarea class="name-line0" type="text" placeholder="Please, Pay Attention to Ragunan Zoo, This Beautiful Place OMG. I love the nature theme or vibes, it's really makes me relax and at the same time entertaining. In the ragunan you can pet the animal(some of them) and taking some good photos. I really like animal and the place is cozy(fresh) because the tree or grass." rows="8" disabled></textarea>
-            </div>
-          </div>
-     </div>
-    </div>
-    </div>
-
-      <div>
-      <div>
-        <div class="write-name" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
-          <div class="card mb-3 bg-name p-20" style="max-width: 49%; display: inline-block;">
-            <div class="row no-gutters">
-              <div class="vertical-center">
-              <div class="col-md-2">
-                <img src="img/user.png" class="card-img" alt="...">
-              </div>
-              <div class="col-md-10">
-                <div class="card-body bg-name">
-                  <input class="name-line" type="text" placeholder="Yongky" disabled><br>
-                </div>
-              </div>
-              </div>
-
-              <div class="vertical-center0">
-              <div class="col-md-2" style="margin-top: 2%;">
-                <img src="img/pensil.png" class="card-img" alt="...">
-              </div>
-              <div class="col-md-10">
-                <div class="card-body bg-name">
-                  <textarea class="name-line0" type="text" placeholder="Seaworld is a good place to study marine life. This place is amazing for me and family, i visited thies place when i go to a tour in ancol with my friends. it is amazing, very big and with a good decor of ocean theme." rows="8" disabled></textarea>
-                </div>
-              </div>
-              </div>
-              </div>
-              </div>
-              <div class="card mb-3 bg-name p-20" style="margin-left: 1.5%; max-width: 49%; display: inline-block;">
-                <div class="row no-gutters">
-                  <div class="vertical-center">
                   <div class="col-md-2">
                     <img src="img/user.png" class="card-img" alt="...">
                   </div>
                   <div class="col-md-10">
                     <div class="card-body bg-name">
-                      <input class="name-line" type="text" placeholder="Nicholas" disabled><br>
+                      <input class="name-line" type="text" placeholder="Angellina" disabled><br>
                     </div>
                   </div>
-                  </div>
-    
-                  <div class="vertical-center0">
+                </div>
+                <div class="vertical-center0">
                   <div class="col-md-2" style="margin-top: 2%;">
                     <img src="img/pensil.png" class="card-img" alt="...">
                   </div>
                   <div class="col-md-10">
                     <div class="card-body bg-name">
-                      <textarea class="name-line0" type="text" placeholder="Taman Ismail Marzuki is known as Jakarta Arts Centre. It is home to a large and a small theatre, galleries, cinema, arts school, literature centre, planetarium, secondhand bookshop and many restaurant or food stalls and a couple of cafes or restaurants. Given that it is the capital city's showcase, it is a bit surprising for foreigner visitors how dilapidated the whole place looks. Nonetheless, it functions. But finding out what is going on isn't easy. The website can be incomplete. Brochures picked up on site, checking the large street banners when passing by, asking around among the various arts fraternities (including via social media) are usually the most reliable methods. All sorts of live shows are presented from local theatre groups, music and visual art exhibitions through national arts festivals to international programs. Most performances, unsurprisingly, are in Indonesian though given that the predominant theatrical form in Indonesia is movement-based works this isn't always an insurmountable barrier for non-Indonesian speakers." rows="8" disabled></textarea>
+                      <textarea class="name-line0" type="text" placeholder="I go to Ancol Beaches, and turn out it's not too bad, clean and organized. If you grow up in Jakarta, this is a place of memories and fun times. Not really spacious, but clean and tidy. A very colourful place, kids and adults can have a great time here. Try to avoid coming during weekends if you want to take all the rides. Tickets are at $20, quite a reasonable price for this kind of theme park." rows="8" disabled></textarea>
                     </div>
                   </div>
+                </div>
               </div>
+            </div>
+            <div class="card mb-3 bg-name p-20" style="margin-left: 1.5%; max-width: 49%; display: inline-block;">
+              <div class="row no-gutters">
+                <div class="vertical-center">
+                  <div class="col-md-2">
+                    <img src="img/user.png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body bg-name">
+                      <input class="name-line" type="text" placeholder="Cordellya" disabled><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="vertical-center0">
+                  <div class="col-md-2" style="margin-top: 2%;">
+                    <img src="img/pensil.png" class="card-img" alt="...">
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body bg-name">
+                      <textarea class="name-line0" type="text" placeholder="Please, Pay Attention to Ragunan Zoo, This Beautiful Place OMG. I love the nature theme or vibes, it's really makes me relax and at the same time entertaining. In the ragunan you can pet the animal(some of them) and taking some good photos. I really like animal and the place is cozy(fresh) because the tree or grass." rows="8" disabled></textarea>
+                    </div>
+                  </div>
+                </div>
               </div>
-              </div>
-
-                  <div>
-                    <div>
-                      <div>
-                        <div class="write-name" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
-                          <div class="card mb-3 bg-name p-20" style="max-width: 49%;">
-                            <div class="row no-gutters">
-                              <div class="vertical-center">
-                              <div class="col-md-2">
-                                <img src="img/user.png" class="card-img" alt="...">
-                              </div>
-                              <div class="col-md-10">
-                                <div class="card-body bg-name">
-                                  <input class="name-line" type="text" placeholder="Vanesa" disabled><br>
-                                </div>
-                              </div>
-                              </div>
-                
-                              <div class="vertical-center0">
-                              <div class="col-md-2" style="margin-top: 2%;">
-                                <img src="img/pensil.png" class="card-img" alt="...">
-                              </div>
-                              <div class="col-md-10">
-                                <div class="card-body bg-name">
-                                  <textarea class="name-line0" type="text" placeholder="For me, Pulau Seribu is another fine part of Indonesian beaches. easy to reach, cheap, but it's unforgettable ! the sun shines so beautiful" rows="8" disabled></textarea>
-                                </div>
-                              </div>
-                         </div>
-                        </div>
-                        </div>
-                       </div>
-                      </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-      </div>
+    </div>
+  </div>
+    <script>
+          function submitReview(){
+            var xmlhttp = new XMLHttpRequest();
+            var review = document.getElementById("review").value;
+            var param = "&review="+review+"&username="+username;
+          
+            xmlhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    console.log(xmlhttp.response);
+                    if(xmlhttp.response = 1){
+                      setTimeout(function(){
+                        alert("Thankyou for the Review");
+                          document.getElementById("review").value = "";
+                          getReview();
+                      }, 100);
+                    }
+                    else {
+                      alert("Gagal Review");
+                    }
+                }
+            }
+            
+            xmlhttp.open("POST","http://localhost/JelajahJakarta/Review.php",true);
+            xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xmlhttp.send(param);
+          }
 
-
+          function getReview(){
+            var xmlhttp = new XMLHttpRequest();
+          
+            xmlhttp.onreadystatechange = function(){
+                if(this.readyState == 4 && this.status == 200){
+                    var data = JSON.parse(xmlhttp.response);
+                    document.getElementById("Review").innerHTML = "";
+                    var dataStart = '<div class="write-name" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">';
+                    var dataEnd = "</div>";
+                    var dataOdd = "";
+                    var dataEven = "";
+                    var line = "";
+                    var full = "";
+                    for(var a = 0;a<data.length;a++){
+                        
+                        if(a % 2 == 0){
+                          console.log(data[a]);
+                            dataOdd = '<div class="card mb-3 bg-name p-20" style="max-width: 49%; display: inline-block;"><div class="row no-gutters"><div class="vertical-center"><div class="col-md-2"><img src="img/user.png" class="card-img" alt="..."></div><div class="col-md-10"><div class="card-body bg-name"><input class="name-line" type="text" placeholder="'+data[a].Username+'" disabled><br></div></div></div><div class="vertical-center0"><div class="col-md-2" style="margin-top: 2%;"><img src="img/pensil.png" class="card-img" alt="..."></div><div class="col-md-10"><div class="card-body bg-name"><textarea class="name-line0" type="text" placeholder="'+data[a].Review+'" rows="8" disabled></textarea></div></div></div></div></div>"'; 
+                        }
+                        else{
+                            dataEven = '<div class="card mb-3 bg-name p-20" style="margin-left: 1.5%; max-width: 49%; display: inline-block;"><div class="row no-gutters"><div class="vertical-center"><div class="col-md-2"><img src="img/user.png" class="card-img" alt="..."></div><div class="col-md-10"><div class="card-body bg-name"><input class="name-line" type="text" placeholder="'+data[a].Username+'" disabled><br></div></div></div><div class="vertical-center0"><div class="col-md-2" style="margin-top: 2%;"><img src="img/pensil.png" class="card-img" alt="..."></div><div class="col-md-10"><div class="card-body bg-name"><textarea class="name-line0" type="text" placeholder="'+data[a].Review+'" rows="8" disabled></textarea></div></div></div></div></div>"';
+                            line = dataStart+dataOdd+dataEven+dataEnd;
+                            full = full + line;
+                        }
+                        
+                    }
+                    console.log(full);
+                    document.getElementById("Review").innerHTML = full;
+                }
+            }
+            
+            xmlhttp.open("POST","http://localhost/JelajahJakarta/TopReview.php",true);
+            xmlhttp.send();
+          }
+        </script>
+        <script>
+          var xmlhttp = new XMLHttpRequest();
+              xmlhttp.onreadystatechange = function(){
+                  if(this.readyState == 4 && this.status == 200){
+                    var data = JSON.parse(xmlhttp.response);
+                    var dataStart = '<div class="write-name" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">';
+                    var dataEnd = "</div>";
+                    var dataOdd = "";
+                    var dataEven = "";
+                    var line = "";
+                    var full = "";
+                    for(var a = 0;a<data.length;a++){
+                        
+                        if(a % 2 == 0){
+                          console.log(data[a]);
+                            dataOdd = '<div class="card mb-3 bg-name p-20" style="max-width: 49%; display: inline-block;"><div class="row no-gutters"><div class="vertical-center"><div class="col-md-2"><img src="img/user.png" class="card-img" alt="..."></div><div class="col-md-10"><div class="card-body bg-name"><input class="name-line" type="text" placeholder="'+data[a].Username+'" disabled><br></div></div></div><div class="vertical-center0"><div class="col-md-2" style="margin-top: 2%;"><img src="img/pensil.png" class="card-img" alt="..."></div><div class="col-md-10"><div class="card-body bg-name"><textarea class="name-line0" type="text" placeholder="'+data[a].Review+'" rows="8" disabled></textarea></div></div></div></div></div>"'; 
+                        }
+                        else{
+                            dataEven = '<div class="card mb-3 bg-name p-20" style="margin-left: 1.5%; max-width: 49%; display: inline-block;"><div class="row no-gutters"><div class="vertical-center"><div class="col-md-2"><img src="img/user.png" class="card-img" alt="..."></div><div class="col-md-10"><div class="card-body bg-name"><input class="name-line" type="text" placeholder="'+data[a].Username+'" disabled><br></div></div></div><div class="vertical-center0"><div class="col-md-2" style="margin-top: 2%;"><img src="img/pensil.png" class="card-img" alt="..."></div><div class="col-md-10"><div class="card-body bg-name"><textarea class="name-line0" type="text" placeholder="'+data[a].Review+'" rows="8" disabled></textarea></div></div></div></div></div>"';
+                            line = dataStart+dataOdd+dataEven+dataEnd;
+                            full = full + line;
+                        }
+                        
+                    }
+                    console.log(full);
+                    document.getElementById("Review").innerHTML = full;
+                   
+                      if(xmlhttp.response == "500"){
+                          console.log(xmlhttp.response);
+                      }else{
+                        console.log(xmlhttp.response);
+                      }
+                  }
+              }
+          xmlhttp.open("GET","http://localhost/JelajahJakarta/TopReview.php",true);
+          xmlhttp.send();
+        </script>
 
 <%- include('../layouts/footer.ejs'); %>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
