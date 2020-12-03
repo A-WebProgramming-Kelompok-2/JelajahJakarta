@@ -304,7 +304,13 @@
         <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content1_2.jpg);
         ">
           <div class="box-1">
-            <a class="link_a" href="/jakarta-history-places"><p>JAKARTA HISTORY PLACES</p></a>
+            <script>
+              if(username == ""){
+              document.write('<a class="link_a" href="/jakarta-history-places"><p>JAKARTA HISTORY PLACES</p></a>');
+              }else{
+                document.write('<a class="link_a" href="/jakarta-history-places?Username='+username+'"><p>JAKARTA HISTORY PLACES</p></a>');
+              }
+            </script>
           </div>
         </div>
         </li>
@@ -314,7 +320,14 @@
           <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content2_1.jpg);
           ">
             <div class="box-1">
-              <a class="link_b" href="/beach-island"><p>BEACH & ISLAND</p></a>
+            <script>
+              if(username == ""){
+                document.write('<a class="link_b" href="/beach-island"><p>BEACH & ISLAND</p></a>');
+              }else{
+                document.write('<a class="link_b" href="/beach-island?Username='+username+'"><p>BEACH & ISLAND</p></a>');
+              }
+            </script>
+              
             </div>
           </div>
           </li>
@@ -324,7 +337,14 @@
           <div class="box" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content3_3.jpg);
           ">
             <div class="box-1">
-              <a class="link_c" href="/zoo"><p>ZOO & AQUARIUM</p></a>
+              <script>
+              if(username == ""){
+                document.write('<a class="link_c" href="/zoo"><p>ZOO & AQUARIUM</p></a>');
+              }else{
+                document.write('<a class="link_b" href="/zoo?Username='+username+'"><p>ZOO & AQUARIUM</p></a>');
+              }
+            </script>
+              
             </div>
           </div>
           </li>
@@ -334,7 +354,13 @@
             <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content4_1.jpg);
             ">
               <div class="box-1">
-                <a class="link_d" href="/culinary"><p>CULINARY</p></a>
+                <script>
+              if(username == ""){
+                document.write('<a class="link_d" href="/culinary"><p>CULINARY</p></a>');
+              }else{
+                document.write('<a class="link_b" href="/culinary?Username='+username+'"><p>CULINARY</p></a>');
+              }
+            </script>
               </div>
             </div>
             </li>
@@ -344,7 +370,14 @@
               <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/content5_3.jpg);
               ">
                 <div class="box-1">
-                  <a class="link_e" href="/amusement-water-park" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p></a>
+                  <script>
+                    if(username == ""){
+                      document.write('<a class="link_e" href="/amusement-water-park" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p></a>');
+                    }else{
+                      document.write('<a class="link_e" href="/amusement-water-park?Username='+username+'" style="text-align: center;"><p>AMUSEMENT PARK <br>&</br>WATER PARK</p>');
+                    }
+                  </script>
+                  
                 </div>
               </div>
               </li>
@@ -354,7 +387,14 @@
                 <div class="box"  style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(img/garden1.jpg);
                 ">
                   <div class="box-1">
-                    <a class="link_f" href="/lake-garden"><p>GARDEN & LAKE</p></a>
+                  <script>
+                    if(username == ""){
+                      document.write('<a class="link_f" href="/lake-garden"><p>GARDEN & LAKE</p></a>');
+                    }else{
+                      document.write('<a class="link_f" href="/lake-garden?Username='+username+'"><p>GARDEN & LAKE</p></a>');
+                    }
+                  </script>
+                    
                   </div>
                 </div>
                 </li>    
