@@ -52,7 +52,7 @@
       <li class="nav-item">
       <script>
          if(username == ""){
-              document.write('<a class="nav-link" href="/mybooking">My Booking <span class="badge badge-light">5</span></a>');
+              document.write('<a class="nav-link" href="/mybooking">My Booking <span class="badge badge-light"></span></a>');
          }else{
               document.write('<a class="nav-link" href="/mybooking?Username='+username+'">My Booking <span class="badge badge-light">5</span></a>');
          }
@@ -107,40 +107,15 @@
       </li>
 
     </ul>
-    <!--search bar-->
-    <script type="text/javascript">
-      $(function(){
-        var data = [
-            "Ancol",
-            "ChinaTown",
-            "Dufan",
-            "Ecopark",
-            "Fauna Land",
-            "Jakarta Aquarium",
-            "Jakarta Cathedral",
-            "Kidzania Pacific Palace",
-            "Kota Tua",
-            "Monumen Nasional",
-            "National Gallery",
-            "Pulau Seribu",
-            "Ragunan Zoo",
-            "Setu Babakan",
-            "Taman Ismail Marzuki",
-            "TMII",
-            "Taman Suropati",
-            "Waterboom",
-        ];
-        $("#auto-complete").autocomplete({
-          source: data
-        });
-      });
-    </script>
+   
     <form class="form-inline my-2 my-lg-0">
       
     </form>
   </div>
 </nav>
-<!--Modal log in-->
+
+
+<!--Modal log in
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered">
   <div class="modal-content">
@@ -169,9 +144,9 @@
   </div>
 </div>
 </div>
-<!-- end of modal log in-->
+ end of modal log in-->
 
-<!--modal register-->
+<!--modal register
 <div class="modal fade" id="register" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 <div class="modal-dialog modal-dialog-centered">
 <div class="modal-content">
@@ -220,9 +195,9 @@
 </div>
 </div>
 </div>
-<!--end of modal register-->
+end of modal register-->
 
-<!--modal my booking list-->
+<!--modal my booking list
 <div class="modal fade" id="mybooking" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
@@ -333,4 +308,5 @@
 </div>
 </div>
 </div>
+-->
 </body>

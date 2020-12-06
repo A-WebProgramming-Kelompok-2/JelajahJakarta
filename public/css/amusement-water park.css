@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
