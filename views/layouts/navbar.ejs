@@ -3,6 +3,15 @@
   <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
   <script type="text/javascript" src="script/navbarscript.js"></script>
   <script>
+        var place="";
+        function setPriceVariable(harga,tempat){
+          console.log(harga);
+          place = tempat;
+          console.log(place);
+          var priceVar = harga;
+          document.getElementById("price").value = harga;
+          document.getElementById("price2").value = harga;
+        } 
         var username="";
           function getUrlVars() {
               var vars = {};
@@ -20,12 +29,42 @@
           }
           console.log(username);
 
-          function booking(path){
-          if(username == "") {
+          function booking(path,tempat){
+                if(username == "") {
                   alert("Please Login Before You Submit");
                   window.location.replace('/auth/login?Path='+path);
+                }else{
+                  var xmlhttp = new XMLHttpRequest();
+                  var name = document.getElementById("nametransaction").value;
+                  var email = document.getElementById("email").value;
+                  var date = document.getElementById("bookingdate").value;
+                  var tiket = document.getElementById("countticket").value;
+                  var Totalprice = document.getElementById("price").value;
+                  var tempdate = new Date();
+                  var transactionDate = tempdate.getFullYear() + "-" + (tempdate.getMonth() + 1) + "-" + tempdate.getDate() + " " + tempdate.getHours() + ":" + tempdate.getMinutes() + ":" + tempdate.getSeconds() ;
+                  var param = "transactionname="+name+"&username="+username+"&email="+email+"&tempat="+tempat+"&tiket="+tiket+"&harga="+Totalprice+"&dateBooking="+date+"&transactiondate="+transactionDate;
+                  console.log(param);
+                  console.log(tempat);
+                  xmlhttp.onreadystatechange = function(){
+                      if(this.readyState == 4 && this.status == 200){
+                          console.log(xmlhttp.response);
+                          if(xmlhttp.response = 1){
+                            setTimeout(function(){
+                              console.log(xmlhttp.response);
+                              alert("Success");
+                              window.location.replace('/mybooking?Username='+username); 
+                            }, 100);
+                          }
+                          else {
+                            alert("Gagal Booking");
+                          }
+                      }
+                  }
+                  
+                  xmlhttp.open("POST","http://localhost/JelajahJakarta/Booking.php",true);
+                  xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                  xmlhttp.send(param);
                 }
-                else{}
           }
         </script>
 </head>

@@ -110,7 +110,7 @@
                       console.log(xmlhttp.response);
                       var a = JSON.parse(xmlhttp.response);
                       console.log(a[0].Username);
-                      if(getUrlVars()["Path"] !== ""){
+                      if(getUrlVars()["Path"] !== "" && getUrlVars()["Path"] !== undefined){
                         window.location.replace('/'+getUrlVars()["Path"]+'?Username='+a[0].Username);
                       }else{
                         window.location.replace('/?Username='+a[0].Username);

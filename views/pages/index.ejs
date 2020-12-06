@@ -117,7 +117,7 @@
                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" >
                      View More 
                     </a>
-                    <a class="btn btn-success" data-toggle="modal" onclick="setPriceVariable(50000)" data-target="#book_ticket">Buy Ticket</a>
+                    <a class="btn btn-success" data-toggle="modal" onclick="setPriceVariable(50000,'Ancol')" data-target="#book_ticket">Buy Ticket</a>
                     </p>
                   <div class="collapse" id="collapseExample">
                     <div class="card card-body">
@@ -145,7 +145,7 @@
                      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample" >
                       View More 
                      </a>
-                     <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(70000)" data-target="#book_ticket">Buy Ticket</a>
+                     <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(70000,'TMII')" data-target="#book_ticket">Buy Ticket</a>
                      </p>
                    <div class="collapse" id="collapseExample1">
                      <div class="card card-body">
@@ -172,7 +172,7 @@
                         <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample" >
                           View More 
                          </a>
-                         <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(35000)" data-target="#book_ticket">Buy Ticket</a>
+                         <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(35000,'Ragunan Zoo')" data-target="#book_ticket">Buy Ticket</a>
                          </p>
                        <div class="collapse" id="collapseExample2">
                          <div class="card card-body">
@@ -205,7 +205,7 @@
                 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
                   View More
                 </a>
-                <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(20000)" data-target="#book_ticket">Buy Ticket</a>
+                <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(20000,'Monumen Nasional')" data-target="#book_ticket">Buy Ticket</a>
                 <p>
                   
                 </p>
@@ -233,7 +233,7 @@
                     <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample">
                       View More
                     </a>
-                    <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(10000)" data-target="#book_ticket">Buy Ticket</a>
+                    <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(10000,'Kota Tua')" data-target="#book_ticket">Buy Ticket</a>
                     <p>
                       
                     </p>
@@ -261,7 +261,7 @@
                       <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample">
                         View More
                       </a>
-                      <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(250000)" data-target="#book_ticket">Buy Ticket</a>
+                      <a class="btn btn-success"data-toggle="modal" onclick="setPriceVariable(250000,'Jakarta Aquarium')" data-target="#book_ticket">Buy Ticket</a>
                       <p>
                         
                       </p>
@@ -450,10 +450,36 @@
         </button>
       </div>
       <div class="modal-body" id="book_ticket">
-        <form method="" action="" id="bookticket">
+         <div>
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control" id="nametransaction" placeholder="Full name" value="">
+          </div>
+          <div>
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="example@gmail.com" value="">
+          </div>
+          <div>
+            <label for="exampleInputDate">date</label>
+            <input type="date" class="form-control select-date" id="bookingdate" value="">
+          </div>
+          <div >
+            <label for="exampleInputCount">How many ticket?</label>
+            <input type="number" min=0 class="form-control" id="countticket" onchange="calculate()" value="1" />
+          </div>
+          <div >
+            <label for="exampleInputCount">Price</label>
+            <input type="number" class="form-control" id="price" value="" disabled/>
+            <label id="price2"></label>
+          </div>
+          <div>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="reset()">Cancel</button>
+            <button type="button" onclick="booking('',place)" class="btn btn-warning">Book now</button>
+          </div>
+          <!--
+        <form method="GET" action="" id="bookticket">
           <div class="form-group">
             <label for="exampleInputName">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Full name">
+            <input type="text" class="form-control" id="name" placeholder="Full name" value="Full name">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
@@ -476,7 +502,7 @@
             <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="reset()">Cancel</button>
             <button type="button" onclick="booking('')" class="btn btn-warning">Book now</button>
           </div>
-        </form>
+        </form>-->
       </div>
     </div>
   </div>
@@ -488,14 +514,6 @@
       AOS.init();
     </script>
     <script>
-      
-      
-      function setPriceVariable(harga){
-        console.log(harga);
-        var priceVar = harga;
-        document.getElementById("price").value = harga;
-        document.getElementById("price2").value = harga;
-      } 
 
       function calculate(){
           var count = document.getElementById("countticket").value;
