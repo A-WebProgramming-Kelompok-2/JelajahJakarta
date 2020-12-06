@@ -4,6 +4,7 @@
   <script type="text/javascript" src="script/navbarscript.js"></script>
   <script>
         var place="";
+        var countDataBooking="3";
         function setPriceVariable(harga,tempat){
           console.log(harga);
           place = tempat;
@@ -25,6 +26,25 @@
               username = "";
             }else{
               username = getUrlVars()["Username"];
+              var xmlhttp = new XMLHttpRequest();
+              var param = "username="+username;
+              xmlhttp.onreadystatechange = function(){
+                      if(this.readyState == 4 && this.status == 200){
+                          console.log(xmlhttp.response);
+                          if(xmlhttp.response = 1){
+                              var data = JSON.parse(xmlhttp.response);
+                              countDataBooking = data.length;
+                              document.getElementById("CountData").innerHTML = countDataBooking;
+                          }
+                          else {
+                            alert("Gagal Booking");
+                          }
+                      }
+                  }
+                  
+                  xmlhttp.open("POST","http://localhost/JelajahJakarta/ListBooking.php",true);
+                  xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                  xmlhttp.send(param);
             }
           }
           console.log(username);
@@ -68,6 +88,7 @@
           }
         </script>
 </head>
+
 <body>
 <!---NAVBAR-->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -90,10 +111,11 @@
       </li>
       <li class="nav-item">
       <script>
+      
          if(username == ""){
               document.write('<a class="nav-link" href="/mybooking">My Booking <span class="badge badge-light"></span></a>');
          }else{
-              document.write('<a class="nav-link" href="/mybooking?Username='+username+'">My Booking <span class="badge badge-light">5</span></a>');
+              document.write('<a class="nav-link" href="/mybooking?Username='+username+'">My Booking <span class="badge badge-light" id="CountData"></span></a>');
          }
       </script>
         
