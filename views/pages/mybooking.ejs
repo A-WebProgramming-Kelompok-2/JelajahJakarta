@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jakarta History Places</title>
+    <title>My Booking</title>
     <link rel = "shortcut icon" type="image" href="img/jj.png">
        <!--css-->
-    <link rel="stylesheet" type="text/css" href="css/zoo.css">
-    <link rel="stylesheet" type="text/css" href="css/jakarta.css">
-    <link rel="stylesheet" type="text/javascript" href="script.js">
+       <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--js bootstrap-->
@@ -37,55 +35,57 @@
 
 </head>
 <body>
-    <header>
-    </header>
+
     <div id="mybooking_content">
-        <div class="card text-center">
-            <div class="card-header">(Nama Tempat)</div>
-            <div class="card-body text-justify">
-                    <div>
-                       <label for="exampleInputName">Name</label>
-                       <input type="text" class="form-control" id="nametransaction" placeholder="Full name" value="">
-                     </div>
-                     <div style="margin-top: 10px;">
-                       <label for="exampleInputDate">Date</label>
-                       <input type="date" class="form-control select-date" id="bookingdate" value="">
-                     </div>
-                     <div style="margin-top: 10px;">
-                       <label for="exampleInputCount">Number of Tickets</label>
-                       <input type="number"class="form-control" id="numticket"/>
-                     </div>
-                     <div style="margin-top: 10px;">
-                       <label for="exampleInputCount">Price</label>
-                       <input type="number" class="form-control" id="price" value=""/>
-                     </div>
-                     <div class="but_cancel">
-                       <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel Booking</button>
-                     </div>
-            <div class="card-footer text-muted text-center">(Booking ID)</div>
-          </div>
+      <div class="card-body">
+        <h1>MY BOOKING</h1>
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Booking No.</th>
+              <th scope="col">Name</th>
+              <th scope="col">Place</th>
+              <th scope="col">Date</th>
+              <th scope="col">Status</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">40233</th>
+              <td>Cordellya</td>
+              <td>Ancol</td>
+              <td>1-DEC-2020</td>
+              <td><span class="badge badge-success" id="book1">Booked</span></td>
+              <td><button onclick="cancelB()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
+              <script>
+                function cancelB() {
+                  var r = confirm("Are you sure to cancel your booking");
+                  if (r == true) {
+                    document.getElementById("book1").innerHTML = "Cancelled";
+                    document.getElementById("book1").style.backgroundColor = "red";
+                  }
+                }
+                </script>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        </div>
+        </div>
     </div>
 
 <style>
-    header{
-        background-image: url(img/buy_1.jpg);
-        height: 50vh;
-        background-size: cover;
-        width: 100%;
+
+    h1{
+      margin-top: 60px;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
     }
-    .card{
-        width: 50%;
-        background-color: white;
-        margin-left: 2%;
-        border: thin 2px black;
+    table{
+      margin-top: 20px;
     }
-    #mybooking_content{
-        margin-top: 20px;
-    }
-    .but_cancel{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+    
 </style>
 
     <%- include('../layouts/footer.ejs'); %>
