@@ -43,10 +43,10 @@
                               var dataList = "";
                               for(var x = 0;x<data.length;x++){
                                 if(data[x].Status == "Booked"){
-                                  dataList = dataList+ '<tr><th scope="row">'+data[x].BookingId+'</th><td>'+data[x].TransactionName+'</td><td>'+data[x].Tempat+'</td><td>'+data[x].DateBooking+'</td><td><span class="badge badge-success" id="book1">'+data[x].Status+'</span></td><td><button onclick="cancelB()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td></tr>';
+                                  dataList = dataList+ '<tr><th scope="row">'+data[x].BookingId+'</th><td>'+data[x].TransactionName+'</td><td>'+data[x].Tempat+'</td><td>'+data[x].DateBooking+'</td><td><span class="badge badge-success" id="book1">'+data[x].Status+'</span></td><td><button onclick="CancelBooking('+data[x].BookingId+')" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td></tr>';
                                 }
                                 else{
-                                  dataList = dataList+ '<tr><th scope="row">'+data[x].BookingId+'</th><td>'+data[x].TransactionName+'</td><td>'+data[x].Tempat+'</td><td>'+data[x].DateBooking+'</td><td><span class="badge badge-error" id="book1">'+data[x].Status+'</span></td><td><button type="button" class="btn btn-outline-danger btn-sm">Canceled</button></td></tr>';
+                                  dataList = dataList+ '<tr><th scope="row">'+data[x].BookingId+'</th><td>'+data[x].TransactionName+'</td><td>'+data[x].Tempat+'</td><td>'+data[x].DateBooking+'</td><td><span class="badge badge-danger" id="book1">'+data[x].Status+'</span></td><td><button type="button" disabled class="btn btn-outline-danger btn-sm">Canceled</button></td></tr>';
                                 }
                               }
                               if(dataList !== "" ){
@@ -102,6 +102,79 @@
                   xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                   xmlhttp.send(param);
                 }
+          }
+
+          function refreshList(){
+            var xmlhttp = new XMLHttpRequest();
+              var param = "username="+username;
+              xmlhttp.onreadystatechange = function(){
+                      if(this.readyState == 4 && this.status == 200){
+                          console.log(xmlhttp.response);
+                          if(xmlhttp.response = 1){
+                              var data = JSON.parse(xmlhttp.response);
+                              console.log(data.length);
+                              if(data.length == undefined){
+                                countDataBooking = "";
+                              }else{
+                                countDataBooking = data.length;
+                              }
+                                document.getElementById("CountData").innerHTML = countDataBooking;
+                              var dataList = "";
+                              for(var x = 0;x<data.length;x++){
+                                if(data[x].Status == "Booked"){
+                                  dataList = dataList+ '<tr><th scope="row">'+data[x].BookingId+'</th><td>'+data[x].TransactionName+'</td><td>'+data[x].Tempat+'</td><td>'+data[x].DateBooking+'</td><td><span class="badge badge-success" id="book1">'+data[x].Status+'</span></td><td><button onclick="CancelBooking('+data[x].BookingId+')" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td></tr>';
+                                }
+                                else{
+                                  dataList = dataList+ '<tr><th scope="row">'+data[x].BookingId+'</th><td>'+data[x].TransactionName+'</td><td>'+data[x].Tempat+'</td><td>'+data[x].DateBooking+'</td><td><span class="badge badge-danger"  id="book1">'+data[x].Status+'</span></td><td><button type="button" disabled class="btn btn-outline-danger btn-sm">Canceled</button></td></tr>';
+                                }
+                              }
+                              if(dataList !== "" ){
+                                document.getElementById("listData").innerHTML = dataList;
+                              }
+                          }
+                          else {
+                            alert("Gagal Booking");
+                          }
+                      }
+                  }
+                  
+                  xmlhttp.open("POST","http://localhost/JelajahJakarta/ListBooking.php",true);
+                  xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                  xmlhttp.send(param);
+          }
+
+          function CancelBooking(bookingId){
+            var xmlhttp = new XMLHttpRequest();
+            var param = "bookingId="+bookingId;
+
+             xmlhttp.onreadystatechange = function(){
+                  if(this.readyState == 4 && this.status == 200){
+                      console.log(xmlhttp.response);
+                      if(xmlhttp.response = 1){
+                        setTimeout(function(){
+                          console.log(xmlhttp.response);
+                          alert("Success");
+                          refreshList();
+                        }, 100);
+                      }
+                      else {
+                        alert("Gagal Cancel Booking");
+                      }
+                  }
+              }
+
+              xmlhttp.open("POST","http://localhost/JelajahJakarta/CancelBooking.php",true);
+              xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+              xmlhttp.send(param);
+
+          }
+
+          function reset(){
+                  document.getElementById("price").value = document.getElementById("price").value/document.getElementById("countticket").value;
+                  document.getElementById("nametransaction").value = "";
+                  document.getElementById("email").value = "";
+                  document.getElementById("bookingdate").value = "";
+                  document.getElementById("countticket").value = "1";         
           }
         </script>
 </head>
