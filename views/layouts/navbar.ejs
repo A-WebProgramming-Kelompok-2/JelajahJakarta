@@ -4,7 +4,7 @@
   <script type="text/javascript" src="script/navbarscript.js"></script>
   <script>
         var place="";
-        var countDataBooking="3";
+        var countDataBooking="0";
         function setPriceVariable(harga,tempat){
           console.log(harga);
           place = tempat;
@@ -33,8 +33,25 @@
                           console.log(xmlhttp.response);
                           if(xmlhttp.response = 1){
                               var data = JSON.parse(xmlhttp.response);
-                              countDataBooking = data.length;
-                              document.getElementById("CountData").innerHTML = countDataBooking;
+                              console.log(data.length);
+                              if(data.length == undefined){
+                                countDataBooking = "";
+                              }else{
+                                countDataBooking = data.length;
+                              }
+                                document.getElementById("CountData").innerHTML = countDataBooking;
+                              var dataList = "";
+                              for(var x = 0;x<data.length;x++){
+                                if(data[x].Status == "Booked"){
+                                  dataList = dataList+ '<tr><th scope="row">'+data[x].BookingId+'</th><td>'+data[x].TransactionName+'</td><td>'+data[x].Tempat+'</td><td>'+data[x].DateBooking+'</td><td><span class="badge badge-success" id="book1">'+data[x].Status+'</span></td><td><button onclick="cancelB()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td></tr>';
+                                }
+                                else{
+                                  dataList = dataList+ '<tr><th scope="row">'+data[x].BookingId+'</th><td>'+data[x].TransactionName+'</td><td>'+data[x].Tempat+'</td><td>'+data[x].DateBooking+'</td><td><span class="badge badge-error" id="book1">'+data[x].Status+'</span></td><td><button type="button" class="btn btn-outline-danger btn-sm">Canceled</button></td></tr>';
+                                }
+                              }
+                              if(dataList !== "" ){
+                                document.getElementById("listData").innerHTML = dataList;
+                              }
                           }
                           else {
                             alert("Gagal Booking");

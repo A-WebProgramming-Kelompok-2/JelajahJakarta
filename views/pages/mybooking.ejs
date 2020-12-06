@@ -50,24 +50,8 @@
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">40233</th>
-              <td>Cordellya</td>
-              <td>Ancol</td>
-              <td>1-DEC-2020</td>
-              <td><span class="badge badge-success" id="book1">Booked</span></td>
-              <td><button onclick="cancelB()" type="button" class="btn btn-outline-danger btn-sm">Cancel</button></td>
-              <script>
-                function cancelB() {
-                  var r = confirm("Are you sure to cancel your booking");
-                  if (r == true) {
-                    document.getElementById("book1").innerHTML = "Cancelled";
-                    document.getElementById("book1").style.backgroundColor = "red";
-                  }
-                }
-                </script>
-            </tr>
+          <tbody id="listData">
+            
           </tbody>
         </table>
         </div>
@@ -90,5 +74,10 @@
 
     <%- include('../layouts/footer.ejs'); %>
 </body>
+            <script>
+                function cancelB() {
+                    
+                }
+            </script>
 </html>
 
