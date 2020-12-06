@@ -326,7 +326,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="reset()">Cancel</button>
-            <button type="submit" class="btn btn-warning">Book now</button>
+            <button type="button" onclick="booking('jakarta-history-places')" class="btn btn-warning">Book now</button>
           </div>
         </form>
       </div>
@@ -357,6 +357,8 @@
           total_price = count * price;
           document.getElementById("price").value = total_price;
       }
+
+      
     </script>
 
     <!---to reset data in form-->

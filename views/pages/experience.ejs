@@ -67,7 +67,7 @@
               </div>
               <div class="col-md-10">
                 <div class="card-body bg-name">
-                  <textarea class="name-line0" id="review" type="text" placeholder="Write Your Review Here..." rows="8" required name=un></textarea>
+                  <textarea class="name-line0" id="review" type="text" placeholder="Write Your Review Here..."  rows="8" required name=un></textarea>
                 </div>
               </div>
               </div>
@@ -144,31 +144,46 @@
       </div>
     </div>
   </div>
+
     <script>
-          function submitReview(){
-            var xmlhttp = new XMLHttpRequest();
-            var review = document.getElementById("review").value;
-            var param = "&review="+review+"&username="+username;
-          
-            xmlhttp.onreadystatechange = function(){
-                if(this.readyState == 4 && this.status == 200){
-                    console.log(xmlhttp.response);
-                    if(xmlhttp.response = 1){
-                      setTimeout(function(){
-                        alert("Thankyou for the Review");
-                          document.getElementById("review").value = "";
-                          getReview();
-                      }, 100);
-                    }
-                    else {
-                      alert("Gagal Review");
-                    }
-                }
-            }
+            function mustLogin(){
             
-            xmlhttp.open("POST","http://localhost/JelajahJakarta/Review.php",true);
-            xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xmlhttp.send(param);
+          }
+    </script>
+
+    <script>
+
+          function submitReview(){
+            
+            if(username == "") {
+              alert("Please Login Before You Submit");
+               window.location.replace('/auth/login?Path=experience');
+            }
+            else{ 
+              var xmlhttp = new XMLHttpRequest();
+              var review = document.getElementById("review").value;
+              var param = "&review="+review+"&username="+username;
+            
+              xmlhttp.onreadystatechange = function(){
+                  if(this.readyState == 4 && this.status == 200){
+                      console.log(xmlhttp.response);
+                      if(xmlhttp.response = 1){
+                        setTimeout(function(){
+                          alert("Thankyou for the Review");
+                            document.getElementById("review").value = "";
+                            getReview();
+                        }, 100);
+                      }
+                      else {
+                        alert("Gagal Review");
+                      }
+                  }
+              }
+              
+              xmlhttp.open("POST","http://localhost/JelajahJakarta/Review.php",true);
+              xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+              xmlhttp.send(param);
+            }
           }
 
           function getReview(){

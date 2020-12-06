@@ -85,6 +85,14 @@
 </div>
 
         <script>
+          function getUrlVars() {
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                    vars[key] = value;
+                });
+                return vars;
+            }
+            
           function doLogin() {
             var xmlhttp = new XMLHttpRequest();
             var username = document.getElementById("username").value;
@@ -102,7 +110,12 @@
                       console.log(xmlhttp.response);
                       var a = JSON.parse(xmlhttp.response);
                       console.log(a[0].Username);
-                      window.location.replace('/?Username='+a[0].Username);
+                      if(getUrlVars()["Path"] !== ""){
+                        window.location.replace('/'+getUrlVars()["Path"]+'?Username='+a[0].Username);
+                      }else{
+                        window.location.replace('/?Username='+a[0].Username);
+                      }
+                      
                     }
                     // 
                     

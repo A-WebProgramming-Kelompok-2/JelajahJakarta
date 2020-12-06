@@ -19,6 +19,14 @@
             }
           }
           console.log(username);
+
+          function booking(path){
+          if(username == "") {
+                  alert("Please Login Before You Submit");
+                  window.location.replace('/auth/login?Path='+path);
+                }
+                else{}
+          }
         </script>
 </head>
 <body>
