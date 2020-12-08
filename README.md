@@ -4,6 +4,8 @@ Jelajah Jakarta is a web application that offers information about various vacat
 
 For the live demo of Jelajah Jakarta which is our first web project, click :arrow_right: [Jelajah Jakarta website](https://jelajahjakarta.herokuapp.com/) 
 
+#### :heavy_exclamation_mark: **YOU HAVE TO LOGIN AFTER REGISTER** :heavy_exclamation_mark:
+
 # Team Members :busts_in_silhouette:
 
 This is the list of our development team, without them this oh so lovely project won't be exist. With all the thoughts and hard work that our team put on this project, hopes to benefit many people. 
