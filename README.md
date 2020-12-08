@@ -1,6 +1,6 @@
-# Jelajah Jakarta :sunrise:
+# <div align="center">Jelajah Jakarta :sunrise:</div>
 
-Jelajah Jakarta is a web application that offers information about various vacation spots in Jakarta. This web comes with features such as booking ticket, review (you can see and do a review about the vacation spot), and a map button that will redirect you to google maps of the place you want.
+Jelajah Jakarta is a web application that offers information about various vacation spots in Jakarta. This web comes with features such as booking ticket, review (you can see other experiences and tell your own), and a map button that will redirect you to google maps of the place you want.
 
 For the live demo of Jelajah Jakarta which is our first web project, click :arrow_right: [Jelajah Jakarta website](https://jelajahjakarta.herokuapp.com/) 
 
@@ -36,3 +36,7 @@ Here are the list of [Jelajah Jakarta](https://jelajahjakarta.herokuapp.com/) pa
   - Tips
   
 - My Booking
+
+# Disclaimer :warning:
+
+This web is for educational purposes only
